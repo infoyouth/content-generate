@@ -4,7 +4,12 @@ on:
   workflow_dispatch:  # Manually trigger the workflow
 
 jobs:
-  call-course-content-action:
-    uses: infoyouth/course-content-action/.github/workflows/course_content_action.yml@main  # Correctly reference the reusable workflow
-    with:
-      github_token: ${{ secrets.GITHUB_TOKEN }}  # Pass the GitHub token to the reusable workflow
+  python-black:
+    name: Python Black
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Python Black
+        uses: cytopia/docker-black@0.8
+        with:
+          path: './'
