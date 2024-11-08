@@ -1,6 +1,9 @@
 name: Trigger Course Content Action
 on:
-  workflow_dispatch:  # Manually trigger the workflow
+  workflow_dispatch:
+
+permissions:
+  contents: read
 
 jobs:
   run-private-action:
@@ -9,10 +12,18 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
-        with:
-          token: ${{ secrets.PAT_TOKEN }}  # Use PAT for checkout
 
+      # Add this step to checkout the private action repository
+      - name: Checkout Private Action
+        uses: actions/checkout@v3
+        with:
+          repository: infoyouth/course-content-action
+          ref: main  # or specific tag/branch
+          token: ${{ secrets.PAT_TOKEN }}
+          path: .github/actions/course-content-action
+
+      # Update the action reference to use local path
       - name: Run Course Content Action
-        uses: infoyouth/course-content-action@main
+        uses: ./.github/actions/course-content-action
         with:
           path: './'
