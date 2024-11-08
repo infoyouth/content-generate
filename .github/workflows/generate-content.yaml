@@ -7,9 +7,13 @@ jobs:
   python-black:
     name: Python Black
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v3
-      - name: Python Black
+
+      - name: Trigger Course Content Action
         uses: infoyouth/course-content-action@main
         with:
           path: './'
+        env:
+          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}  # Use the PAT for authentication
