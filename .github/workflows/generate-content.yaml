@@ -1,12 +1,29 @@
 name: Trigger Course Content Action
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '0 0 * * *'
+
+permissions:
+  contents: read
 
 jobs:
-  call-content-action:
-    uses: infoyouth/course-content-action/.github/workflows/course_content_action.yml@main
-    with:
-      github_token: ${{ secrets.GITHUB_TOKEN }}
-    secrets: inherit
+  run-private-action:
+    name: Run Private Action
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      # Add this step to checkout the private action repository
+      - name: Checkout Private Action
+        uses: actions/checkout@v3
+        with:
+          repository: infoyouth/course-content-action
+          ref: main  # or specific tag/branch
+          token: ${{ secrets.PAT_TOKEN }}
+          path: .github/actions/course-content-action
+
+      # Update the action reference to use local path
+      - name: Run Course Content Action
+        uses: ./.github/actions/course-content-action
+        with:
+          path: './'
