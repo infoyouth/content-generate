@@ -1,17 +1,22 @@
 name: Trigger Course Content Action
 on:
-  workflow_dispatch:  # Manual trigger
+  workflow_dispatch:
   schedule:
-    - cron: '0 0 * * *'  # Runs daily at midnight UTC
-
-permissions: read-all
+    - cron: '0 0 * * *'
 
 jobs:
   call-content-action:
+    # Using the full repository reference format
     uses: infoyouth/course-content-action/.github/workflows/course_content_action.yml@main
-    permissions:
-      contents: read
-    secrets:
-      inherit
     with:
       github_token: ${{ secrets.PAT_TOKEN }}
+    secrets: inherit
+
+  # Add a fallback job if needed
+  debug-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Debug Info
+        run: |
+          echo "Attempting to access workflow from private repo"
+          echo "Check repository permissions and PAT token"
