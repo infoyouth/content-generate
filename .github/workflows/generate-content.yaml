@@ -16,4 +16,4 @@ jobs:
         with:
           path: './'
         env:
-          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}  # Use the PAT for authentication
+          PAT_TOKEN: ${{ secrets.PAT_TOKEN }}  # Pass the PAT as an environment variable
