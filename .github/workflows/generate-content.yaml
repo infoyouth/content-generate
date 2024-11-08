@@ -8,5 +8,5 @@ on:
 jobs:
   run-course-content:
     uses: infoyouth/course-content-action/.github/workflows/course_content_action.yml@main
-    secrets:
-      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Provide the token to authenticate with private AA
+    with:
+      github_token: ${{ secrets.GITHUB_TOKEN }}
