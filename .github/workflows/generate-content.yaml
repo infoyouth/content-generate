@@ -5,14 +5,10 @@ on:
     - cron: '0 0 * * *'  # Runs daily at midnight UTC (optional)
 
 jobs:
+  # The entire job calls the reusable workflow
   call-content-action:
-    name: Call Course Content Generation
-    runs-on: ubuntu-latest
-    permissions:
-      contents: read
-    
-    steps:
-      - name: Call Reusable Workflow
-        uses: infoyouth/course-content-action/.github/workflows/course_content_action.yml@main
-        with:
-          github_token: ${{ secrets.PAT_TOKEN }}
+    uses: infoyouth/course-content-action/.github/workflows/course_content_action.yml@main
+    with:
+      github_token: ${{ secrets.PAT_TOKEN }}
+    # Pass secrets if needed
+    secrets: inherit  # This passes all secrets to the called workflow
