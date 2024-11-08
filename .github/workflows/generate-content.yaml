@@ -15,12 +15,12 @@ jobs:
 
       # Add this step to checkout the private action repository
       - name: Checkout Private Action
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           repository: infoyouth/course-content-action
           ref: main  # or specific tag/branch
           token: ${{ secrets.PAT_TOKEN }}
-          path: .github/actions/course-content-action
+          path: ./
 
       # Update the action reference to use local path
       - name: Run Course Content Action
