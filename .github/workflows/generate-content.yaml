@@ -1,19 +1,18 @@
 name: Trigger Course Content Action
-
 on:
   workflow_dispatch:  # Manually trigger the workflow
 
 jobs:
-  python-black:
-    name: Python Black
+  run-private-action:
+    name: Run Private Action
     runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.PAT_TOKEN }}  # Use PAT for checkout
 
-      - name: Trigger Course Content Action
+      - name: Run Course Content Action
         uses: infoyouth/course-content-action@main
         with:
           path: './'
-        env:
-          PAT_TOKEN: ${{ secrets.PAT_TOKEN }}  # Pass the PAT as an environment variable
