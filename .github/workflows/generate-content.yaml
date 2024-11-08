@@ -2,13 +2,16 @@ name: Trigger Course Content Action
 on:
   workflow_dispatch:  # Manual trigger
   schedule:
-    - cron: '0 0 * * *'  # Runs daily at midnight UTC (optional)
+    - cron: '0 0 * * *'  # Runs daily at midnight UTC
+
+permissions: read-all
 
 jobs:
-  # The entire job calls the reusable workflow
   call-content-action:
     uses: infoyouth/course-content-action/.github/workflows/course_content_action.yml@main
+    permissions:
+      contents: read
+    secrets:
+      inherit
     with:
       github_token: ${{ secrets.PAT_TOKEN }}
-    # Pass secrets if needed
-    secrets: inherit  # This passes all secrets to the called workflow
