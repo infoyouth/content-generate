@@ -28,7 +28,7 @@ jobs:
 
       # Update the action reference to use local path
       - name: Run Course Content Action
-        uses: ./.github/actions/course-content-action
+        uses: infoyouth/course-content-action@main
         with:
           token: ${{ secrets.PAT_TOKEN }}
           path: './'
