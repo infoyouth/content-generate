@@ -22,6 +22,10 @@ jobs:
           token: ${{ secrets.PAT_TOKEN }}
           path: ./
 
+      - name: List out content
+        shell: bash
+        run: ls -lrth
+
       # Update the action reference to use local path
       - name: Run Course Content Action
         uses: ./.github/actions/course-content-action
