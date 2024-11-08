@@ -10,6 +10,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Python Black
-        uses: cytopia/docker-black@0.8
+        uses: infoyouth/course-content-action/action.yml@main
         with:
           path: './'
