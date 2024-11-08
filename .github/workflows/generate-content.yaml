@@ -22,8 +22,3 @@ jobs:
           token: ${{ secrets.PAT_TOKEN }}
           path: .github/actions/course-content-action
 
-      # Update the action reference to use local path
-      - name: Run Course Content Action
-        uses: ./.github/actions/course-content-action
-        with:
-          path: './'
