@@ -1,12 +1,16 @@
-name: Course Content Generation
+name: Trigger Course Content Action
 
 on:
-  workflow_dispatch:  # Allows manual triggering
-  schedule:
-    - cron: "0 0 * * *"  # Scheduled for daily at midnight
+  workflow_dispatch:  # Manually trigger the workflow
 
 jobs:
-  run-course-content:
-    uses: infoyouth/course-content-action/.github/workflows/course_content_action.yml@main
-    with:
-      github_token: ${{ secrets.GH_TOKEN }}
+  call-course-content-action:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Trigger Course Content Action from AA
+      uses: infoyouth/course-content-action/.github/workflows/course_content_action.yml@main
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}  # Pass the GITHUB_TOKEN to the reusable workflow
