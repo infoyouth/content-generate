@@ -6,17 +6,7 @@ on:
 
 jobs:
   call-content-action:
-    # Using the full repository reference format
     uses: infoyouth/course-content-action/.github/workflows/course_content_action.yml@main
     with:
-      github_token: ${{ secrets.PAT_TOKEN }}
+      github_token: ${{ secrets.GITHUB_TOKEN }}
     secrets: inherit
-
-  # Add a fallback job if needed
-  debug-job:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Debug Info
-        run: |
-          echo "Attempting to access workflow from private repo"
-          echo "Check repository permissions and PAT token"
