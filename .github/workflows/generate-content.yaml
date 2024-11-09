@@ -7,7 +7,7 @@ on:
         required: false
         default: 'Manual content generation'
   schedule:
-    - cron: '0 0 * * *'  # Runs daily at midnight UTC
+    - cron: '0 3 * * *'  # Runs daily at midnight UTC
 
 permissions:
   contents: write  # Changed to write since we'll be generating content
