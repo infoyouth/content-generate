@@ -44,18 +44,64 @@ jobs:
         run: |
           set -x
           echo "🎯 Starting content generation process..."
-          ls -lrth
           chmod a+x *.py
           python3 todays_course_finder.py || echo "Failed to run the Python script"
         env:
           GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
 
+      # Step 2: Check status of content generation process
       - name: 📋 Process Status
-        if: always()  # This will run even if previous steps fail
+        if: always()  # This will run even if the previous steps fail
         run: |
           if [ "${{ job.status }}" == "success" ]; then
             echo "✅ Content generation completed successfully!"
+            # List the generated *.md file(s)
+            GENERATED_FILE=$(ls .github/course-generator/*.md)
+            echo "Generated file: $GENERATED_FILE"
+            echo "MARKDOWN_FILENAME=${GENERATED_FILE}" >> $GITHUB_ENV
           else
             echo "❌ Content generation encountered issues"
+            exit 1
           fi
+
+      # Step 3: Set up branch name and current datetime for the PR
+      - name: Set up branch and datetime
+        run: |
+          CURRENT_DATETIME=$(date '+%Y-%m-%d-%H-%M-%S')
+          BRANCH_NAME="topic-update-${CURRENT_DATETIME}"
+          echo "CURRENT_DATETIME=${CURRENT_DATETIME}" >> $GITHUB_ENV
+          echo "BRANCH_NAME=${BRANCH_NAME}" >> $GITHUB_ENV
+
+      # Step 4: Generate tutorial (if needed)
+      - name: Generate Tutorial
+        run: python .github/workflows/generate_gemini.py
+
+      # Step 5: Create Pull Request
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v4
+        with:
+          title: "✨ Notes generated for ${{ env.MARKDOWN_FILENAME }} on ${{ env.CURRENT_DATETIME }} 📝"
+          body: |
+            ## 🎉 New Content Generated!
+            This PR contains generated notes for the topic based on the latest content creation process.
+
+            **Generated on**: ${{ env.CURRENT_DATETIME }}
+
+            **File Created**: ${{ env.MARKDOWN_FILENAME }}
+
+            ### 📜 Overview:
+            - The notes for the topic have been generated successfully.
+            - Please review the changes in the `{{ env.MARKDOWN_FILENAME }}` file.
+
+            ### 🛠️ Action Needed:
+            - If everything looks good, kindly approve the pull request.
+            - If there are any issues, please provide feedback.
+
+            ✨ _Happy learning!_ 🚀
+
+          base: main
+          branch: ${{ env.BRANCH_NAME }}
+          commit-message: "✨ Tutorials generated and file created: ${{ env.MARKDOWN_FILENAME }} on ${{ env.CURRENT_DATETIME }} 📝"
+          token: ${{ secrets.GITHUB_TOKEN }}
+          node-version: '20'
