@@ -42,17 +42,17 @@ jobs:
           pip install transformers markdownify torch requests
 
       - name: 🚀 Generate Course Content
-        #working-directory: .github/course-generator
+        working-directory: .github/course-generator
         run: |
           set -x
-          mkdir -p temp && cd temp
-          cp -r ../.github/course-generator/* .
-          rm -rf ../.github/course-generator/
+          mkdir -p $GITHUB_WORKSPACE/_posts
+          #cp -r ../.github/course-generator/* .
+          #rm -rf ../.github/course-generator/
           echo "🎯 Starting content generation process..."
           chmod a+x *.py
           python3 todays_course_finder.py || echo "Failed to run the Python script"
-          cp *.md ../ && cd ../
-          rm -rf temp
+          cp *.md $GITHUB_WORKSPACE/_posts && cd 
+          rm -rf .github/course-generator
         env:
           GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
@@ -64,10 +64,7 @@ jobs:
         run: |
           if [ "${{ job.status }}" == "success" ]; then
             echo "✅ Content generation completed successfully!"
-            # List the generated *.md file(s)
-            GENERATED_FILE=$(ls *.md)
-            echo "Generated file: $GENERATED_FILE"
-            echo "MARKDOWN_FILENAME=${GENERATED_FILE}" >> $GITHUB_ENV
+            git status
           else
             echo "❌ Content generation encountered issues"
             exit 1
@@ -84,10 +81,10 @@ jobs:
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v4
         with:
-          title: "Notes generated for ${{ env.MARKDOWN_FILENAME }} on ${{ env.CURRENT_DATETIME }}"
+          title: "Notes generated for on ${{ env.CURRENT_DATETIME }}"
           body: "This PR contains generated notes on ${{ env.CURRENT_DATETIME }}."
           base: main
           branch: ${{ env.BRANCH_NAME }}
-          commit-message: "Tutorials generated and file created ${{ env.MARKDOWN_FILENAME }} on ${{ env.CURRENT_DATETIME }}"
+          commit-message: "New blog post generated on ${{ env.CURRENT_DATETIME }}"
           token: ${{ secrets.GITHUB_TOKEN }}
           node-version: '20'
