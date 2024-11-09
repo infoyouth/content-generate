@@ -87,7 +87,7 @@ jobs:
 
       # Step 6: Create Pull Request using GitHub API
       - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v4
+        uses: infoyouth/course-content-action@v1
         with:
           title: "Notes generated for ${{ env.MARKDOWN_FILENAME }} on ${{ env.CURRENT_DATETIME }}"
           body: "This PR contains generated notes on ${{ env.CURRENT_DATETIME }}."
@@ -95,4 +95,3 @@ jobs:
           branch: ${{ env.BRANCH_NAME }}
           commit-message: "Tutorials generated and file created ${{ env.MARKDOWN_FILENAME }} on ${{ env.CURRENT_DATETIME }}"
           token: ${{ secrets.GITHUB_TOKEN }}
-          node-version: '20'
