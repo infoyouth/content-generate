@@ -72,7 +72,7 @@ jobs:
       - name: Set up branch and datetime
         run: |
           CURRENT_DATETIME=$(date '+%Y-%m-%d')
-          BRANCH_NAME="${env.TOPIC}-${CURRENT_DATETIME}"
+          BRANCH_NAME="${TOPIC}-${CURRENT_DATETIME}"
           echo "CURRENT_DATETIME=${CURRENT_DATETIME}" >> $GITHUB_ENV
           echo "BRANCH_NAME=${BRANCH_NAME}" >> $GITHUB_ENV
         env:
