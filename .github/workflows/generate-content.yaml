@@ -1,4 +1,4 @@
-name: 🎓 Daily Course Content Generator
+name: 🎓 Daily Course Generator
 on:
   workflow_dispatch:  # Manual trigger with a nice UI button
     inputs:
@@ -43,7 +43,8 @@ jobs:
         working-directory: .github/course-generator
         run: |
           echo "🎯 Starting content generation process..."
-          python todays_course_finder.py
+          ls -lrth
+          python3 todays_course_finder.py
         env:
           GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
 
