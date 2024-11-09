@@ -70,7 +70,7 @@ jobs:
       # Step 3: Set up branch name and current datetime for the PR
       - name: Set up branch and datetime
         run: |
-          CURRENT_DATETIME=$(date '+%Y-%m-%d-%H-%M-%S')
+          CURRENT_DATETIME=$(date '+%Y-%m-%d')
           BRANCH_NAME="topic-update-${CURRENT_DATETIME}"
           echo "CURRENT_DATETIME=${CURRENT_DATETIME}" >> $GITHUB_ENV
           echo "BRANCH_NAME=${BRANCH_NAME}" >> $GITHUB_ENV
@@ -78,8 +78,8 @@ jobs:
       # Step 5: Commit and Push Changes to New Branch
       - name: Commit changes
         run: |
-          git config --global user.name "GitHub Actions"
-          git config --global user.email "actions@github.com"
+          git config --global user.name "Youth Innovations"
+          git config --global user.email "info.youthinno@gmail.com"
           git checkout -b ${{ env.BRANCH_NAME }}
           git add .
           git commit -m "✨ Tutorials generated and file created: ${{ env.MARKDOWN_FILENAME }} on ${{ env.CURRENT_DATETIME }} 📝"
@@ -87,32 +87,12 @@ jobs:
 
       # Step 6: Create Pull Request using GitHub API
       - name: Create Pull Request
-        run: |
-          PR_BODY="## 🎉 New Content Generated!
-          
-          This PR contains generated notes for the topic based on the latest content creation process.
-
-          **Generated on**: ${{ env.CURRENT_DATETIME }}
-
-          **File Created**: ${{ env.MARKDOWN_FILENAME }}
-
-          ### 📜 Overview:
-          - The notes for the topic have been generated successfully.
-          - Please review the changes in the \`${{ env.MARKDOWN_FILENAME }}\` file.
-
-          ### 🛠️ Action Needed:
-          - If everything looks good, kindly approve the pull request.
-          - If there are any issues, please provide feedback.
-          
-          ✨ _Happy learning!_ 🚀"
-
-          curl -X POST \
-            -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
-            -H "Accept: application/vnd.github.v3+json" \
-            -d '{
-                  "title": "✨ Notes generated for '${{ env.MARKDOWN_FILENAME }}' on '${{ env.CURRENT_DATETIME }}' 📝",
-                  "head": "'${{ env.BRANCH_NAME }}'",
-                  "base": "main",
-                  "body": "'"${PR_BODY}"'"
-                }' \
-            https://api.github.com/repos/${{ github.repository }}/pulls
+        uses: peter-evans/create-pull-request@v4
+        with:
+          title: "Notes generated for ${{ env.MARKDOWN_FILENAME }} on ${{ env.CURRENT_DATETIME }}"
+          body: "This PR contains generated notes on ${{ env.CURRENT_DATETIME }}."
+          base: main
+          branch: ${{ env.BRANCH_NAME }}
+          commit-message: "Tutorials generated and file created ${{ env.MARKDOWN_FILENAME }} on ${{ env.CURRENT_DATETIME }}"
+          token: ${{ secrets.GITHUB_TOKEN }}
+          node-version: '20'
