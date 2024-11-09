@@ -49,6 +49,7 @@ jobs:
           python3 todays_course_finder.py || echo "Failed to run the Python script"
         env:
           GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
 
       - name: 📋 Process Status
         if: always()  # This will run even if previous steps fail
