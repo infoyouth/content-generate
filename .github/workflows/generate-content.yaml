@@ -79,6 +79,7 @@ jobs:
           echo "BRANCH_NAME=${BRANCH_NAME}" >> $GITHUB_ENV
 
       # Step 5: Commit and Push Changes to New Branch
+      # Step 5: Commit and Push Changes to New Branch
       - name: Commit changes
         run: |
           git config --global user.name "Youth Innovations"
@@ -86,9 +87,7 @@ jobs:
           git checkout -b ${{ env.BRANCH_NAME }}
           git add .
           git commit -m "✨ Tutorials generated and file created: ${{ env.MARKDOWN_FILENAME }} on ${{ env.CURRENT_DATETIME }} 📝"
-          git branch --set-upstream-to=origin/${{ env.BRANCH_NAME }} ${{ env.BRANCH_NAME }}
-          git pull
-          git push origin ${{ env.BRANCH_NAME }}
+          git push -u origin ${{ env.BRANCH_NAME }}
           curl -X POST \
             -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
             -H "Accept: application/vnd.github.v3+json" \
