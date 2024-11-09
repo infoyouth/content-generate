@@ -84,7 +84,7 @@ jobs:
           TOPIC: ${{ env.TOPIC }}
 
       - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v4
+        uses: peter-evans/create-pull-request@v7.0.5
         with:
           title: "Notes generated for ${{ env.TOPIC }} on ${{ env.CURRENT_DATETIME }}"
           body: "This PR contains generated notes on ${{ env.CURRENT_DATETIME }}."
