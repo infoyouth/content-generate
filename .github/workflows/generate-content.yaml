@@ -12,10 +12,9 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
-
-      # Directly use the private action as a reusable action without cloning it
+        
       - name: Run Course Content Action
-        uses: infoyouth/course-content-action@main
+        uses: infoyouth/course-content-action@main  # Make sure this exact repo name exists
         with:
           token: ${{ secrets.PAT_TOKEN }}
           path: './'
