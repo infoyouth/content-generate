@@ -87,9 +87,5 @@ jobs:
 
       # Step 6: Create Pull Request using GitHub API
       - name: Create Pull Request
-        uses: thomaseizinger/create-pull-request@master
-        with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          head: ${{ github.ref }}
-          base: main
-          title: "An automatically created PR!"
+        run: |
+          curl -X POST -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" -H "Accept: application/vnd.github.v3+json" -d '{"title": "Notes generated for ${{ env.MARKDOWN_FILENAME }} on ${{ env.CURRENT_DATETIME }}", "head": "${{ env.BRANCH_NAME }}", "base": "main", "body": "This PR contains generated notes for the topic."}' https://api.github.com/repos/${{ github.repository }}/pulls
