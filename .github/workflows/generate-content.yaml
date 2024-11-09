@@ -83,6 +83,7 @@ jobs:
           git checkout -b ${{ env.BRANCH_NAME }}
           git add .
           git commit -m "✨ Tutorials generated and file created: ${{ env.MARKDOWN_FILENAME }} on ${{ env.CURRENT_DATETIME }} 📝"
+          git branch --set-upstream-to=origin/${{ env.BRANCH_NAME }} ${{ env.BRANCH_NAME }}
           git pull
           git push origin ${{ env.BRANCH_NAME }}
           curl -X POST \
