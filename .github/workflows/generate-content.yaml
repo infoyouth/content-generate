@@ -87,7 +87,8 @@ jobs:
           git checkout -b ${{ env.BRANCH_NAME }}
           git add .
           git commit -m "✨ Tutorials generated and file created: ${{ env.MARKDOWN_FILENAME }} on ${{ env.CURRENT_DATETIME }} 📝"
-          git push -u origin ${{ env.BRANCH_NAME }}
+          #git push -u origin ${{ env.BRANCH_NAME }}
+          git push -u origin ${{ env.BRANCH_NAME }} --force
           curl -X POST \
             -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
             -H "Accept: application/vnd.github.v3+json" \
