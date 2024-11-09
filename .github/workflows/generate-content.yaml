@@ -87,11 +87,9 @@ jobs:
 
       # Step 6: Create Pull Request using GitHub API
       - name: Create Pull Request
-        uses: infoyouth/course-content-action@v1
+        uses: thomaseizinger/create-pull-request@master
         with:
-          title: "Notes generated for ${{ env.MARKDOWN_FILENAME }} on ${{ env.CURRENT_DATETIME }}"
-          body: "This PR contains generated notes on ${{ env.CURRENT_DATETIME }}."
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          head: ${{ github.ref }}
           base: main
-          branch: ${{ env.BRANCH_NAME }}
-          commit-message: "Tutorials generated and file created ${{ env.MARKDOWN_FILENAME }} on ${{ env.CURRENT_DATETIME }}"
-          token: ${{ secrets.GITHUB_TOKEN }}
+          title: "An automatically created PR!"
