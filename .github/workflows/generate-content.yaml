@@ -65,7 +65,7 @@ jobs:
           if [ "${{ job.status }}" == "success" ]; then
             echo "✅ Content generation completed successfully!"
             # List the generated *.md file(s)
-            GENERATED_FILE=$(ls temp/*.md)
+            GENERATED_FILE=$(ls *.md)
             echo "Generated file: $GENERATED_FILE"
             echo "MARKDOWN_FILENAME=${GENERATED_FILE}" >> $GITHUB_ENV
           else
