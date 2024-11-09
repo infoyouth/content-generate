@@ -51,9 +51,12 @@ jobs:
           echo "🎯 Starting content generation process..."
           chmod a+x *.py
           python3 todays_course_finder.py || echo "Failed to run the Python script"
+          cp *.md ../ && cd ../
+          rm -rf temp
         env:
           GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          
   
       # Step 2: Check status of content generation process
       - name: 📋 Process Status
@@ -78,19 +81,13 @@ jobs:
           echo "CURRENT_DATETIME=${CURRENT_DATETIME}" >> $GITHUB_ENV
           echo "BRANCH_NAME=${BRANCH_NAME}" >> $GITHUB_ENV
 
-      # Step 5: Commit and Push Changes to New Branch
-      # Step 5: Commit and Push Changes to New Branch
-      - name: Commit changes
-        run: |
-          git config --global user.name "Youth Innovations"
-          git config --global user.email "info.youthinno@gmail.com"
-          git checkout -b ${{ env.BRANCH_NAME }}
-          git add .
-          git commit -m "✨ Tutorials generated and file created: ${{ env.MARKDOWN_FILENAME }} on ${{ env.CURRENT_DATETIME }} 📝"
-          #git push -u origin ${{ env.BRANCH_NAME }}
-          git push -u origin ${{ env.BRANCH_NAME }} --force
-          curl -X POST \
-            -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
-            -H "Accept: application/vnd.github.v3+json" \
-            -d '{"title": "Notes generated for '${{ env.MARKDOWN_FILENAME }}' on '${{ env.CURRENT_DATETIME }}'", "head": "'${{ env.BRANCH_NAME }}'", "base": "main", "body": "This PR contains generated notes for the topic."}' \
-            https://api.github.com/repos/${{ github.repository }}/pulls
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v4
+        with:
+          title: "Notes generated for ${{ env.MARKDOWN_FILENAME }} on ${{ env.CURRENT_DATETIME }}"
+          body: "This PR contains generated notes on ${{ env.CURRENT_DATETIME }}."
+          base: main
+          branch: ${{ env.BRANCH_NAME }}
+          commit-message: "Tutorials generated and file created ${{ env.MARKDOWN_FILENAME }} on ${{ env.CURRENT_DATETIME }}"
+          token: ${{ secrets.GITHUB_TOKEN }}
+          node-version: '20'
