@@ -45,6 +45,7 @@ jobs:
           set -x
           echo "🎯 Starting content generation process..."
           ls -lrth
+          chmod a+x *.py
           python3 todays_course_finder.py || echo "Failed to run the Python script"
         env:
           GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
