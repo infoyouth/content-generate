@@ -34,7 +34,6 @@ jobs:
         with:
           python-version: '3.10'
           cache: 'pip'  # Enables caching of pip dependencies
-          node-version: '20'  # Ensure Node.js 20
 
       - name: 📦 Install Dependencies
         run: |
@@ -87,4 +86,3 @@ jobs:
           branch: ${{ env.BRANCH_NAME }}
           commit-message: "New blog post generated on ${{ env.CURRENT_DATETIME }}"
           token: ${{ secrets.GITHUB_TOKEN }}
-          node-version: '20'
