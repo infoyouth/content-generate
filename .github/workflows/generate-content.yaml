@@ -71,10 +71,12 @@ jobs:
       # Step 3: Set up branch name and current datetime for the PR
       - name: Set up branch and datetime
         run: |
+          echo "TOPIC value is: ${TOPIC}"
           CURRENT_DATETIME=$(date '+%Y-%m-%d')
           BRANCH_NAME="${TOPIC}-${CURRENT_DATETIME}"
           echo "CURRENT_DATETIME=${CURRENT_DATETIME}" >> $GITHUB_ENV
           echo "BRANCH_NAME=${BRANCH_NAME}" >> $GITHUB_ENV
+          echo "Generated BRANCH_NAME: ${BRANCH_NAME}"
         env:
           TOPIC: ${{ env.TOPIC }}
 
