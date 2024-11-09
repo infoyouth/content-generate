@@ -44,13 +44,13 @@ jobs:
         run: |
           set -x
           mkdir -p $GITHUB_WORKSPACE/_posts
-          #cp -r ../.github/course-generator/* .
-          #rm -rf ../.github/course-generator/
           echo "🎯 Starting content generation process..."
           chmod a+x *.py
           python3 todays_course_finder.py || echo "Failed to run the Python script"
           cp *.md $GITHUB_WORKSPACE/_posts && cd 
-          git rm -r --cached ./temp
+          rm -rf ./temp
+          pwd
+          ls -lrth
         env:
           GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
