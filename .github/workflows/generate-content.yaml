@@ -75,6 +75,8 @@ jobs:
           BRANCH_NAME="${{ env.TOPIC }}-${{CURRENT_DATETIME}}"
           echo "CURRENT_DATETIME=${CURRENT_DATETIME}" >> $GITHUB_ENV
           echo "BRANCH_NAME=${BRANCH_NAME}" >> $GITHUB_ENV
+        env:
+          TOPIC: ${{ env.TOPIC }}
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v4
