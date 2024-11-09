@@ -13,18 +13,9 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      # Add this step to checkout the private action repository
-      - name: Checkout Private Action
-        uses: actions/checkout@v3
-        with:
-          repository: infoyouth/course-content-action
-          ref: main  # or specific tag/branch
-          token: ${{ secrets.PAT_TOKEN }}
-          path: .github/actions/course-content-action
-
-      # Update the action reference to use local path
+      # Directly use the private action as a reusable action without cloning it
       - name: Run Course Content Action
-        uses: ./.github/actions/course-content-action
+        uses: infoyouth/course-content-action@main
         with:
           token: ${{ secrets.PAT_TOKEN }}
           path: './'
