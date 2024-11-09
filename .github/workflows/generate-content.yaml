@@ -34,6 +34,7 @@ jobs:
         with:
           python-version: '3.10'
           cache: 'pip'  # Enables caching of pip dependencies
+          node-version: '20'  # Ensure Node.js 20
 
       - name: 📦 Install Dependencies
         run: |
@@ -45,7 +46,6 @@ jobs:
         run: |
           set -x
           echo "🎯 Starting content generation process..."
-          ls -lrth
           chmod a+x *.py
           python3 todays_course_finder.py || echo "Failed to run the Python script"
         env:
