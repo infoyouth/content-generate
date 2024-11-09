@@ -1,0 +1,36 @@
+[
+  {
+    "Date": "2024-11-09",
+    "Topic": "This is test topic",
+    "Prompts": [
+      {
+        "title": "Introduction to the C Language",
+        "prompt": "Describe the origins of C, its historical importance, and why it remains relevant in software development. Limit to 150-200 words. Include links to resources about its evolution and significant milestones."
+      },
+      {
+        "title": "Features of the C Programming Language",
+        "prompt": "List the key features of C (like portability, efficiency, and modularity) and explain how each contributes to its flexibility and performance. Limit to 100-150 words. Add links to resources for further info."
+      },
+      {
+        "title": "Understanding the C Language Standards",
+        "prompt": "Explain the evolution of C standards (C89, C99, C11, etc.) and how each version has added new capabilities. Limit to 150-200 words and include links to resources on C language standards."
+      },
+      {
+        "title": "Setting Up a C Development Environment",
+        "prompt": "Provide a guide for setting up a development environment for C across different platforms (Windows, macOS, Linux). Mention common tools, compilers, and IDEs. Limit to 150-200 words and include installation links."
+      },
+      {
+        "title": "Writing and Running a Basic C Program",
+        "prompt": "Guide readers on writing and executing a basic C program. Include steps for code structure, compiling, and running the code on different platforms. Limit to 100-150 words."
+      },
+      {
+        "title": "Understanding C Comments",
+        "prompt": "Explain the purpose of comments in C and demonstrate the correct syntax for single-line and multi-line comments. Limit to 100-150 words and include tips on writing effective comments."
+      },
+      {
+        "title": "Conclusion!",
+        "prompt": "### Conclusion\nWrite an engaging and inviting conclusion statement that encourages readers to leave their comments, feedback, or suggestions in the comments section. Use a friendly tone with emojis. Format the response with the following styled title:<h1><span style='color:#e67e22'>Conclusion</span></h1>Make sure the generated text follows this header and fits well with a blog's ending."
+      }
+    ]
+  }
+]

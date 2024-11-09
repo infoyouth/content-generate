@@ -1,0 +1,1268 @@
+[
+  {
+    "Date": "2025-02-25",
+    "Topic": "C++ Overview",
+    "Prompts": [
+      {
+        "title": "Introduction to C++",
+        "prompt": "Introduce the C++ programming language, highlighting its purpose, key features, and areas of application. Limit to 150-200 words and include relevant examples."
+      },
+      {
+        "title": "Features of C++",
+        "prompt": "List and explain the main features of C++, such as object-oriented programming, encapsulation, inheritance, and polymorphism. Provide examples to illustrate each feature, keeping it within 150-200 words."
+      },
+      {
+        "title": "History of C++",
+        "prompt": "Discuss the history of C++, including its development by Bjarne Stroustrup, key milestones, and its evolution over the years. Highlight significant versions and their contributions in 150-200 words."
+      },
+      {
+        "title": "Interesting Facts about C++",
+        "prompt": "Share some intriguing facts about C++, including its usage in major software applications and industries. Limit to 100-150 words."
+      },
+      {
+        "title": "Setting up C++ Development Environment",
+        "prompt": "Provide a step-by-step guide for setting up a C++ development environment across different platforms (Windows, macOS, and Linux). Limit to 200-250 words."
+      },
+      {
+        "title": "Similarities and Differences between C++ and C",
+        "prompt": "Compare and contrast C++ with C, focusing on similarities, differences, and how the languages complement each other. Provide code examples to illustrate key points in 150-200 words."
+      },
+      {
+        "title": "Conclusion!",
+        "prompt": "### Conclusion\nWrite an engaging and inviting conclusion statement that encourages readers to leave their comments, feedback, or suggestions in the comments section. Use a friendly tone with emojis. Format the response with the following styled title:<h1><span style='color:#e67e22'>Conclusion</span></h1>Make sure the generated text follows this header and fits well with a blog's ending."
+      }
+    ]
+  },
+  {
+    "Date": "2025-03-04",
+    "Topic": "C++ Basics",
+    "Prompts": [
+      {
+        "title": "First C++ Program",
+        "prompt": "Walk through writing and executing a simple C++ program (e.g., Hello World). Explain each part of the code, its purpose, and how to compile and run it. Limit to 150-200 words."
+      },
+      {
+        "title": "C++ Basic Syntax",
+        "prompt": "Explain the basic syntax of C++, including structure, statements, and common conventions. Include code snippets to demonstrate syntax rules, keeping it within 150-200 words."
+      },
+      {
+        "title": "C++ Comments",
+        "prompt": "Describe the types of comments in C++ (single-line, multi-line) and their importance. Provide examples to show effective use of comments in code in 100-150 words."
+      },
+      {
+        "title": "C++ Tokens",
+        "prompt": "Define C++ tokens and categorize them (keywords, identifiers, constants, etc.). Provide examples for each type of token in 150-200 words."
+      },
+      {
+        "title": "C++ Identifiers",
+        "prompt": "Explain what identifiers are in C++, including rules for naming them and examples of valid and invalid identifiers. Limit to 100-150 words."
+      },
+      {
+        "title": "C++ Keywords",
+        "prompt": "List and describe the keywords in C++, their purpose, and how they fit into the language's functionality. Provide code examples to illustrate their usage in 150-200 words."
+      },
+      {
+        "title": "Difference between Keyword and Identifier",
+        "prompt": "Clarify the distinction between keywords and identifiers in C++, providing examples to show how they are used in programming. Limit to 100-150 words."
+      },
+      {
+        "title": "Conclusion!",
+        "prompt": "### Conclusion\nWrite an engaging and inviting conclusion statement that encourages readers to leave their comments, feedback, or suggestions in the comments section. Use a friendly tone with emojis. Format the response with the following styled title:<h1><span style='color:#e67e22'>Conclusion</span></h1>Make sure the generated text follows this header and fits well with a blog's ending."
+      }
+    ]
+  },
+  {
+    "Date": "2025-03-11",
+    "Topic": "C++ Variables and Constants",
+    "Prompts": [
+      {
+        "title": "C++ Variables",
+        "prompt": "Discuss the types of variables in C++, including local, global, and static variables. Provide examples to illustrate each type in 150-200 words."
+      },
+      {
+        "title": "C++ Constants",
+        "prompt": "Explain what constants are in C++, how to define them, and their role in programming. Provide examples of different types of constants in 150-200 words."
+      },
+      {
+        "title": "Scope of C++ Variables",
+        "prompt": "Describe variable scope in C++, including local and global scope. Provide code examples to illustrate how scope affects variable accessibility in 150-200 words."
+      },
+      {
+        "title": "C++ Storage Classes",
+        "prompt": "Introduce the different storage classes in C++ (automatic, static, external, and register) and explain their purposes. Include examples for clarity in 150-200 words."
+      },
+      {
+        "title": "C++ Static Variables",
+        "prompt": "Explain the concept of static variables in C++, how they differ from regular variables, and when to use them. Provide examples to illustrate their behavior in 150-200 words."
+      },
+      {
+        "title": "Conclusion!",
+        "prompt": "### Conclusion\nWrite an engaging and inviting conclusion statement that encourages readers to leave their comments, feedback, or suggestions in the comments section. Use a friendly tone with emojis. Format the response with the following styled title:<h1><span style='color:#e67e22'>Conclusion</span></h1>Make sure the generated text follows this header and fits well with a blog's ending."
+      }
+    ]
+  },
+  {
+    "Date": "2025-03-18",
+    "Topic": "C++ Data Types and Literals",
+    "Prompts": [
+      {
+        "title": "C++ Data Types",
+        "prompt": "Discuss the various data types in C++ (int, char, float, etc.) and their uses. Include examples to demonstrate each data type in action in 150-200 words."
+      },
+      {
+        "title": "C++ Literals",
+        "prompt": "Define literals in C++ and categorize them (integer, floating-point, character, string, etc.). Provide examples for each type of literal in 150-200 words."
+      },
+      {
+        "title": "C++ Derived Data Types",
+        "prompt": "Explain derived data types in C++ (arrays, pointers, references, etc.) and how they differ from fundamental data types. Provide code examples in 150-200 words."
+      },
+      {
+        "title": "C++ User-Defined Data Types",
+        "prompt": "Introduce user-defined data types in C++, such as structs, unions, and enums. Explain their significance and provide examples in 150-200 words."
+      },
+      {
+        "title": "C++ Data Type Ranges and Their Macros",
+        "prompt": "Discuss the ranges of various data types in C++ and the macros used to determine these ranges. Provide examples to illustrate in 150-200 words."
+      },
+      {
+        "title": "C++ Type Modifiers",
+        "prompt": "Explain type modifiers in C++ (signed, unsigned, short, long) and how they affect data types. Include examples to clarify their usage in 150-200 words."
+      },
+      {
+        "title": "C++ Data Type Conversion",
+        "prompt": "Discuss data type conversion in C++, including implicit and explicit conversion. Provide examples to illustrate the concepts in 150-200 words."
+      },
+      {
+        "title": "C++ Typecasting Operators",
+        "prompt": "Introduce typecasting operators in C++ (static_cast, dynamic_cast, const_cast, reinterpret_cast) and their use cases. Provide examples for each operator in 150-200 words."
+      },
+      {
+        "title": "Conclusion!",
+        "prompt": "### Conclusion\nWrite an engaging and inviting conclusion statement that encourages readers to leave their comments, feedback, or suggestions in the comments section. Use a friendly tone with emojis. Format the response with the following styled title:<h1><span style='color:#e67e22'>Conclusion</span></h1>Make sure the generated text follows this header and fits well with a blog's ending."
+      }
+    ]
+  },
+  {
+    "Date": "2025-03-25",
+    "Topic": "C++ Operators",
+    "Prompts": [
+      {
+        "title": "C++ Operators",
+        "prompt": "Introduce the concept of operators in C++, explaining their importance and categorization. Provide a brief overview in 150-200 words."
+      },
+      {
+        "title": "C++ Arithmetic Operators",
+        "prompt": "Explain arithmetic operators in C++, such as +, -, *, /, and %. Provide examples that demonstrate their usage and expected outputs in 150-200 words."
+      },
+      {
+        "title": "C++ Unary Operators",
+        "prompt": "Discuss unary operators in C++, including increment (++) and decrement (--). Provide code examples to illustrate their effects on variables in 150-200 words."
+      },
+      {
+        "title": "C++ Bitwise Operators",
+        "prompt": "Define bitwise operators in C++ (&, |, ^, ~, <<, >>) and explain their usage with examples. Keep the explanation within 150-200 words."
+      },
+      {
+        "title": "C++ Relational Operators",
+        "prompt": "Describe relational operators in C++ (==, !=, >, <, >=, <=) and how they are used in comparisons. Provide examples to clarify in 150-200 words."
+      },
+      {
+        "title": "C++ Logical Operators",
+        "prompt": "Introduce logical operators in C++ (&&, ||, !) and explain their role in controlling program flow. Include code examples in 150-200 words."
+      },
+      {
+        "title": "C++ Assignment Operators",
+        "prompt": "Explain assignment operators in C++, including =, +=, -=, *=, /=, and %=, with examples demonstrating their usage. Limit to 150-200 words."
+      },
+      {
+        "title": "C++ Ternary/Conditional Operators",
+        "prompt": "Discuss the ternary operator (?:) in C++, explaining its syntax and how it can simplify conditional expressions. Provide examples in 150-200 words."
+      },
+      {
+        "title": "C++ Sizeof Operator",
+        "prompt": "Describe the sizeof operator in C++, its syntax, and its importance in determining the size of data types. Provide examples for clarity in 100-150 words."
+      },
+      {
+        "title": "C++ Scope Resolution Operator",
+        "prompt": "Explain the scope resolution operator (::) in C++, its usage in accessing global variables and class members, and provide examples in 150-200 words."
+      },
+      {
+        "title": "Conclusion!",
+        "prompt": "### Conclusion\nWrite an engaging and inviting conclusion statement that encourages readers to leave their comments, feedback, or suggestions in the comments section. Use a friendly tone with emojis. Format the response with the following styled title:<h1><span style='color:#e67e22'>Conclusion</span></h1>Make sure the generated text follows this header and fits well with a blog's ending."
+      }
+    ]
+  },
+  {
+    "Date": "2025-04-01",
+    "Topic": "C++ Input/Output",
+    "Prompts": [
+      {
+        "title": "C++ Basic Input / Output",
+        "prompt": "Introduce basic input and output in C++, discussing the use of standard streams. Provide examples illustrating basic I/O operations in 150-200 words."
+      },
+      {
+        "title": "C++ Standard Input Stream (cin)",
+        "prompt": "Explain the cin stream in C++, its usage for input operations, and provide examples demonstrating its functionality in 150-200 words."
+      },
+      {
+        "title": "C++ Standard Output Stream (cout)",
+        "prompt": "Discuss the cout stream in C++, how it handles output operations, and provide code examples showing its use in 150-200 words."
+      },
+      {
+        "title": "C++ Standard Error Stream (cerr)",
+        "prompt": "Describe the cerr stream in C++, its purpose for error output, and how it differs from cout. Include examples in 150-200 words."
+      },
+      {
+        "title": "C++ Input / Output Manipulator",
+        "prompt": "Introduce I/O manipulators in C++, explaining their role in formatting input and output. Provide examples of common manipulators in 150-200 words."
+      },
+      {
+        "title": "Conclusion!",
+        "prompt": "### Conclusion\nWrite an engaging and inviting conclusion statement that encourages readers to leave their comments, feedback, or suggestions in the comments section. Use a friendly tone with emojis. Format the response with the following styled title:<h1><span style='color:#e67e22'>Conclusion</span></h1>Make sure the generated text follows this header and fits well with a blog's ending."
+      }
+    ]
+  },
+  {
+    "Date": "2025-04-08",
+    "Topic": "C++ Control Statements",
+    "Prompts": [
+      {
+        "title": "C++ Decision Making",
+        "prompt": "Introduce decision-making statements in C++, discussing their importance in controlling program flow. Provide an overview in 150-200 words."
+      },
+      {
+        "title": "C++ if Statement",
+        "prompt": "Explain the if statement in C++, its syntax, and provide examples demonstrating its use in decision-making in 150-200 words."
+      },
+      {
+        "title": "C++ if-else Statement",
+        "prompt": "Discuss the if-else statement in C++, explaining its structure and use cases with code examples in 150-200 words."
+      },
+      {
+        "title": "C++ if-else-if Ladder",
+        "prompt": "Describe the if-else-if ladder in C++, its syntax, and when to use it. Provide examples for clarity in 150-200 words."
+      },
+      {
+        "title": "C++ Nested if-else Statement",
+        "prompt": "Explain nested if-else statements in C++, discussing their structure and providing examples in 150-200 words."
+      },
+      {
+        "title": "C++ Switch Statement",
+        "prompt": "Introduce the switch statement in C++, explaining its syntax and how it differs from if statements. Provide examples in 150-200 words."
+      },
+      {
+        "title": "C++ Jump Statements",
+        "prompt": "Discuss jump statements in C++ (break, continue, return) and their roles in controlling program flow. Provide examples in 150-200 words."
+      },
+      {
+        "title": "C++ Loops",
+        "prompt": "Introduce loops in C++, discussing their purpose and types (for, while, do-while). Provide an overview in 150-200 words."
+      },
+      {
+        "title": "C++ for Loop",
+        "prompt": "Explain the for loop in C++, its structure, and provide examples demonstrating its use in 150-200 words."
+      },
+      {
+        "title": "C++ Range-Based for Loop",
+        "prompt": "Discuss the range-based for loop in C++, its advantages, and provide examples to illustrate its usage in 150-200 words."
+      },
+      {
+        "title": "C++ while Loop",
+        "prompt": "Describe the while loop in C++, explaining its syntax and providing examples demonstrating its functionality in 150-200 words."
+      },
+      {
+        "title": "C++ do\u2026while Loop",
+        "prompt": "Introduce the do\u2026while loop in C++, discussing its structure and differences from the while loop. Provide examples in 150-200 words."
+      },
+      {
+        "title": "Conclusion!",
+        "prompt": "### Conclusion\nWrite an engaging and inviting conclusion statement that encourages readers to leave their comments, feedback, or suggestions in the comments section. Use a friendly tone with emojis. Format the response with the following styled title:<h1><span style='color:#e67e22'>Conclusion</span></h1>Make sure the generated text follows this header and fits well with a blog's ending."
+      }
+    ]
+  },
+  {
+    "Date": "2025-04-15",
+    "Topic": "C++ Functions",
+    "Prompts": [
+      {
+        "title": "C++ Functions",
+        "prompt": "Introduce the concept of functions in C++, explaining their importance for code organization and reuse. Provide an overview in 150-200 words."
+      },
+      {
+        "title": "C++ return",
+        "prompt": "Discuss the return statement in C++, its syntax, and how it is used to return values from functions. Include examples in 150-200 words."
+      },
+      {
+        "title": "C++ Parameter Passing Techniques",
+        "prompt": "Explain different parameter passing techniques in C++, including call by value and call by reference, with examples to illustrate their usage in 150-200 words."
+      },
+      {
+        "title": "Difference between Call by Value and Call by Reference",
+        "prompt": "Detail the differences between call by value and call by reference in C++. Provide examples demonstrating each technique in 150-200 words."
+      },
+      {
+        "title": "C++ Default Arguments",
+        "prompt": "Describe default arguments in C++, how they work, and provide examples to clarify their usage in function definitions in 150-200 words."
+      },
+      {
+        "title": "C++ Recursion",
+        "prompt": "Explain recursion in C++, its concept, and how it is implemented with examples. Discuss advantages and potential pitfalls in 150-200 words."
+      },
+      {
+        "title": "C++ Inline Functions",
+        "prompt": "Introduce inline functions in C++, explaining their purpose and benefits for performance optimization. Provide examples in 150-200 words."
+      },
+      {
+        "title": "C++ Lambda Expression",
+        "prompt": "Discuss lambda expressions in C++, explaining their syntax and how they simplify function creation. Provide examples in 150-200 words."
+      },
+      {
+        "title": "Conclusion!",
+        "prompt": "### Conclusion\nWrite an engaging and inviting conclusion statement that encourages readers to leave their comments, feedback, or suggestions in the comments section. Use a friendly tone with emojis. Format the response with the following styled title:<h1><span style='color:#e67e22'>Conclusion</span></h1>Make sure the generated text follows this header and fits well with a blog's ending."
+      }
+    ]
+  },
+  {
+    "Date": "2025-04-22",
+    "Topic": "C++ Pointers and References",
+    "Prompts": [
+      {
+        "title": "C++ Pointers and References",
+        "prompt": "Introduce pointers and references in C++, discussing their roles in memory management and variable manipulation. Provide an overview in 150-200 words."
+      },
+      {
+        "title": "C++ Pointers",
+        "prompt": "Explain the concept of pointers in C++, how to declare and use them, and provide examples in 150-200 words."
+      },
+      {
+        "title": "C++ Pointer Arithmetic",
+        "prompt": "Discuss pointer arithmetic in C++, explaining how to perform operations like incrementing and decrementing pointers with examples in 150-200 words."
+      },
+      {
+        "title": "Dangling, Void, Null, and Wild Pointers",
+        "prompt": "Define different types of pointers: dangling, void, null, and wild pointers, explaining their characteristics and potential issues in C++ in 150-200 words."
+      },
+      {
+        "title": "Applications of Pointers",
+        "prompt": "Explore various applications of pointers in C++, including dynamic memory allocation and data structure manipulation. Provide examples in 150-200 words."
+      },
+      {
+        "title": "C++ nullptr",
+        "prompt": "Introduce nullptr in C++, explaining its purpose and advantages over NULL in pointer initialization and comparison in 150-200 words."
+      },
+      {
+        "title": "C++ References",
+        "prompt": "Explain references in C++, how they differ from pointers, and provide examples demonstrating their usage in 150-200 words."
+      },
+      {
+        "title": "Can references refer to an invalid location in C++?",
+        "prompt": "Discuss whether references can point to invalid memory locations in C++, providing examples and explanations in 150-200 words."
+      },
+      {
+        "title": "Difference Between Pointers and References in C++",
+        "prompt": "Detail the key differences between pointers and references in C++, including syntax, memory management, and use cases in 150-200 words."
+      },
+      {
+        "title": "Passing by pointer Vs Passing by Reference in C++",
+        "prompt": "Explain the differences between passing arguments by pointer and by reference in C++, including when to use each approach with examples in 150-200 words."
+      },
+      {
+        "title": "When do we pass arguments by reference or pointer?",
+        "prompt": "Discuss scenarios in C++ when it is preferable to pass arguments by reference or pointer, providing examples to illustrate each case in 150-200 words."
+      },
+      {
+        "title": "Conclusion!",
+        "prompt": "### Conclusion\nWrite an engaging and inviting conclusion statement that encourages readers to leave their comments, feedback, or suggestions in the comments section. Use a friendly tone with emojis. Format the response with the following styled title:<h1><span style='color:#e67e22'>Conclusion</span></h1>Make sure the generated text follows this header and fits well with a blog's ending."
+      }
+    ]
+  },
+  {
+    "Date": "2025-04-29",
+    "Topic": "C++ Arrays",
+    "Prompts": [
+      {
+        "title": "C++ Arrays",
+        "prompt": "Introduce the concept of arrays in C++, explaining their structure and how they are used to store multiple values. Provide an overview in 150-200 words."
+      },
+      {
+        "title": "C++ Multidimensional Arrays",
+        "prompt": "Discuss multidimensional arrays in C++, explaining how they extend the concept of arrays and provide examples of usage in 150-200 words."
+      },
+      {
+        "title": "C++ Pointer to an Array",
+        "prompt": "Explain how pointers can be used to refer to arrays in C++, including syntax and examples to illustrate the concept in 150-200 words."
+      },
+      {
+        "title": "Size of Array parameter",
+        "prompt": "Detail how to determine the size of an array parameter in C++, including methods for passing arrays to functions and managing their size in 150-200 words."
+      },
+      {
+        "title": "Passing Arrays to Functions in C++",
+        "prompt": "Discuss the methods for passing arrays to functions in C++, including the implications of passing by reference and by pointer with examples in 150-200 words."
+      },
+      {
+        "title": "What is Array Decay in C++? How can it be prevented?",
+        "prompt": "Explain array decay in C++, its effects on function parameter passing, and strategies to prevent it with examples in 150-200 words."
+      },
+      {
+        "title": "Conclusion!",
+        "prompt": "### Conclusion\nWrite an engaging and inviting conclusion statement that encourages readers to leave their comments, feedback, or suggestions in the comments section. Use a friendly tone with emojis. Format the response with the following styled title:<h1><span style='color:#e67e22'>Conclusion</span></h1>Make sure the generated text follows this header and fits well with a blog's ending."
+      }
+    ]
+  },
+  {
+    "Date": "2025-05-06",
+    "Topic": "C++ Structures and Unions",
+    "Prompts": [
+      {
+        "title": "C++ Structures, Unions, and Enumerations",
+        "prompt": "Introduce the concepts of structures, unions, and enumerations in C++, explaining their roles in organizing data in 150-200 words."
+      },
+      {
+        "title": "C++ Structures",
+        "prompt": "Explain the structure data type in C++, how to define and use structures, and provide examples in 150-200 words."
+      },
+      {
+        "title": "C++ Pointer to Structure",
+        "prompt": "Discuss how to create pointers to structures in C++, including syntax and examples to illustrate their usage in 150-200 words."
+      },
+      {
+        "title": "C++ Self-Referential Structures",
+        "prompt": "Define self-referential structures in C++, explain their significance, and provide examples of linked lists or similar data structures in 150-200 words."
+      },
+      {
+        "title": "Difference Between C Structures and C++ Structures",
+        "prompt": "Detail the key differences between C structures and C++ structures, focusing on features like access control and methods in 150-200 words."
+      },
+      {
+        "title": "C++ Unions",
+        "prompt": "Introduce unions in C++, explaining how they differ from structures and when to use them, with examples in 150-200 words."
+      },
+      {
+        "title": "C++ Bit Fields",
+        "prompt": "Discuss bit fields in C++, their use cases for memory-efficient data storage, and provide examples of their implementation in 150-200 words."
+      },
+      {
+        "title": "C++ Enumeration",
+        "prompt": "Explain enumerations in C++, how to define them, and their role in improving code readability with examples in 150-200 words."
+      },
+      {
+        "title": "C++ typedef",
+        "prompt": "Describe the typedef keyword in C++, explaining how it simplifies type definitions and providing examples in 150-200 words."
+      },
+      {
+        "title": "Array of Structures vs Array within a Structure in C/C++",
+        "prompt": "Compare and contrast arrays of structures and arrays within structures in C/C++, highlighting their differences and use cases in 150-200 words."
+      },
+      {
+        "title": "Conclusion!",
+        "prompt": "### Conclusion\nWrite an engaging and inviting conclusion statement that encourages readers to leave their comments, feedback, or suggestions in the comments section. Use a friendly tone with emojis. Format the response with the following styled title:<h1><span style='color:#e67e22'>Conclusion</span></h1>Make sure the generated text follows this header and fits well with a blog's ending."
+      }
+    ]
+  },
+  {
+    "Date": "2025-05-13",
+    "Topic": "C++ Dynamic Memory Management",
+    "Prompts": [
+      {
+        "title": "C++ Dynamic Memory Management",
+        "prompt": "Introduce the concept of dynamic memory management in C++, explaining its importance and how it differs from static memory management in 150-200 words."
+      },
+      {
+        "title": "C++ new and delete Operators",
+        "prompt": "Explain the new and delete operators in C++, how they are used for dynamic memory allocation and deallocation, and provide examples in 150-200 words."
+      },
+      {
+        "title": "new vs malloc() and free() vs delete in C++",
+        "prompt": "Compare and contrast new and malloc(), and delete and free() in C++, focusing on their differences in memory management and usage in 150-200 words."
+      },
+      {
+        "title": "Memory leak in C++",
+        "prompt": "Discuss memory leaks in C++, how they occur, their impact on applications, and strategies for preventing them in 150-200 words."
+      },
+      {
+        "title": "Difference between Static and Dynamic Memory Allocation in C++",
+        "prompt": "Detail the differences between static and dynamic memory allocation in C++, highlighting their respective advantages and disadvantages in 150-200 words."
+      },
+      {
+        "title": "Conclusion!",
+        "prompt": "### Conclusion\nWrite an engaging and inviting conclusion statement that encourages readers to leave their comments, feedback, or suggestions in the comments section. Use a friendly tone with emojis. Format the response with the following styled title:<h1><span style='color:#e67e22'>Conclusion</span></h1>Make sure the generated text follows this header and fits well with a blog's ending."
+      }
+    ]
+  },
+  {
+    "Date": "2025-05-20",
+    "Topic": "C++ Object-Oriented Programming",
+    "Prompts": [
+      {
+        "title": "C++ Object Oriented Programming (OOPs)",
+        "prompt": "Introduce the principles of object-oriented programming in C++, discussing encapsulation, inheritance, and polymorphism in 150-200 words."
+      },
+      {
+        "title": "C++ Classes and Objects",
+        "prompt": "Explain the concepts of classes and objects in C++, including how to define and use them with examples in 150-200 words."
+      },
+      {
+        "title": "C++ Access Modifiers",
+        "prompt": "Detail the access modifiers in C++ (public, private, and protected), explaining their significance in class design in 150-200 words."
+      },
+      {
+        "title": "C++ Friend Class and Function",
+        "prompt": "Discuss the concept of friend classes and functions in C++, explaining how they grant access to private members and providing examples in 150-200 words."
+      },
+      {
+        "title": "C++ Constructors",
+        "prompt": "Introduce constructors in C++, detailing their purpose, types, and how they are invoked in 150-200 words."
+      },
+      {
+        "title": "C++ Default Constructors",
+        "prompt": "Explain default constructors in C++, how they differ from other constructors, and provide examples of their usage in 150-200 words."
+      },
+      {
+        "title": "C++ Copy Constructor",
+        "prompt": "Detail the copy constructor in C++, its purpose, and when it is called with examples in 150-200 words."
+      },
+      {
+        "title": "C++ Destructors",
+        "prompt": "Discuss destructors in C++, their purpose, and how they are used to release resources when an object is destroyed in 150-200 words."
+      },
+      {
+        "title": "C++ Private Destructor",
+        "prompt": "Explain the significance of private destructors in C++, including scenarios where they might be useful in 150-200 words."
+      },
+      {
+        "title": "When is the Copy Constructor Called?",
+        "prompt": "Describe the scenarios in which the copy constructor is invoked in C++, with examples to illustrate in 150-200 words."
+      },
+      {
+        "title": "Shallow Copy and Deep Copy in C++",
+        "prompt": "Differentiate between shallow copy and deep copy in C++, discussing their implications and providing examples in 150-200 words."
+      },
+      {
+        "title": "When Should We Write Our Own Copy Constructor?",
+        "prompt": "Discuss situations where it is necessary to implement a custom copy constructor in C++, along with examples in 150-200 words."
+      },
+      {
+        "title": "Does the Compiler Create a Default Constructor When We Write Our Own?",
+        "prompt": "Explain whether the compiler creates a default constructor when a custom constructor is defined, with examples to clarify in 150-200 words."
+      },
+      {
+        "title": "C++ Static Data Members",
+        "prompt": "Detail the concept of static data members in C++, including how they differ from regular data members and their usage in 150-200 words."
+      },
+      {
+        "title": "C++ Static Member Functions",
+        "prompt": "Discuss static member functions in C++, their characteristics, and how they can be accessed, providing examples in 150-200 words."
+      },
+      {
+        "title": "C++ this pointer",
+        "prompt": "Explain the this pointer in C++, its role within class methods, and how it can be used in 150-200 words."
+      },
+      {
+        "title": "C++ Scope Resolution Operator vs this pointer",
+        "prompt": "Compare the scope resolution operator and the this pointer in C++, explaining their respective uses and providing examples in 150-200 words."
+      },
+      {
+        "title": "C++ Local Class",
+        "prompt": "Define local classes in C++, their characteristics, and when they can be used, along with examples in 150-200 words."
+      },
+      {
+        "title": "C++ Nested Classes",
+        "prompt": "Discuss nested classes in C++, their significance, and how they can be utilized with examples in 150-200 words."
+      },
+      {
+        "title": "C++ enum Class",
+        "prompt": "Introduce the enum class in C++, discussing its benefits over traditional enums and providing examples in 150-200 words."
+      },
+      {
+        "title": "Difference between Structure and Class in C++",
+        "prompt": "Compare structures and classes in C++, highlighting their differences and similarities with examples in 150-200 words."
+      },
+      {
+        "title": "Why C++ is a partially Object Oriented Language?",
+        "prompt": "Discuss the reasons why C++ is considered a partially object-oriented language, including its support for procedural programming in 150-200 words."
+      },
+      {
+        "title": "Conclusion!",
+        "prompt": "### Conclusion\nWrite an engaging and inviting conclusion statement that encourages readers to leave their comments, feedback, or suggestions in the comments section. Use a friendly tone with emojis. Format the response with the following styled title:<h1><span style='color:#e67e22'>Conclusion</span></h1>Make sure the generated text follows this header and fits well with a blog's ending."
+      }
+    ]
+  },
+  {
+    "Date": "2025-05-27",
+    "Topic": "C++ Encapsulation and Abstraction",
+    "Prompts": [
+      {
+        "title": "C++ Encapsulation",
+        "prompt": "Explain the concept of encapsulation in C++, detailing its importance in data hiding and providing examples in 150-200 words."
+      },
+      {
+        "title": "C++ Abstraction",
+        "prompt": "Discuss abstraction in C++, highlighting how it helps in simplifying complex systems and showing examples in 150-200 words."
+      },
+      {
+        "title": "Difference between Abstraction and Encapsulation in C++",
+        "prompt": "Clarify the differences between abstraction and encapsulation in C++, with examples to illustrate each concept in 150-200 words."
+      },
+      {
+        "title": "Conclusion!",
+        "prompt": "### Conclusion\nWrite an engaging and inviting conclusion statement that encourages readers to leave their comments, feedback, or suggestions in the comments section. Use a friendly tone with emojis. Format the response with the following styled title:<h1><span style='color:#e67e22'>Conclusion</span></h1>Make sure the generated text follows this header and fits well with a blog's ending."
+      }
+    ]
+  },
+  {
+    "Date": "2025-06-03",
+    "Topic": "C++ Polymorphism",
+    "Prompts": [
+      {
+        "title": "C++ Polymorphism",
+        "prompt": "Introduce polymorphism in C++, explaining its significance and types with examples in 150-200 words."
+      },
+      {
+        "title": "C++ Function Overriding",
+        "prompt": "Explain function overriding in C++, how it enables runtime polymorphism, and provide examples in 150-200 words."
+      },
+      {
+        "title": "C++ Virtual Functions and Runtime Polymorphism",
+        "prompt": "Discuss the role of virtual functions in C++ and how they facilitate runtime polymorphism with examples in 150-200 words."
+      },
+      {
+        "title": "Difference between Compile-time and Run-time Polymorphism in C++",
+        "prompt": "Compare compile-time and run-time polymorphism in C++, detailing their characteristics and providing examples in 150-200 words."
+      },
+      {
+        "title": "Difference between Inheritance and Polymorphism in C++",
+        "prompt": "Clarify the differences between inheritance and polymorphism in C++, with examples to highlight each concept in 150-200 words."
+      },
+      {
+        "title": "C++ Function Overloading",
+        "prompt": "Introduce function overloading in C++, explaining its purpose and providing examples in 150-200 words."
+      },
+      {
+        "title": "C++ Constructor Overloading",
+        "prompt": "Discuss constructor overloading in C++, how it works, and provide examples to illustrate in 150-200 words."
+      },
+      {
+        "title": "C++ Functions that Cannot be Overloaded",
+        "prompt": "List and explain functions in C++ that cannot be overloaded, along with examples in 150-200 words."
+      },
+      {
+        "title": "C++ Function Overloading and const Keyword",
+        "prompt": "Explain how the const keyword interacts with function overloading in C++, providing examples in 150-200 words."
+      },
+      {
+        "title": "C++ Function Overloading and Return Type",
+        "prompt": "Discuss how return type affects function overloading in C++, clarifying misconceptions with examples in 150-200 words."
+      },
+      {
+        "title": "C++ Function Overloading and float Data Type",
+        "prompt": "Detail considerations when overloading functions with float data types in C++, providing relevant examples in 150-200 words."
+      },
+      {
+        "title": "C++ Function Overloading and Default Arguments",
+        "prompt": "Explain how default arguments work in function overloading in C++, with examples to illustrate potential issues in 150-200 words."
+      },
+      {
+        "title": "Can main() be overloaded?",
+        "prompt": "Discuss whether the main() function can be overloaded in C++, providing reasoning and examples in 150-200 words."
+      },
+      {
+        "title": "C++ Function Overloading Vs Function Overriding",
+        "prompt": "Compare and contrast function overloading and function overriding in C++, detailing their differences with examples in 150-200 words."
+      },
+      {
+        "title": "Advantages and Disadvantages of C++ Function Overloading",
+        "prompt": "Discuss the advantages and disadvantages of function overloading in C++, providing insights and examples in 150-200 words."
+      },
+      {
+        "title": "C++ Operator Overloading",
+        "prompt": "Introduce operator overloading in C++, explaining its importance and providing examples in 150-200 words."
+      },
+      {
+        "title": "Types of C++ Operator Overloading",
+        "prompt": "Detail the various types of operator overloading in C++, explaining their purposes and providing examples in 150-200 words."
+      },
+      {
+        "title": "C++ Functors",
+        "prompt": "Explain what functors are in C++, their characteristics, and provide examples of their usage in 150-200 words."
+      },
+      {
+        "title": "C++ Operators that Cannot be Overloaded",
+        "prompt": "List the operators in C++ that cannot be overloaded, explaining the reasons with examples in 150-200 words."
+      },
+      {
+        "title": "Conclusion!",
+        "prompt": "### Conclusion\nWrite an engaging and inviting conclusion statement that encourages readers to leave their comments, feedback, or suggestions in the comments section. Use a friendly tone with emojis. Format the response with the following styled title:<h1><span style='color:#e67e22'>Conclusion</span></h1>Make sure the generated text follows this header and fits well with a blog's ending."
+      }
+    ]
+  },
+  {
+    "Date": "2025-06-10",
+    "Topic": "C++ Inheritance",
+    "Prompts": [
+      {
+        "title": "C++ Inheritance",
+        "prompt": "Explain the concept of inheritance in C++, including its types and benefits, along with examples in 150-200 words."
+      },
+      {
+        "title": "C++ Inheritance Access",
+        "prompt": "Discuss access specifiers in C++ inheritance (public, protected, private) and their impact on derived classes, with examples in 150-200 words."
+      },
+      {
+        "title": "C++ Multiple Inheritance",
+        "prompt": "Explain multiple inheritance in C++, discussing potential issues like the diamond problem, with examples in 150-200 words."
+      },
+      {
+        "title": "C++ Hierarchical Inheritance",
+        "prompt": "Describe hierarchical inheritance in C++, providing examples to illustrate its structure and advantages in 150-200 words."
+      },
+      {
+        "title": "C++ Multilevel Inheritance",
+        "prompt": "Discuss multilevel inheritance in C++, detailing its structure and providing examples in 150-200 words."
+      },
+      {
+        "title": "C++ Constructor in Multiple Inheritance",
+        "prompt": "Explain how constructors work in multiple inheritance scenarios in C++, providing examples for clarity in 150-200 words."
+      },
+      {
+        "title": "C++ Inheritance and Friendship",
+        "prompt": "Discuss the relationship between inheritance and friendship in C++, explaining how friendship can affect access to members in derived classes in 150-200 words."
+      },
+      {
+        "title": "Does Function Overloading Work with Inheritance in C++?",
+        "prompt": "Clarify how function overloading interacts with inheritance in C++, providing examples to illustrate the concept in 150-200 words."
+      },
+      {
+        "title": "Difference Between Inheritance and Polymorphism in C++",
+        "prompt": "Compare and contrast inheritance and polymorphism in C++, explaining their differences and interrelations with examples in 150-200 words."
+      },
+      {
+        "title": "C++ Virtual Functions",
+        "prompt": "Introduce virtual functions in C++, explaining their purpose in achieving runtime polymorphism with examples in 150-200 words."
+      },
+      {
+        "title": "C++ Virtual Functions in Derived Classes",
+        "prompt": "Discuss how virtual functions work in derived classes in C++, providing examples and explaining their significance in 150-200 words."
+      },
+      {
+        "title": "C++ Default Arguments and Virtual Function",
+        "prompt": "Explain how default arguments behave in conjunction with virtual functions in C++, with examples to illustrate in 150-200 words."
+      },
+      {
+        "title": "C++ Inline Virtual Functions",
+        "prompt": "Discuss the concept of inline virtual functions in C++, explaining their implementation and implications in 150-200 words."
+      },
+      {
+        "title": "C++ Virtual Destructor",
+        "prompt": "Explain the importance of virtual destructors in C++, especially in the context of inheritance, with examples in 150-200 words."
+      },
+      {
+        "title": "C++ Virtual Constructor",
+        "prompt": "Clarify the concept of virtual constructors in C++ and discuss why they do not exist, providing reasoning in 150-200 words."
+      },
+      {
+        "title": "C++ Virtual Copy Constructor",
+        "prompt": "Discuss the idea of virtual copy constructors in C++, explaining the common practices used instead in 150-200 words."
+      },
+      {
+        "title": "C++ Pure Virtual Functions and Abstract Class",
+        "prompt": "Explain pure virtual functions and abstract classes in C++, detailing their role and providing examples in 150-200 words."
+      },
+      {
+        "title": "C++ Pure Virtual Destructor in C++",
+        "prompt": "Discuss the significance of pure virtual destructors in C++ and their implications for abstract classes in 150-200 words."
+      },
+      {
+        "title": "Can Static Functions be Virtual in C++?",
+        "prompt": "Clarify whether static functions can be virtual in C++, explaining the rationale behind your answer in 150-200 words."
+      },
+      {
+        "title": "C++ RTTI (Run-Time Type Information)",
+        "prompt": "Explain run-time type information (RTTI) in C++, discussing its uses and how it interacts with polymorphism in 150-200 words."
+      },
+      {
+        "title": "Can C++ Virtual Functions be Private?",
+        "prompt": "Discuss the implications of declaring virtual functions as private in C++, providing examples to illustrate in 150-200 words."
+      },
+      {
+        "title": "Conclusion!",
+        "prompt": "### Conclusion\nWrite an engaging and inviting conclusion statement that encourages readers to leave their comments, feedback, or suggestions in the comments section. Use a friendly tone with emojis. Format the response with the following styled title:<h1><span style='color:#e67e22'>Conclusion</span></h1>Make sure the generated text follows this header and fits well with a blog's ending."
+      }
+    ]
+  },
+  {
+    "Date": "2025-06-17",
+    "Topic": "C++ Exception Handling",
+    "Prompts": [
+      {
+        "title": "C++ Exception Handling",
+        "prompt": "Introduce exception handling in C++, explaining its importance and how it works with examples in 150-200 words."
+      },
+      {
+        "title": "C++ Exception Handling using Classes",
+        "prompt": "Discuss how to implement exception handling using classes in C++, providing examples of custom exceptions in 150-200 words."
+      },
+      {
+        "title": "C++ Stack Unwinding",
+        "prompt": "Explain the concept of stack unwinding in C++, detailing its role in exception handling with examples in 150-200 words."
+      },
+      {
+        "title": "C++ User-Defined Exceptions",
+        "prompt": "Discuss how to create user-defined exceptions in C++, explaining their advantages and providing examples in 150-200 words."
+      },
+      {
+        "title": "Conclusion!",
+        "prompt": "### Conclusion\nWrite an engaging and inviting conclusion statement that encourages readers to leave their comments, feedback, or suggestions in the comments section. Use a friendly tone with emojis. Format the response with the following styled title:<h1><span style='color:#e67e22'>Conclusion</span></h1>Make sure the generated text follows this header and fits well with a blog's ending."
+      }
+    ]
+  },
+  {
+    "Date": "2025-06-24",
+    "Topic": "C++ Files and Streams",
+    "Prompts": [
+      {
+        "title": "C++ Files and Streams",
+        "prompt": "Explain the concepts of files and streams in C++, including how to handle file input and output with examples in 150-200 words."
+      },
+      {
+        "title": "C++ I/O Redirection",
+        "prompt": "Discuss I/O redirection in C++, explaining how to redirect input and output streams and providing examples in 150-200 words."
+      },
+      {
+        "title": "Conclusion!",
+        "prompt": "### Conclusion\nWrite an engaging and inviting conclusion statement that encourages readers to leave their comments, feedback, or suggestions in the comments section. Use a friendly tone with emojis. Format the response with the following styled title:<h1><span style='color:#e67e22'>Conclusion</span></h1>Make sure the generated text follows this header and fits well with a blog's ending."
+      }
+    ]
+  },
+  {
+    "Date": "2025-07-01",
+    "Topic": "C++ Templates",
+    "Prompts": [
+      {
+        "title": "C++ Templates",
+        "prompt": "Introduce templates in C++, explaining their purpose and benefits in generic programming with examples in 150-200 words."
+      },
+      {
+        "title": "C++ Template Specialization",
+        "prompt": "Discuss template specialization in C++, explaining its purpose and how to implement it with examples in 150-200 words."
+      },
+      {
+        "title": "C++ using Keyword",
+        "prompt": "Explain the 'using' keyword in C++ and how it relates to templates, providing examples to illustrate its use in 150-200 words."
+      },
+      {
+        "title": "Conclusion!",
+        "prompt": "### Conclusion\nWrite an engaging and inviting conclusion statement that encourages readers to leave their comments, feedback, or suggestions in the comments section. Use a friendly tone with emojis. Format the response with the following styled title:<h1><span style='color:#e67e22'>Conclusion</span></h1>Make sure the generated text follows this header and fits well with a blog's ending."
+      }
+    ]
+  },
+  {
+    "Date": "2025-07-08",
+    "Topic": "C++ Standard Template Library (STL)",
+    "Prompts": [
+      {
+        "title": "The C++ Standard Template Library (STL)",
+        "prompt": "Introduce the C++ Standard Template Library (STL), explaining its components and advantages in generic programming, with examples in 150-200 words."
+      },
+      {
+        "title": "STL Algorithms",
+        "prompt": "Discuss STL algorithms, covering common algorithms available in the STL and their use cases, along with examples in 150-200 words."
+      },
+      {
+        "title": "STL Containers",
+        "prompt": "Explain the various STL containers, their types, and use cases, providing examples of each container in 150-200 words."
+      },
+      {
+        "title": "STL Vector",
+        "prompt": "Describe the STL vector, its features, and how to use it in C++, including code examples in 150-200 words."
+      },
+      {
+        "title": "STL Pair",
+        "prompt": "Explain the STL pair, its purpose, and how to use it in C++, providing code examples in 150-200 words."
+      },
+      {
+        "title": "STL Set",
+        "prompt": "Discuss the STL set, its properties, and how to work with it in C++, including code examples in 150-200 words."
+      },
+      {
+        "title": "STL Multiset",
+        "prompt": "Explain the STL multiset, how it differs from set, and how to use it in C++ with examples in 150-200 words."
+      },
+      {
+        "title": "STL Stack",
+        "prompt": "Describe the STL stack, its operations, and provide examples of how to implement it in C++ in 150-200 words."
+      },
+      {
+        "title": "STL Queue",
+        "prompt": "Discuss the STL queue, its features, and provide usage examples in C++ in 150-200 words."
+      },
+      {
+        "title": "STL Priority Queue",
+        "prompt": "Explain the STL priority queue, its properties, and how to use it effectively in C++, with examples in 150-200 words."
+      },
+      {
+        "title": "STL Deque",
+        "prompt": "Introduce the STL deque, its characteristics, and usage examples in C++ in 150-200 words."
+      },
+      {
+        "title": "STL List",
+        "prompt": "Discuss the STL list, its advantages, and provide examples of its usage in C++ in 150-200 words."
+      },
+      {
+        "title": "STL Forward List",
+        "prompt": "Explain the STL forward list, its features, and usage examples in C++ in 150-200 words."
+      },
+      {
+        "title": "STL Map",
+        "prompt": "Describe the STL map, its characteristics, and how to use it in C++, including examples in 150-200 words."
+      },
+      {
+        "title": "STL Multimap",
+        "prompt": "Discuss the STL multimap, how it differs from map, and provide examples in C++ in 150-200 words."
+      },
+      {
+        "title": "STL Bitset",
+        "prompt": "Explain the STL bitset, its applications, and how to use it in C++ with examples in 150-200 words."
+      },
+      {
+        "title": "STL Unordered Sets",
+        "prompt": "Introduce STL unordered sets, their characteristics, and provide examples of their use in C++ in 150-200 words."
+      },
+      {
+        "title": "STL Unordered Multiset",
+        "prompt": "Discuss STL unordered multiset, its features, and usage examples in C++ in 150-200 words."
+      },
+      {
+        "title": "STL Unordered Map",
+        "prompt": "Explain STL unordered map, its properties, and provide usage examples in C++ in 150-200 words."
+      },
+      {
+        "title": "STL Unordered Multimap",
+        "prompt": "Describe STL unordered multimap, how it differs from multimap, and provide examples in C++ in 150-200 words."
+      },
+      {
+        "title": "Conclusion!",
+        "prompt": "### Conclusion\nWrite an engaging and inviting conclusion statement that encourages readers to leave their comments, feedback, or suggestions in the comments section. Use a friendly tone with emojis. Format the response with the following styled title:<h1><span style='color:#e67e22'>Conclusion</span></h1>Make sure the generated text follows this header and fits well with a blog's ending."
+      }
+    ]
+  },
+  {
+    "Date": "2025-07-15",
+    "Topic": "C++ Iterators",
+    "Prompts": [
+      {
+        "title": "Introduction to C++ Iterators",
+        "prompt": "Introduce C++ iterators, explaining their role in accessing container elements, with examples in 150-200 words."
+      },
+      {
+        "title": "C++ Input Iterators",
+        "prompt": "Discuss input iterators in C++, explaining how they work and providing examples in 150-200 words."
+      },
+      {
+        "title": "C++ Output Iterators",
+        "prompt": "Explain output iterators, their usage, and provide examples in C++ in 150-200 words."
+      },
+      {
+        "title": "C++ Forward Iterators",
+        "prompt": "Describe forward iterators in C++, explaining their characteristics and providing examples in 150-200 words."
+      },
+      {
+        "title": "C++ Bidirectional Iterators",
+        "prompt": "Discuss bidirectional iterators, their features, and provide usage examples in C++ in 150-200 words."
+      },
+      {
+        "title": "C++ Random Access Iterators",
+        "prompt": "Explain random access iterators, their advantages, and provide examples in C++ in 150-200 words."
+      },
+      {
+        "title": "C++ istream_iterator and ostream_iterator",
+        "prompt": "Introduce istream_iterator and ostream_iterator, explaining their use cases and providing examples in C++ in 150-200 words."
+      },
+      {
+        "title": "Difference between C++ Iterators and Pointers",
+        "prompt": "Discuss the differences between C++ iterators and pointers, highlighting their respective advantages with examples in 150-200 words."
+      },
+      {
+        "title": "Conclusion!",
+        "prompt": "### Conclusion\nWrite an engaging and inviting conclusion statement that encourages readers to leave their comments, feedback, or suggestions in the comments section. Use a friendly tone with emojis. Format the response with the following styled title:<h1><span style='color:#e67e22'>Conclusion</span></h1>Make sure the generated text follows this header and fits well with a blog's ending."
+      }
+    ]
+  },
+  {
+    "Date": "2025-07-22",
+    "Topic": "C++ Preprocessors",
+    "Prompts": [
+      {
+        "title": "C++ Preprocessor",
+        "prompt": "Introduce the C++ preprocessor, explaining its role in the compilation process and its basic functions in 150-200 words."
+      },
+      {
+        "title": "C++ Preprocessor Directives",
+        "prompt": "Discuss various C++ preprocessor directives, their usage, and provide examples of common directives in 150-200 words."
+      },
+      {
+        "title": "#include Directive",
+        "prompt": "Explain the #include directive, its purpose, and provide examples of how to use it in C++ in 150-200 words."
+      },
+      {
+        "title": "#define Directive",
+        "prompt": "Describe the #define directive, how it works, and give examples of its usage in C++ in 150-200 words."
+      },
+      {
+        "title": "Conditional Preprocessors",
+        "prompt": "Introduce conditional preprocessors in C++, explaining their purpose and providing examples in 150-200 words."
+      },
+      {
+        "title": "Difference between C++ Preprocessor Directives and Function Templates",
+        "prompt": "Discuss the differences between C++ preprocessor directives and function templates, highlighting their roles with examples in 150-200 words."
+      },
+      {
+        "title": "Conclusion!",
+        "prompt": "### Conclusion\nWrite an engaging and inviting conclusion statement that encourages readers to leave their comments, feedback, or suggestions in the comments section. Use a friendly tone with emojis. Format the response with the following styled title:<h1><span style='color:#e67e22'>Conclusion</span></h1>Make sure the generated text follows this header and fits well with a blog's ending."
+      }
+    ]
+  },
+  {
+    "Date": "2025-07-29",
+    "Topic": "C++ Namespace",
+    "Prompts": [
+      {
+        "title": "C++ Namespaces",
+        "prompt": "Introduce C++ namespaces, explaining their purpose in avoiding name collisions and providing examples in 150-200 words."
+      },
+      {
+        "title": "Extending C++ Namespace and Unnamed Namespace",
+        "prompt": "Discuss how to extend C++ namespaces and the concept of unnamed namespaces, providing usage examples in 150-200 words."
+      },
+      {
+        "title": "Accessing, Creating Header, Nesting, and Aliasing Namespace",
+        "prompt": "Explain how to access, create, nest, and alias namespaces in C++, including examples in 150-200 words."
+      },
+      {
+        "title": "C++ Inline Namespaces",
+        "prompt": "Describe inline namespaces, their purpose, and how to use them in C++ with examples in 150-200 words."
+      },
+      {
+        "title": "Conclusion!",
+        "prompt": "### Conclusion\nWrite an engaging and inviting conclusion statement that encourages readers to leave their comments, feedback, or suggestions in the comments section. Use a friendly tone with emojis. Format the response with the following styled title:<h1><span style='color:#e67e22'>Conclusion</span></h1>Make sure the generated text follows this header and fits well with a blog's ending."
+      }
+    ]
+  },
+  {
+    "Date": "2025-08-05",
+    "Topic": "Advanced C++",
+    "Prompts": [
+      {
+        "title": "C++ Multithreading",
+        "prompt": "Introduce C++ multithreading, explaining its importance in modern programming and how to implement it in C++ with examples in 150-200 words."
+      },
+      {
+        "title": "C++ Smart Pointers",
+        "prompt": "Discuss C++ smart pointers, their types, and benefits over traditional pointers, providing examples in 150-200 words."
+      },
+      {
+        "title": "Differences between Different C++ Smart Pointers",
+        "prompt": "Explain the differences between various C++ smart pointers (unique_ptr, shared_ptr, weak_ptr) with examples in 150-200 words."
+      },
+      {
+        "title": "Type of \u2018this\u2019 Pointer in C++",
+        "prompt": "Describe the type and role of the \u2018this\u2019 pointer in C++, providing examples of its usage in 150-200 words."
+      },
+      {
+        "title": "Delete \u2018this\u2019 Pointer in C++",
+        "prompt": "Discuss the implications and best practices of deleting the \u2018this\u2019 pointer in C++, including examples in 150-200 words."
+      },
+      {
+        "title": "Passing C++ Function as a Parameter",
+        "prompt": "Explain how to pass functions as parameters in C++, including examples of usage in 150-200 words."
+      },
+      {
+        "title": "C++ Signal Handling",
+        "prompt": "Introduce signal handling in C++, explaining its importance and how to implement it with examples in 150-200 words."
+      },
+      {
+        "title": "C++ Generics",
+        "prompt": "Discuss C++ generics, explaining their purpose and how to use templates to create generic functions and classes with examples in 150-200 words."
+      },
+      {
+        "title": "Conclusion!",
+        "prompt": "### Conclusion\nWrite an engaging and inviting conclusion statement that encourages readers to leave their comments, feedback, or suggestions in the comments section. Use a friendly tone with emojis. Format the response with the following styled title:<h1><span style='color:#e67e22'>Conclusion</span></h1>Make sure the generated text follows this header and fits well with a blog's ending."
+      }
+    ]
+  },
+  {
+    "Date": "2025-08-12",
+    "Topic": "C vs C++",
+    "Prompts": [
+      {
+        "title": "Differences and Similarities between C++ and C",
+        "prompt": "Discuss the key differences and similarities between C and C++, highlighting aspects such as memory management, object-oriented features, and syntax in 150-200 words."
+      },
+      {
+        "title": "Difference between C++ and Objective C",
+        "prompt": "Explain the main differences between C++ and Objective C, focusing on syntax, object-oriented features, and use cases in 150-200 words."
+      },
+      {
+        "title": "C programs that won\u2019t compile in C++",
+        "prompt": "Provide examples of C programs that will fail to compile in C++, explaining the reasons for each failure in 150-200 words."
+      },
+      {
+        "title": "Program that produces different results in C and C++",
+        "prompt": "Show an example of a program that produces different results when compiled in C versus C++, and explain why the results differ in 150-200 words."
+      },
+      {
+        "title": "Void * in C vs C++",
+        "prompt": "Discuss the differences in how void pointers are treated in C and C++, providing examples and explanations in 150-200 words."
+      },
+      {
+        "title": "Type Difference of Character Literals in C vs C++",
+        "prompt": "Explain the differences in character literal types between C and C++, including examples to illustrate the differences in 150-200 words."
+      },
+      {
+        "title": "Difference between Structures in C and Structures in C++",
+        "prompt": "Compare structures in C and C++, focusing on enhancements in C++ such as access modifiers and member functions in 150-200 words."
+      },
+      {
+        "title": "Cin-Cout vs Scanf-Printf",
+        "prompt": "Discuss the differences between using cin/cout in C++ and scanf/printf in C, highlighting usability and safety in 150-200 words."
+      },
+      {
+        "title": "Conclusion!",
+        "prompt": "### Conclusion\nWrite an engaging and inviting conclusion statement that encourages readers to leave their comments, feedback, or suggestions in the comments section. Use a friendly tone with emojis. Format the response with the following styled title:<h1><span style='color:#e67e22'>Conclusion</span></h1>Make sure the generated text follows this header and fits well with a blog's ending."
+      }
+    ]
+  },
+  {
+    "Date": "2025-08-19",
+    "Topic": "C++ vs Java",
+    "Prompts": [
+      {
+        "title": "Differences and Similarities between C++ and Java",
+        "prompt": "Discuss the main differences and similarities between C++ and Java, focusing on syntax, memory management, and performance in 150-200 words."
+      },
+      {
+        "title": "Inheritance in C++ vs Java",
+        "prompt": "Explain how inheritance works in C++ compared to Java, highlighting differences in syntax and implementation in 150-200 words."
+      },
+      {
+        "title": "Static keyword in C++ vs Java",
+        "prompt": "Compare the usage of the static keyword in C++ and Java, including examples to illustrate their differences in 150-200 words."
+      },
+      {
+        "title": "Default Virtual Behavior in C++ vs Java",
+        "prompt": "Discuss the differences in default virtual behavior between C++ and Java, focusing on method overriding and polymorphism in 150-200 words."
+      },
+      {
+        "title": "Exception Handling in C++ vs Java",
+        "prompt": "Compare exception handling mechanisms in C++ and Java, including syntax and best practices in 150-200 words."
+      },
+      {
+        "title": "Foreach loop in C++ vs Java",
+        "prompt": "Explain the foreach loop in C++ and Java, highlighting their syntax and usage with examples in 150-200 words."
+      },
+      {
+        "title": "Templates in C++ vs Generics in Java",
+        "prompt": "Discuss the differences between templates in C++ and generics in Java, including type safety and usage examples in 150-200 words."
+      },
+      {
+        "title": "Floating Point Operations & Associativity in C, C++, and Java",
+        "prompt": "Compare floating point operations and their associativity in C, C++, and Java, providing examples and explanations in 150-200 words."
+      },
+      {
+        "title": "Conclusion!",
+        "prompt": "### Conclusion\nWrite an engaging and inviting conclusion statement that encourages readers to leave their comments, feedback, or suggestions in the comments section. Use a friendly tone with emojis. Format the response with the following styled title:<h1><span style='color:#e67e22'>Conclusion</span></h1>Make sure the generated text follows this header and fits well with a blog's ending."
+      }
+    ]
+  },
+  {
+    "Date": "2025-08-26",
+    "Topic": "Competitive Programming in C++",
+    "Prompts": [
+      {
+        "title": "Competitive Programming \u2013 A Complete Guide",
+        "prompt": "Provide a comprehensive guide to competitive programming in C++, covering key concepts, strategies, and resources in 150-200 words."
+      },
+      {
+        "title": "C++ Tricks for Competitive Programming",
+        "prompt": "Share useful C++ tricks and techniques for competitive programming, including code snippets and explanations in 150-200 words."
+      },
+      {
+        "title": "Writing C/C++ code efficiently in Competitive Programming",
+        "prompt": "Discuss best practices for writing efficient C/C++ code in competitive programming, including examples and tips in 150-200 words."
+      },
+      {
+        "title": "Why C++ is Best for Competitive Programming?",
+        "prompt": "Explain why C++ is considered one of the best languages for competitive programming, highlighting its features and advantages in 150-200 words."
+      },
+      {
+        "title": "Generating Test Cases in C++",
+        "prompt": "Provide techniques for generating test cases in C++ for competitive programming problems, including examples in 150-200 words."
+      },
+      {
+        "title": "Fast I/O for Competitive Programming in C++",
+        "prompt": "Discuss methods for implementing fast I/O in C++ during competitive programming, providing examples and performance comparisons in 150-200 words."
+      },
+      {
+        "title": "Setting up Sublime Text for C++ Competitive Programming Environment",
+        "prompt": "Guide readers through setting up Sublime Text for competitive programming in C++, including configuration steps in 150-200 words."
+      },
+      {
+        "title": "Setting up VS Code for C++ Competitive Programming Environment",
+        "prompt": "Provide a guide for setting up VS Code for C++ competitive programming, detailing the necessary configurations in 150-200 words."
+      },
+      {
+        "title": "Which C++ libraries are useful for competitive programming?",
+        "prompt": "List and explain useful C++ libraries for competitive programming, discussing their features and use cases in 150-200 words."
+      },
+      {
+        "title": "Common mistakes to be avoided in Competitive Programming in C++",
+        "prompt": "Identify common mistakes made in competitive programming using C++ and provide tips on how to avoid them in 150-200 words."
+      },
+      {
+        "title": "Conclusion!",
+        "prompt": "### Conclusion\nWrite an engaging and inviting conclusion statement that encourages readers to leave their comments, feedback, or suggestions in the comments section. Use a friendly tone with emojis. Format the response with the following styled title:<h1><span style='color:#e67e22'>Conclusion</span></h1>Make sure the generated text follows this header and fits well with a blog's ending."
+      }
+    ]
+  },
+  {
+    "Date": "2025-09-02",
+    "Topic": "C++ Interview Questions",
+    "Prompts": [
+      {
+        "title": "Top 50 C++ Interview Questions and Answers",
+        "prompt": "Compile a list of the top 50 C++ interview questions along with their answers, covering a range of topics including syntax, features, and best practices in 150-200 words."
+      },
+      {
+        "title": "Top C++ STL Interview Questions and Answers",
+        "prompt": "Create a list of key STL (Standard Template Library) interview questions and their answers, focusing on containers, algorithms, and iterators in 150-200 words."
+      },
+      {
+        "title": "30 OOPs Interview Questions and Answers",
+        "prompt": "List 30 interview questions related to Object-Oriented Programming (OOP) concepts in C++, along with clear and concise answers in 150-200 words."
+      },
+      {
+        "title": "Top C++ Exception Handling Interview Questions and Answers",
+        "prompt": "Compile a list of the top interview questions related to exception handling in C++, including explanations and examples where necessary in 150-200 words."
+      },
+      {
+        "title": "Conclusion!",
+        "prompt": "### Conclusion\nWrite an engaging and inviting conclusion statement that encourages readers to leave their comments, feedback, or suggestions in the comments section. Use a friendly tone with emojis. Format the response with the following styled title:<h1><span style='color:#e67e22'>Conclusion</span></h1>Make sure the generated text follows this header and fits well with a blog's ending."
+      }
+    ]
+  },
+  {
+    "Date": "2025-09-09",
+    "Topic": "C++ FAQ",
+    "Prompts": [
+      {
+        "title": "C++ FAQ",
+        "prompt": "Compile a list of 20 frequently asked questions about C++. For each question, provide a concise answer along with relevant code examples where applicable. Ensure that the explanations are clear and easy to understand."
+      },
+      {
+        "title": "Conclusion!",
+        "prompt": "### Conclusion\nWrite an engaging and inviting conclusion statement that encourages readers to leave their comments, feedback, or suggestions in the comments section. Use a friendly tone with emojis. Format the response with the following styled title:<h1><span style='color:#e67e22'>Conclusion</span></h1>Make sure the generated text follows this header and fits well with a blog's ending."
+      }
+    ]
+  }
+]

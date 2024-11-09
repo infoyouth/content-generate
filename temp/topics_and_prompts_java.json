@@ -1,0 +1,1252 @@
+[
+  {
+    "Date": "2025-01-25",
+    "Topic": "Overview of Java",
+    "Prompts": [
+      {
+        "title": "Introduction to Java",
+        "prompt": "What is Java, and why is it one of the most popular programming languages? Discuss its key features and use cases in 150-200 words."
+      },
+      {
+        "title": "History of Java",
+        "prompt": "Describe the history and evolution of Java, including the main motivations behind its creation and major updates, in 150-200 words."
+      },
+      {
+        "title": "Java vs C++ vs Python",
+        "prompt": "Compare Java with C++ and Python, focusing on syntax, performance, and primary use cases in 150-200 words."
+      },
+      {
+        "title": "How to Download and Install Java",
+        "prompt": "Provide a step-by-step guide on downloading and installing Java on a Windows or Mac system, in 150-200 words."
+      },
+      {
+        "title": "Setting Up the Environment in Java",
+        "prompt": "Explain the process of setting up the environment for Java development, including configuring system variables, in 150-200 words."
+      },
+      {
+        "title": "How to Download and Install Eclipse on Windows",
+        "prompt": "Describe how to download, install, and configure Eclipse for Java development on a Windows system, in 150-200 words."
+      },
+      {
+        "title": "Java Development Kit (JDK) in Java",
+        "prompt": "What is the Java Development Kit (JDK)? Explain its components and importance for Java developers in 150-200 words."
+      },
+      {
+        "title": "JVM and its Architecture",
+        "prompt": "Describe the architecture of the Java Virtual Machine (JVM) and explain its role in Java’s platform independence in 150-200 words."
+      },
+      {
+        "title": "JDK vs JRE vs JVM",
+        "prompt": "Differentiate between JDK, JRE, and JVM, focusing on their roles in Java development and execution in 150-200 words."
+      },
+      {
+        "title": "Just In Time (JIT) Compiler",
+        "prompt": "Explain the role of the Just-In-Time (JIT) compiler in Java, including how it improves runtime performance, in 150-200 words."
+      },
+      {
+        "title": "JIT vs JVM",
+        "prompt": "Compare JIT and JVM, discussing their roles in the Java runtime environment and how they interact in 150-200 words."
+      },
+      {
+        "title": "Byte Code vs Machine Code",
+        "prompt": "Explain the difference between bytecode and machine code, and why Java uses bytecode for cross-platform support in 150-200 words."
+      },
+      {
+        "title": "Recap and Conclusion",
+        "prompt": "Summarize the key points covered in the Overview of Java section, encouraging readers to share their thoughts in the comments."
+      }
+    ]
+  },
+  {
+    "Date": "2025-02-12",
+    "Topic": "Basics of Java",
+    "Prompts": [
+      {
+        "title": "Java Basic Syntax",
+        "prompt": "Explain the basic syntax of Java, covering structure, case-sensitivity, and common conventions in 150-200 words."
+      },
+      {
+        "title": "First Java Program (Hello World)",
+        "prompt": "Write a simple 'Hello, World!' program in Java and explain each component of the code in 150-200 words."
+      },
+      {
+        "title": "Datatypes in Java",
+        "prompt": "List and describe the different data types available in Java, with examples for each in 150-200 words."
+      },
+      {
+        "title": "Primitive vs Non-Primitive Datatypes",
+        "prompt": "Compare primitive and non-primitive data types in Java, including their memory usage and application in 150-200 words."
+      },
+      {
+        "title": "Java Identifiers",
+        "prompt": "Explain what identifiers are in Java, including rules and naming conventions in 150-200 words."
+      },
+      {
+        "title": "Operators in Java",
+        "prompt": "Provide an overview of operators in Java, including arithmetic, relational, and logical operators with examples in 150-200 words."
+      },
+      {
+        "title": "Java Variables",
+        "prompt": "Describe variables in Java, covering declaration, initialization, and scope in 150-200 words."
+      },
+      {
+        "title": "Java Keywords",
+        "prompt": "List and explain common Java keywords and their usage in 150-200 words."
+      },
+      {
+        "title": "Scope of Variables",
+        "prompt": "Discuss the scope of variables in Java, explaining local, instance, and static scopes with examples in 150-200 words."
+      },
+      {
+        "title": "Wrapper Classes in Java",
+        "prompt": "What are wrapper classes in Java? Explain their purpose and how they work with primitive types in 150-200 words."
+      },
+      {
+        "title": "Recap of Basics of Java",
+        "prompt": "Summarize the key concepts covered in Basics of Java, including syntax, data types, variables, and operators in 150-200 words."
+      },
+      {
+        "title": "Conclusion on Basics of Java",
+        "prompt": "Wrap up the Basics of Java section by discussing its importance as a foundation for learning Java programming in 150-200 words."
+      }
+    ]
+  },
+  {
+    "Date": "2025-02-13",
+    "Topic": "Input/Output in Java",
+    "Prompts": [
+      {
+        "title": "How to Take Input from Users in Java",
+        "prompt": "Explain different ways to take input from users in Java, with examples using Scanner and BufferedReader in 150-200 words."
+      },
+      {
+        "title": "Scanner Class in Java",
+        "prompt": "What is the Scanner class in Java? Provide examples on how to use it for reading various data types in 150-200 words."
+      },
+      {
+        "title": "BufferedReader Class in Java",
+        "prompt": "Explain the BufferedReader class in Java, covering its syntax and usage for reading text from the console in 150-200 words."
+      },
+      {
+        "title": "Scanner vs BufferedReader in Java",
+        "prompt": "Compare the Scanner and BufferedReader classes in Java, discussing their pros, cons, and use cases in 150-200 words."
+      },
+      {
+        "title": "Ways to Read Input from Console in Java",
+        "prompt": "List and explain different ways to read input from the console in Java, including System.in, Scanner, and BufferedReader in 150-200 words."
+      },
+      {
+        "title": "Print Output in Java",
+        "prompt": "Discuss how to print output to the console in Java, including System.out.print and System.out.println in 150-200 words."
+      },
+      {
+        "title": "print() vs println() in Java",
+        "prompt": "Explain the difference between print() and println() methods in Java, including examples to illustrate line breaks in 150-200 words."
+      },
+      {
+        "title": "Formatted Outputs in Java",
+        "prompt": "How can you produce formatted output in Java? Explain with examples using printf and format methods in 150-200 words."
+      },
+      {
+        "title": "Recap of Input/Output in Java",
+        "prompt": "Summarize the key points covered in the Input/Output section, including taking input and displaying output, in 150-200 words."
+      },
+      {
+        "title": "Conclusion on Input/Output in Java",
+        "prompt": "Wrap up the Input/Output section by discussing how mastering these methods enhances interaction within Java programs in 150-200 words."
+      }
+    ]
+  },
+  {
+    "Date": "2025-02-14",
+    "Topic": "Flow Control in Java",
+    "Prompts": [
+      {
+        "title": "Decision Making in Java",
+        "prompt": "Describe decision-making in Java, including if, if-else, and switch statements in 150-200 words."
+      },
+      {
+        "title": "If Statement in Java",
+        "prompt": "Explain the if statement in Java, including syntax, examples, and use cases in 150-200 words."
+      },
+      {
+        "title": "If-Else Statement in Java",
+        "prompt": "Describe the if-else statement in Java, with examples and scenarios where it is useful in 150-200 words."
+      },
+      {
+        "title": "If-Else-If Ladder in Java",
+        "prompt": "Explain the if-else-if ladder in Java, and discuss how it can be used for multiple conditions in 150-200 words."
+      },
+      {
+        "title": "Loops in Java",
+        "prompt": "Provide an overview of looping constructs in Java, including for, while, and do-while loops in 150-200 words."
+      },
+      {
+        "title": "For Loop in Java",
+        "prompt": "Explain the syntax and usage of the for loop in Java, including an example for iteration over arrays in 150-200 words."
+      },
+      {
+        "title": "While Loop in Java",
+        "prompt": "Describe the while loop in Java, covering syntax, examples, and common applications in 150-200 words."
+      },
+      {
+        "title": "Do-While Loop in Java",
+        "prompt": "Explain the do-while loop in Java, highlighting its structure, usage, and examples in 150-200 words."
+      },
+      {
+        "title": "For-Each Loop in Java",
+        "prompt": "Discuss the for-each loop in Java, covering its syntax, purpose, and use cases with arrays and collections in 150-200 words."
+      },
+      {
+        "title": "Continue Statement in Java",
+        "prompt": "What is the continue statement in Java? Explain its purpose and provide examples of how it is used in loops in 150-200 words."
+      },
+      {
+        "title": "Break Statement in Java",
+        "prompt": "Describe the break statement in Java, covering syntax, examples, and common use cases in loops and switch statements in 150-200 words."
+      },
+      {
+        "title": "Usage of Break in Java",
+        "prompt": "Provide examples showing the use of the break statement in loops and other control structures in Java in 150-200 words."
+      },
+      {
+        "title": "Return Statement in Java",
+        "prompt": "Explain the return statement in Java, discussing its role in methods and how it affects program flow in 150-200 words."
+      },
+      {
+        "title": "Recap of Flow Control in Java",
+        "prompt": "Summarize the key concepts of flow control in Java, covering decision-making and looping statements in 150-200 words."
+      },
+      {
+        "title": "Conclusion on Flow Control in Java",
+        "prompt": "Conclude the Flow Control section, discussing how these structures enable dynamic and responsive Java programs in 150-200 words."
+      }
+    ]
+  },
+  {
+    "Date": "2025-02-15",
+    "Topic": "Operators in Java",
+    "Prompts": [
+      {
+        "title": "Arithmetic Operator",
+        "prompt": "Explain arithmetic operators in Java, including addition, subtraction, multiplication, division, and modulus with examples in 150-200 words."
+      },
+      {
+        "title": "Unary Operator",
+        "prompt": "Describe unary operators in Java, covering increment, decrement, and unary plus/minus with examples in 150-200 words."
+      },
+      {
+        "title": "Assignment Operator",
+        "prompt": "Explain assignment operators in Java, including simple assignment, compound assignment, and their usage in 150-200 words."
+      },
+      {
+        "title": "Relational Operator",
+        "prompt": "Discuss relational operators in Java, explaining how they compare values and their return types with examples in 150-200 words."
+      },
+      {
+        "title": "Logical Operator",
+        "prompt": "Explain logical operators in Java, including AND, OR, and NOT, along with their usage in conditional statements in 150-200 words."
+      },
+      {
+        "title": "Ternary Operator",
+        "prompt": "What is the ternary operator in Java? Explain its syntax and provide examples of how it can replace if-else statements in 150-200 words."
+      },
+      {
+        "title": "Bitwise Operator",
+        "prompt": "Describe bitwise operators in Java, including AND, OR, XOR, NOT, and their applications in manipulating bits in 150-200 words."
+      },
+      {
+        "title": "Recap of Operators in Java",
+        "prompt": "Summarize the key operators discussed in Java, covering arithmetic, unary, assignment, relational, logical, ternary, and bitwise operators in 150-200 words."
+      },
+      {
+        "title": "Conclusion on Operators in Java",
+        "prompt": "Conclude the Operators section by discussing their importance in Java programming and how they facilitate various operations in 150-200 words."
+      }
+    ]
+  },
+  {
+    "Date": "2025-02-16",
+    "Topic": "Arrays in Java",
+    "Prompts": [
+      {
+        "title": "Introduction to Arrays in Java",
+        "prompt": "Introduce arrays in Java, explaining what they are, their characteristics, and how they are used in 150-200 words."
+      },
+      {
+        "title": "Arrays Class in Java",
+        "prompt": "Discuss the Arrays class in Java, detailing its methods and functionality for array manipulation in 150-200 words."
+      },
+      {
+        "title": "Multi-Dimensional Array in Java",
+        "prompt": "Explain multi-dimensional arrays in Java, including their structure and how to use them effectively in 150-200 words."
+      },
+      {
+        "title": "How to Declare and Initialize 2D Arrays in Java",
+        "prompt": "Describe the process of declaring and initializing 2D arrays in Java with examples demonstrating different approaches in 150-200 words."
+      },
+      {
+        "title": "Jagged Array in Java",
+        "prompt": "What is a jagged array in Java? Explain its structure and provide examples of how to create and use jagged arrays in 150-200 words."
+      },
+      {
+        "title": "Final Arrays in Java",
+        "prompt": "Discuss the concept of final arrays in Java, explaining how the final keyword affects array reference and modification in 150-200 words."
+      },
+      {
+        "title": "Reflect Arrays in Java",
+        "prompt": "Explain the concept of reflective arrays in Java, discussing their applications and how to manipulate them using reflection in 150-200 words."
+      },
+      {
+        "title": "Java Util.Arrays vs Reflect.Arrays",
+        "prompt": "Compare the Java util.Arrays class with reflect.Arrays, discussing their functionalities and use cases in array manipulation in 150-200 words."
+      },
+      {
+        "title": "Java Array Programs",
+        "prompt": "Provide examples of common Java array programs, including sorting, searching, and manipulating array elements in 150-200 words."
+      },
+      {
+        "title": "Recap of Arrays in Java",
+        "prompt": "Summarize the key concepts of arrays in Java, including their types, manipulation methods, and important features in 150-200 words."
+      },
+      {
+        "title": "Conclusion on Arrays in Java",
+        "prompt": "Conclude the Arrays section by discussing their significance in Java programming and how they facilitate efficient data management in 150-200 words."
+      }
+    ]
+  },
+  {
+    "Date": "2025-02-17",
+    "Topic": "Strings in Java",
+    "Prompts": [
+      {
+        "title": "Introduction of Strings in Java",
+        "prompt": "Introduce strings in Java, explaining what they are and how they differ from other data types in 150-200 words."
+      },
+      {
+        "title": "String Class in Java Set-1",
+        "prompt": "Explain the String class in Java, covering its characteristics, methods, and common usage scenarios in 150-200 words."
+      },
+      {
+        "title": "String Class in Java Set-2",
+        "prompt": "Continue discussing the String class in Java by highlighting additional methods and features not covered previously in 150-200 words."
+      },
+      {
+        "title": "Why Strings are Immutable in Java?",
+        "prompt": "Discuss the concept of string immutability in Java, explaining its advantages and implications for memory management in 150-200 words."
+      },
+      {
+        "title": "StringBuffer Class in Java",
+        "prompt": "Explain the StringBuffer class in Java, including its characteristics, methods, and use cases for mutable strings in 150-200 words."
+      },
+      {
+        "title": "StringBuilder Class in Java",
+        "prompt": "Discuss the StringBuilder class in Java, comparing it with StringBuffer in terms of performance and usage in 150-200 words."
+      },
+      {
+        "title": "Strings vs StringBuffer vs StringBuilder in Java",
+        "prompt": "Compare and contrast Strings, StringBuffer, and StringBuilder in Java, discussing their characteristics and best use cases in 150-200 words."
+      },
+      {
+        "title": "StringTokenizer Class in Java Set-1",
+        "prompt": "Introduce the StringTokenizer class in Java, explaining its functionality and providing examples of how to use it in 150-200 words."
+      },
+      {
+        "title": "StringTokenizer Class in Java Set-2",
+        "prompt": "Continue discussing the StringTokenizer class by highlighting additional methods and features not covered previously in 150-200 words."
+      },
+      {
+        "title": "StringJoiner in Java",
+        "prompt": "Explain the StringJoiner class in Java, discussing its purpose, usage, and advantages for joining strings in 150-200 words."
+      },
+      {
+        "title": "Java String Programs",
+        "prompt": "Provide examples of common Java string programs, including string manipulation, searching, and formatting techniques in 150-200 words."
+      },
+      {
+        "title": "Recap of Strings in Java",
+        "prompt": "Summarize the key concepts of strings in Java, covering string types, classes, and important operations in 150-200 words."
+      },
+      {
+        "title": "Conclusion on Strings in Java",
+        "prompt": "Conclude the Strings section by discussing their role in Java programming and how effective string handling enhances applications in 150-200 words."
+      }
+    ]
+  },
+  {
+    "Date": "2025-02-15",
+    "Topic": "OOPS in Java",
+    "Prompts": [
+      {
+        "title": "OOPS Concept in Java",
+        "prompt": "Explain the core concepts of Object-Oriented Programming (OOP) in Java, including encapsulation, inheritance, and polymorphism in 150-200 words."
+      },
+      {
+        "title": "Why Java is not a purely Object-Oriented Language?",
+        "prompt": "Discuss the reasons why Java is considered not to be a purely object-oriented programming language, highlighting the role of primitive types in 150-200 words."
+      },
+      {
+        "title": "Classes and Objects in Java",
+        "prompt": "Define classes and objects in Java, explaining how they interact and their importance in OOP concepts in 150-200 words."
+      },
+      {
+        "title": "Naming Conventions in Java",
+        "prompt": "Discuss the naming conventions in Java, including best practices for naming classes, methods, and variables to ensure code readability in 150-200 words."
+      },
+      {
+        "title": "Methods in Java",
+        "prompt": "Explain the concept of methods in Java, detailing how they are defined, invoked, and their significance in encapsulating behavior in 150-200 words."
+      },
+      {
+        "title": "Access Modifiers in Java",
+        "prompt": "Describe the different access modifiers in Java (public, private, protected, and default) and their impact on encapsulation in 150-200 words."
+      },
+      {
+        "title": "Constructors in Java",
+        "prompt": "Define constructors in Java, explaining their role in object initialization and the differences between default and parameterized constructors in 150-200 words."
+      },
+      {
+        "title": "Four Pillars of OOP in Java",
+        "prompt": "Discuss the four pillars of Object-Oriented Programming—encapsulation, inheritance, polymorphism, and abstraction—and their implementation in Java in 150-200 words."
+      },
+      {
+        "title": "Recap and Conclusion of OOPS in Java",
+        "prompt": "Summarize the key OOP concepts in Java, emphasizing the importance of classes, objects, and the four pillars, and encourage readers to explore further in 150-200 words."
+      }
+    ]
+  },
+  {
+    "Date": "2025-02-16",
+    "Topic": "Classes of Java",
+    "Prompts": [
+      {
+        "title": "Understanding Classes and Objects in Java",
+        "prompt": "Explain the relationship between classes and objects in Java, detailing how classes serve as blueprints for creating objects in 150-200 words."
+      },
+      {
+        "title": "Class vs Interface",
+        "prompt": "Compare and contrast classes and interfaces in Java, focusing on their purposes, implementation, and use cases in 150-200 words."
+      },
+      {
+        "title": "Singleton Class in Java",
+        "prompt": "Describe the singleton design pattern in Java, explaining how it restricts the instantiation of a class to one object and its use cases in 150-200 words."
+      },
+      {
+        "title": "Object Class in Java",
+        "prompt": "Discuss the Object class in Java, its significance as the root of the class hierarchy, and the methods it provides to all Java objects in 150-200 words."
+      },
+      {
+        "title": "Inner Class in Java",
+        "prompt": "Explain the concept of inner classes in Java, including their types (member, static, local, and anonymous) and their benefits in 150-200 words."
+      },
+      {
+        "title": "Abstract Classes in Java",
+        "prompt": "Define abstract classes in Java, discussing their purpose, how they differ from interfaces, and when to use them in 150-200 words."
+      },
+      {
+        "title": "Throwable Class in Java",
+        "prompt": "Discuss the Throwable class in Java, explaining its role in exception handling and the difference between checked and unchecked exceptions in 150-200 words."
+      },
+      {
+        "title": "Recap and Conclusion of Classes in Java",
+        "prompt": "Summarize the key concepts related to classes in Java, including the importance of the Object class, inner classes, and the abstract class concept, while encouraging practical application in 150-200 words."
+      }
+    ]
+  },
+  {
+    "Date": "2025-02-17",
+    "Topic": "Interfaces in Java",
+    "Prompts": [
+      {
+        "title": "Java Interfaces",
+        "prompt": "Define Java interfaces, discussing their purpose in defining contracts for classes and enabling multiple inheritance in 150-200 words."
+      },
+      {
+        "title": "Interfaces and Inheritance in Java",
+        "prompt": "Explain how interfaces support inheritance in Java, detailing how a class can implement multiple interfaces and the advantages of this approach in 150-200 words."
+      },
+      {
+        "title": "Class vs Interface in Java",
+        "prompt": "Compare classes and interfaces in Java, highlighting their differences in instantiation, method implementation, and use cases in 150-200 words."
+      },
+      {
+        "title": "Functional Interface",
+        "prompt": "Discuss functional interfaces in Java, explaining their significance in lambda expressions and how they promote functional programming in 150-200 words."
+      },
+      {
+        "title": "Nested Interface",
+        "prompt": "Explain the concept of nested interfaces in Java, discussing how they can be declared within classes or other interfaces and their use cases in 150-200 words."
+      },
+      {
+        "title": "Marker Interface",
+        "prompt": "Define marker interfaces in Java, discussing their purpose and how they signal certain behaviors to the Java compiler or runtime in 150-200 words."
+      },
+      {
+        "title": "Comparator Interface",
+        "prompt": "Discuss the Comparator interface in Java, explaining its role in sorting objects and providing examples of its implementation in 150-200 words."
+      },
+      {
+        "title": "Recap and Conclusion of Interfaces in Java",
+        "prompt": "Summarize the key points regarding interfaces in Java, including their purpose, types, and differences from classes, while encouraging readers to implement these concepts in their projects in 150-200 words."
+      }
+    ]
+  },
+  {
+    "Date": "2025-02-18",
+    "Topic": "Methods in Java",
+    "Prompts": [
+      {
+        "title": "Introduction to Methods in Java",
+        "prompt": "Explain the concept of methods in Java, including their purpose, syntax, and how they enhance code reusability and organization in 150-200 words."
+      },
+      {
+        "title": "Different Method Calls in Java",
+        "prompt": "Discuss the different ways to call methods in Java, including direct calls, static calls, and through objects, and the implications of each in 150-200 words."
+      },
+      {
+        "title": "Static Methods vs Instance Methods in Java",
+        "prompt": "Compare static methods and instance methods in Java, highlighting their characteristics, usage scenarios, and when to choose one over the other in 150-200 words."
+      },
+      {
+        "title": "Abstract Methods in Java",
+        "prompt": "Define abstract methods in Java, explaining their role in abstract classes and how they enforce a contract for subclasses in 150-200 words."
+      },
+      {
+        "title": "Method Overriding in Java",
+        "prompt": "Explain method overriding in Java, detailing how it enables polymorphism and the rules governing its use in subclasses in 150-200 words."
+      },
+      {
+        "title": "Method Overloading in Java",
+        "prompt": "Define method overloading in Java, discussing how it allows multiple methods with the same name but different parameters and its benefits in 150-200 words."
+      },
+      {
+        "title": "Method Overloading vs Method Overriding",
+        "prompt": "Compare and contrast method overloading and method overriding in Java, focusing on their differences in usage, implementation, and outcomes in 150-200 words."
+      },
+      {
+        "title": "Recap and Conclusion of Methods in Java",
+        "prompt": "Summarize the key concepts related to methods in Java, including their types, differences, and the importance of overloading and overriding, while encouraging practical implementation in 150-200 words."
+      }
+    ]
+  },
+  {
+    "Date": "2025-02-19",
+    "Topic": "Packages in Java",
+    "Prompts": [
+      {
+        "title": "Java Packages",
+        "prompt": "Define Java packages, explaining their purpose in organizing classes and interfaces, and how they promote modular programming in 150-200 words."
+      },
+      {
+        "title": "How to Create a Package in Java",
+        "prompt": "Describe the steps to create a package in Java, including the syntax and the role of the package statement in structuring code effectively in 150-200 words."
+      },
+      {
+        "title": "java.util Package",
+        "prompt": "Discuss the java.util package in Java, highlighting its commonly used classes and their significance in data manipulation and collection handling in 150-200 words."
+      },
+      {
+        "title": "java.lang Package",
+        "prompt": "Explain the java.lang package in Java, discussing its core classes and their fundamental role in Java programming, including Object, String, and Math in 150-200 words."
+      },
+      {
+        "title": "java.io Package",
+        "prompt": "Describe the java.io package in Java, outlining its purpose in input and output operations and the key classes it provides for file handling in 150-200 words."
+      },
+      {
+        "title": "Recap and Conclusion of Packages in Java",
+        "prompt": "Summarize the key aspects of Java packages, including their structure, creation, and the importance of standard packages like java.util and java.io, encouraging their use in organizing code in 150-200 words."
+      }
+    ]
+  },
+  {
+    "Date": "2025-02-20",
+    "Topic": "Collection Framework in Java",
+    "Prompts": [
+      {
+        "title": "Java Collection Framework",
+        "prompt": "Explain the Java Collection Framework, discussing its architecture, benefits, and the types of collections it offers for data management in 150-200 words."
+      },
+      {
+        "title": "Collections Class in Java",
+        "prompt": "Discuss the Collections class in Java, detailing its utility methods for manipulating collections and how it enhances collection operations in 150-200 words."
+      },
+      {
+        "title": "Collection Interface in Java",
+        "prompt": "Define the Collection interface in Java, explaining its role as the root of the collection hierarchy and its key methods in 150-200 words."
+      },
+      {
+        "title": "List Interface in Java",
+        "prompt": "Describe the List interface in Java, highlighting its characteristics, common implementations, and scenarios where lists are preferred in 150-200 words."
+      },
+      {
+        "title": "Queue Interface in Java",
+        "prompt": "Explain the Queue interface in Java, discussing its purpose in handling collections of elements in a first-in-first-out (FIFO) manner and its common implementations in 150-200 words."
+      },
+      {
+        "title": "Map Interface in Java",
+        "prompt": "Discuss the Map interface in Java, highlighting its role in key-value pair storage, common implementations, and the differences from collections in 150-200 words."
+      },
+      {
+        "title": "Set Interface in Java",
+        "prompt": "Define the Set interface in Java, explaining its unique characteristics, how it prevents duplicate elements, and its common implementations in 150-200 words."
+      },
+      {
+        "title": "SortedSet Interface in Java",
+        "prompt": "Describe the SortedSet interface in Java, discussing its purpose in maintaining sorted order among elements and common implementations like TreeSet in 150-200 words."
+      },
+      {
+        "title": "Deque Interface in Java",
+        "prompt": "Explain the Deque interface in Java, highlighting its double-ended queue capabilities and its utility in various data structure scenarios in 150-200 words."
+      },
+      {
+        "title": "Comparator in Java",
+        "prompt": "Discuss the Comparator interface in Java, explaining its role in custom sorting of collections and how it differs from the Comparable interface in 150-200 words."
+      },
+      {
+        "title": "Comparator vs Comparable in Java",
+        "prompt": "Compare and contrast the Comparator and Comparable interfaces in Java, highlighting their use cases and the differences in how they are implemented in 150-200 words."
+      },
+      {
+        "title": "Iterator in Java",
+        "prompt": "Define the Iterator interface in Java, discussing its purpose in traversing collections and the methods it provides for safe element access in 150-200 words."
+      },
+      {
+        "title": "Recap and Conclusion of Collection Framework in Java",
+        "prompt": "Summarize the key components of the Java Collection Framework, including its interfaces, classes, and the importance of collections in efficient data management, while encouraging practical exploration in 150-200 words."
+      }
+    ]
+  },
+  {
+    "Date": "2025-02-21",
+    "Topic": "Collection Classes in Java",
+    "Prompts": [
+      {
+        "title": "ArrayList in Java",
+        "prompt": "Explain the ArrayList class in Java, discussing its characteristics, advantages, and common use cases in managing dynamic arrays in 150-200 words."
+      },
+      {
+        "title": "Vector Class in Java",
+        "prompt": "Define the Vector class in Java, highlighting its similarities and differences with ArrayList, and its historical significance in Java's collection framework in 150-200 words."
+      },
+      {
+        "title": "Stack Class in Java",
+        "prompt": "Discuss the Stack class in Java, explaining its LIFO (Last In, First Out) behavior and common methods for managing stack operations in 150-200 words."
+      },
+      {
+        "title": "LinkedList in Java",
+        "prompt": "Describe the LinkedList class in Java, outlining its structure, advantages over arrays, and typical scenarios where it is preferred in 150-200 words."
+      },
+      {
+        "title": "Priority Queue in Java",
+        "prompt": "Explain the PriorityQueue class in Java, discussing its unique characteristics and how it orders elements based on priority rather than insertion order in 150-200 words."
+      },
+      {
+        "title": "HashMap in Java",
+        "prompt": "Define the HashMap class in Java, highlighting its key-value pair storage, performance characteristics, and common use cases in 150-200 words."
+      },
+      {
+        "title": "LinkedHashMap in Java",
+        "prompt": "Discuss the LinkedHashMap class in Java, explaining how it combines the benefits of HashMap and LinkedList to maintain insertion order in 150-200 words."
+      },
+      {
+        "title": "Dictionary in Java",
+        "prompt": "Explain the Dictionary class in Java, outlining its purpose and how it serves as an abstract data structure for key-value pairs, along with its legacy status in 150-200 words."
+      },
+      {
+        "title": "Hashtable in Java",
+        "prompt": "Describe the Hashtable class in Java, discussing its synchronization characteristics and differences from HashMap in terms of thread safety and performance in 150-200 words."
+      },
+      {
+        "title": "HashSet in Java",
+        "prompt": "Define the HashSet class in Java, explaining its unique properties, such as preventing duplicates and its underlying data structure, the hash table, in 150-200 words."
+      },
+      {
+        "title": "TreeSet in Java",
+        "prompt": "Discuss the TreeSet class in Java, highlighting its sorted nature, implementation details, and how it differs from HashSet in terms of ordering in 150-200 words."
+      },
+      {
+        "title": "LinkedHashSet in Java",
+        "prompt": "Explain the LinkedHashSet class in Java, outlining its characteristics of maintaining insertion order while preventing duplicates in 150-200 words."
+      },
+      {
+        "title": "Recap and Conclusion of Collection Classes in Java",
+        "prompt": "Summarize the key collection classes in Java, highlighting their differences, advantages, and practical applications, encouraging exploration and usage in real-world scenarios in 150-200 words."
+      }
+    ]
+  },
+  {
+    "Date": "2025-02-22",
+    "Topic": "Memory Allocation in Java",
+    "Prompts": [
+      {
+        "title": "Java Memory Management",
+        "prompt": "Explain the concept of memory management in Java, discussing the role of the JVM in allocating and deallocating memory for Java applications in 150-200 words."
+      },
+      {
+        "title": "How are Java Objects Stored in Memory",
+        "prompt": "Discuss how Java objects are stored in memory, outlining the differences between primitive types and reference types in terms of memory allocation in 150-200 words."
+      },
+      {
+        "title": "Stack vs Heap Memory Allocation",
+        "prompt": "Compare stack and heap memory allocation in Java, highlighting their characteristics, usage scenarios, and the implications for performance and memory management in 150-200 words."
+      },
+      {
+        "title": "Types of Memory Areas Allocated by JVM",
+        "prompt": "Describe the various memory areas allocated by the JVM, including the method area, heap, stack, and others, detailing their purposes in Java applications in 150-200 words."
+      },
+      {
+        "title": "Garbage Collection in Java",
+        "prompt": "Explain garbage collection in Java, discussing its importance in automatic memory management and the various strategies employed by the JVM for reclaiming memory in 150-200 words."
+      },
+      {
+        "title": "Heap and Stack Memory Allocation",
+        "prompt": "Discuss the differences between heap and stack memory allocation, emphasizing their respective roles in variable storage, lifespan, and accessibility in 150-200 words."
+      },
+      {
+        "title": "Types of JVM Garbage Collectors in Java",
+        "prompt": "Describe the different types of garbage collectors available in the JVM, including serial, parallel, CMS, and G1, outlining their characteristics and use cases in 150-200 words."
+      },
+      {
+        "title": "Memory Leaks in Java",
+        "prompt": "Define memory leaks in Java, explaining how they occur, their consequences on application performance, and strategies to prevent them in 150-200 words."
+      },
+      {
+        "title": "Java Virtual Machine (JVM) Stack Area",
+        "prompt": "Explain the stack area in the Java Virtual Machine (JVM), discussing its role in method invocation, local variables, and the execution flow of Java applications in 150-200 words."
+      },
+      {
+        "title": "Recap and Conclusion of Memory Allocation in Java",
+        "prompt": "Summarize the key concepts of memory allocation in Java, including memory management, stack vs heap, garbage collection, and the importance of understanding these concepts for efficient programming in 150-200 words."
+      }
+    ]
+  },
+  {
+    "Date": "2025-02-23",
+    "Topic": "Exception Handling in Java",
+    "Prompts": [
+      {
+        "title": "Exceptions in Java",
+        "prompt": "Define exceptions in Java, discussing their role in handling errors and abnormal conditions in a program, along with the structure of exception handling in 150-200 words."
+      },
+      {
+        "title": "Types of Exceptions",
+        "prompt": "Discuss the different types of exceptions in Java, categorizing them into checked, unchecked, and errors, with examples of each in 150-200 words."
+      },
+      {
+        "title": "Checked vs Unchecked Exceptions",
+        "prompt": "Compare checked and unchecked exceptions in Java, highlighting their differences in handling, declaration, and impact on program execution in 150-200 words."
+      },
+      {
+        "title": "Try, Catch, Finally, throw, and throws",
+        "prompt": "Explain the try-catch-finally construct in Java, discussing how it handles exceptions and the roles of throw and throws in exception propagation in 150-200 words."
+      },
+      {
+        "title": "Flow Control in Try-Catch Block",
+        "prompt": "Discuss the flow control in a try-catch block in Java, explaining how the program execution proceeds based on the presence of exceptions in 150-200 words."
+      },
+      {
+        "title": "Throw vs Throws",
+        "prompt": "Compare throw and throws in Java, discussing their purposes in exception handling and how they differ in usage and functionality in 150-200 words."
+      },
+      {
+        "title": "Final vs Finally vs Finalize",
+        "prompt": "Explain the differences between final, finally, and finalize in Java, discussing their roles in resource management, exception handling, and variable declaration in 150-200 words."
+      },
+      {
+        "title": "User-defined Custom Exception",
+        "prompt": "Describe how to create user-defined custom exceptions in Java, discussing their structure and when to use them for better error handling in 150-200 words."
+      },
+      {
+        "title": "Chained Exceptions",
+        "prompt": "Define chained exceptions in Java, explaining their significance in providing more context for error handling by linking related exceptions together in 150-200 words."
+      },
+      {
+        "title": "Null Pointer Exceptions",
+        "prompt": "Discuss null pointer exceptions in Java, explaining their causes, common scenarios where they occur, and strategies to avoid them in 150-200 words."
+      },
+      {
+        "title": "Exception Handling with Method Overriding",
+        "prompt": "Explain how exception handling works with method overriding in Java, discussing the rules and implications for handling exceptions in overridden methods in 150-200 words."
+      },
+      {
+        "title": "Recap and Conclusion of Exception Handling in Java",
+        "prompt": "Summarize the key concepts of exception handling in Java, including exception types, handling mechanisms, and the importance of robust error management in applications in 150-200 words."
+      }
+    ]
+  },
+  {
+    "Date": "2025-02-24",
+    "Topic": "Multithreading in Java",
+    "Prompts": [
+      {
+        "title": "Introduction to Multithreading in Java",
+        "prompt": "Explain the concept of multithreading in Java, its significance, and how it enhances the performance of Java applications in 150-200 words."
+      },
+      {
+        "title": "Lifecycle and Stages of a Thread",
+        "prompt": "Discuss the lifecycle of a thread in Java, outlining the different states a thread can be in and the transitions between these states in 150-200 words."
+      },
+      {
+        "title": "Thread Priority in Java",
+        "prompt": "Define thread priority in Java, explaining how it affects thread scheduling and the implications of setting different priorities for threads in 150-200 words."
+      },
+      {
+        "title": "Main Thread in Java",
+        "prompt": "Describe the main thread in Java, discussing its role as the entry point for Java applications and how it interacts with other threads in 150-200 words."
+      },
+      {
+        "title": "Thread Class",
+        "prompt": "Explain the Thread class in Java, detailing its constructors, methods, and how it is used to create and manage threads in 150-200 words."
+      },
+      {
+        "title": "Runnable Interface",
+        "prompt": "Discuss the Runnable interface in Java, explaining its significance in thread creation and how it differs from the Thread class in 150-200 words."
+      },
+      {
+        "title": "How to Name a Thread",
+        "prompt": "Explain the importance of naming threads in Java and the methods available for setting and retrieving thread names in 150-200 words."
+      },
+      {
+        "title": "start() Method in Thread",
+        "prompt": "Discuss the start() method in the Thread class, explaining its role in starting a new thread and how it differs from directly calling the run() method in 150-200 words."
+      },
+      {
+        "title": "run() vs start() Method in Java",
+        "prompt": "Compare the run() and start() methods in Java, discussing their functions, execution flow, and why the start() method is crucial for multithreading in 150-200 words."
+      },
+      {
+        "title": "sleep() Method",
+        "prompt": "Explain the sleep() method in Java, discussing its purpose in pausing thread execution and the implications for thread management in 150-200 words."
+      },
+      {
+        "title": "Daemon Thread",
+        "prompt": "Define daemon threads in Java, explaining their characteristics, use cases, and how they differ from user threads in terms of lifecycle in 150-200 words."
+      },
+      {
+        "title": "Thread Pool in Java",
+        "prompt": "Discuss the concept of thread pools in Java, explaining their advantages for managing thread lifecycle and performance in concurrent applications in 150-200 words."
+      },
+      {
+        "title": "Thread Group in Java",
+        "prompt": "Describe thread groups in Java, outlining their purpose in managing multiple threads and the benefits they provide for thread organization and control in 150-200 words."
+      },
+      {
+        "title": "Thread Safety in Java",
+        "prompt": "Explain the concept of thread safety in Java, discussing the techniques used to ensure safe access to shared resources in multithreaded environments in 150-200 words."
+      },
+      {
+        "title": "Shutdown Hook",
+        "prompt": "Discuss shutdown hooks in Java, explaining how they allow for cleanup operations when the JVM is shutting down and their implementation in 150-200 words."
+      },
+      {
+        "title": "Multithreading Tutorial",
+        "prompt": "Summarize the key concepts covered in a multithreading tutorial, emphasizing practical applications and best practices for implementing multithreading in Java in 150-200 words."
+      },
+      {
+        "title": "Recap and Conclusion of Multithreading in Java",
+        "prompt": "Summarize the key concepts of multithreading in Java, highlighting its importance and practical applications. Include references to relevant resources such as the official Java documentation, tutorials on multithreading, and articles on best practices for multithreading in Java in 150-200 words."
+      }
+    ]
+  },
+  {
+    "Date": "2025-02-25",
+    "Topic": "Synchronization in Java",
+    "Prompts": [
+      {
+        "title": "Java Synchronization",
+        "prompt": "Explain the concept of synchronization in Java, discussing its importance in managing concurrent access to shared resources in 150-200 words."
+      },
+      {
+        "title": "Importance of Thread Synchronization in Java",
+        "prompt": "Discuss the significance of thread synchronization in Java, highlighting how it prevents data inconsistency and ensures thread safety in shared resources in 150-200 words."
+      },
+      {
+        "title": "Method and Block Synchronization in Java",
+        "prompt": "Explain method and block synchronization in Java, outlining their differences, use cases, and impact on thread behavior in 150-200 words."
+      },
+      {
+        "title": "Local Frameworks vs Thread Synchronization",
+        "prompt": "Compare local frameworks and thread synchronization in Java, discussing their roles in managing concurrency and ensuring data integrity in 150-200 words."
+      },
+      {
+        "title": "Atomic vs Volatile in Java",
+        "prompt": "Define the differences between atomic and volatile variables in Java, explaining their uses in concurrency and the guarantees they provide in 150-200 words."
+      },
+      {
+        "title": "Atomic vs Synchronized in Java",
+        "prompt": "Compare atomic variables and synchronized blocks in Java, discussing their advantages, performance implications, and suitable use cases in concurrency management in 150-200 words."
+      },
+      {
+        "title": "Deadlock in Multithreading",
+        "prompt": "Explain the concept of deadlock in multithreading, discussing its causes, implications, and examples of how it can occur in Java applications in 150-200 words."
+      },
+      {
+        "title": "Deadlock Prevention and Avoidance",
+        "prompt": "Discuss strategies for preventing and avoiding deadlock in Java, outlining best practices for thread management and resource allocation in 150-200 words."
+      },
+      {
+        "title": "Lock vs Monitor in Concurrency",
+        "prompt": "Compare locks and monitors in Java concurrency, explaining their characteristics, differences in usage, and the implications for thread synchronization in 150-200 words."
+      },
+      {
+        "title": "Reentrant Lock",
+        "prompt": "Define reentrant locks in Java, explaining their functionality, advantages over traditional synchronization methods, and when to use them in 150-200 words."
+      },
+      {
+        "title": "Recap and Conclusion of Synchronization in Java",
+        "prompt": "Summarize the key concepts of synchronization in Java, emphasizing its importance in thread safety and data integrity. Include references to relevant resources such as the official Java documentation, tutorials on synchronization techniques, and articles on concurrency best practices in 150-200 words."
+      }
+    ]
+  },
+  {
+    "Date": "2025-02-26",
+    "Topic": "File Handling in Java",
+    "Prompts": [
+      {
+        "title": "File Class in Java",
+        "prompt": "Explain the File class in Java, detailing its purpose, common methods, and how it is used for file manipulation in 150-200 words."
+      },
+      {
+        "title": "How to Create Files in Java",
+        "prompt": "Discuss the various methods to create files in Java, providing examples and explaining the use cases for each method in 150-200 words."
+      },
+      {
+        "title": "How to Read Files in Java",
+        "prompt": "Explain how to read files in Java, outlining the different classes and methods available for reading data from files in 150-200 words."
+      },
+      {
+        "title": "How to Write on Files in Java",
+        "prompt": "Discuss the different approaches to writing data to files in Java, highlighting the classes and methods involved in file writing operations in 150-200 words."
+      },
+      {
+        "title": "How to Delete a File in Java",
+        "prompt": "Explain how to delete files in Java, detailing the methods available in the File class and the considerations when performing delete operations in 150-200 words."
+      },
+      {
+        "title": "File Permissions",
+        "prompt": "Discuss file permissions in Java, explaining how to manage file permissions programmatically and the implications of these permissions in file handling in 150-200 words."
+      },
+      {
+        "title": "FileReader",
+        "prompt": "Explain the FileReader class in Java, outlining its purpose, use cases, and methods for reading character files in 150-200 words."
+      },
+      {
+        "title": "FileWriter",
+        "prompt": "Discuss the FileWriter class in Java, detailing its role in writing character files, along with common methods and usage examples in 150-200 words."
+      },
+      {
+        "title": "FileDescriptor Class",
+        "prompt": "Define the FileDescriptor class in Java, explaining its significance in file handling and how it relates to file I/O operations in 150-200 words."
+      },
+      {
+        "title": "RandomAccessFile Class",
+        "prompt": "Explain the RandomAccessFile class in Java, outlining its unique features, methods, and use cases for reading and writing files at any position in 150-200 words."
+      },
+      {
+        "title": "Recap and Conclusion of File Handling in Java",
+        "prompt": "Summarize the key concepts of file handling in Java, emphasizing its importance for data management in applications. Include references to relevant resources such as the official Java documentation, tutorials on file handling, and articles on best practices for file operations in 150-200 words."
+      }
+    ]
+  },
+  {
+    "Date": "2025-02-27",
+    "Topic": "Java Regex",
+    "Prompts": [
+      {
+        "title": "Introduction to Java Regex",
+        "prompt": "Explain what Java Regex is, its purpose in pattern matching and string manipulation, and how it is used in Java applications in 150-200 words."
+      },
+      {
+        "title": "How to Write Regex Expressions",
+        "prompt": "Discuss the syntax and structure of regex expressions in Java, providing examples of common patterns and their applications in 150-200 words."
+      },
+      {
+        "title": "Matcher Class",
+        "prompt": "Explain the Matcher class in Java, detailing its role in performing pattern matching operations and the methods it provides for regex operations in 150-200 words."
+      },
+      {
+        "title": "Pattern Class",
+        "prompt": "Discuss the Pattern class in Java, explaining how it is used to compile regex expressions and the significance of its methods in regex processing in 150-200 words."
+      },
+      {
+        "title": "Quantifiers",
+        "prompt": "Define quantifiers in Java regex, explaining their role in specifying the number of occurrences of a pattern and providing examples in 150-200 words."
+      },
+      {
+        "title": "Character Class",
+        "prompt": "Discuss character classes in Java regex, explaining how they are used to define sets of characters and providing examples of their usage in 150-200 words."
+      },
+      {
+        "title": "Recap and Conclusion of Java Regex",
+        "prompt": "Summarize the key concepts of Java Regex, emphasizing its significance in string manipulation and pattern matching. Include references to relevant resources such as the official Java documentation, regex tutorials, and articles on regex best practices in 150-200 words."
+      }
+    ]
+  },
+  {
+    "Date": "2025-02-28",
+    "Topic": "Java IO",
+    "Prompts": [
+      {
+        "title": "Introduction to Java IO",
+        "prompt": "Explain the Java IO framework, its purpose in input and output operations, and how it facilitates file handling and data manipulation in 150-200 words."
+      },
+      {
+        "title": "Reader Class",
+        "prompt": "Discuss the Reader class in Java, explaining its role in reading character streams and its key methods for handling input in 150-200 words."
+      },
+      {
+        "title": "Writer Class",
+        "prompt": "Explain the Writer class in Java, detailing its purpose in writing character streams and how it complements the Reader class in 150-200 words."
+      },
+      {
+        "title": "FileInputStream",
+        "prompt": "Discuss the FileInputStream class in Java, explaining how it is used to read binary data from files and its key features in 150-200 words."
+      },
+      {
+        "title": "FileOutputStream",
+        "prompt": "Explain the FileOutputStream class in Java, outlining its role in writing binary data to files and how it can be used effectively in file handling in 150-200 words."
+      },
+      {
+        "title": "BufferedReader Input Stream",
+        "prompt": "Define the BufferedReader class in Java, explaining its advantages for reading text data and how it improves performance in input operations in 150-200 words."
+      },
+      {
+        "title": "BufferedWriter Output Stream",
+        "prompt": "Discuss the BufferedWriter class in Java, detailing its significance in writing text data efficiently and its methods for handling output in 150-200 words."
+      },
+      {
+        "title": "BufferedReader vs Scanner",
+        "prompt": "Compare BufferedReader and Scanner classes in Java, discussing their differences in usage, performance, and suitable scenarios for each class in 150-200 words."
+      },
+      {
+        "title": "Fast I/O in Java",
+        "prompt": "Explain techniques for achieving fast I/O operations in Java, discussing various classes and methods that enhance performance in data handling in 150-200 words."
+      },
+      {
+        "title": "Recap and Conclusion of Java IO",
+        "prompt": "Summarize the key concepts of Java IO, emphasizing its importance in data input and output operations. Include references to relevant resources such as the official Java documentation, IO tutorials, and articles on best practices for I/O operations in 150-200 words."
+      }
+    ]
+  },
+  {
+    "Date": "2025-03-01",
+    "Topic": "Java Networking",
+    "Prompts": [
+      {
+        "title": "Introduction to Java Networking",
+        "prompt": "Explain the basics of Java Networking, detailing its significance in developing networked applications and how Java facilitates networking in 150-200 words."
+      },
+      {
+        "title": "TCP Architecture",
+        "prompt": "Discuss the TCP architecture, explaining its role in reliable communication, connection establishment, and data transfer mechanisms in Java networking in 150-200 words."
+      },
+      {
+        "title": "UDP Architecture",
+        "prompt": "Explain the UDP architecture, detailing its characteristics, use cases, and how it differs from TCP in terms of reliability and performance in 150-200 words."
+      },
+      {
+        "title": "IPV4 vs IPV6",
+        "prompt": "Compare IPV4 and IPV6, discussing their differences in addressing, packet structure, and the implications of transitioning from IPV4 to IPV6 in Java networking in 150-200 words."
+      },
+      {
+        "title": "Connection-oriented vs Connectionless Protocols",
+        "prompt": "Define connection-oriented and connectionless protocols, explaining their characteristics and examples in the context of Java networking in 150-200 words."
+      },
+      {
+        "title": "Socket Programming in Java",
+        "prompt": "Discuss socket programming in Java, outlining its importance for network communication and providing examples of client-server interactions using sockets in 150-200 words."
+      },
+      {
+        "title": "Server Socket Class",
+        "prompt": "Explain the ServerSocket class in Java, detailing its purpose, methods, and how it facilitates server-side communication in socket programming in 150-200 words."
+      },
+      {
+        "title": "URL Class and Methods",
+        "prompt": "Discuss the URL class in Java, explaining its role in handling Uniform Resource Locators, along with key methods and use cases in 150-200 words."
+      },
+      {
+        "title": "Recap and Conclusion of Java Networking",
+        "prompt": "Summarize the key concepts of Java Networking, emphasizing its importance in building networked applications. Include references to relevant resources such as the official Java documentation on networking, tutorials on socket programming, and articles on TCP/UDP protocols in 150-200 words."
+      }
+    ]
+  },
+  {
+    "Date": "2025-03-02",
+    "Topic": "Java SE 8 Features",
+    "Prompts": [
+      {
+        "title": "Lambda Expressions",
+        "prompt": "Explain lambda expressions in Java SE 8, detailing their syntax, purpose, and how they enhance code readability and conciseness in 150-200 words."
+      },
+      {
+        "title": "Streams API",
+        "prompt": "Discuss the Streams API in Java SE 8, outlining its significance in processing collections of data in a functional style and providing examples of its usage in 150-200 words."
+      },
+      {
+        "title": "New Date/Time API",
+        "prompt": "Explain the new Date/Time API introduced in Java SE 8, discussing its advantages over the old Date class and how it simplifies date and time manipulation in 150-200 words."
+      },
+      {
+        "title": "Default Methods",
+        "prompt": "Define default methods in Java SE 8, explaining their purpose in interfaces and how they enable backward compatibility with new methods in 150-200 words."
+      },
+      {
+        "title": "Functional Interfaces",
+        "prompt": "Discuss functional interfaces in Java SE 8, explaining their role in lambda expressions and the concept of functional programming in Java in 150-200 words."
+      },
+      {
+        "title": "Method References",
+        "prompt": "Explain method references in Java SE 8, detailing their syntax and use cases in simplifying lambda expressions in 150-200 words."
+      },
+      {
+        "title": "Optional Class",
+        "prompt": "Discuss the Optional class in Java SE 8, explaining its significance in handling null values and improving code safety in 150-200 words."
+      },
+      {
+        "title": "Stream Filter",
+        "prompt": "Explain the use of the filter method in Streams API, detailing how it facilitates conditional processing of data streams in 150-200 words."
+      },
+      {
+        "title": "Type Annotations",
+        "prompt": "Discuss type annotations in Java SE 8, explaining their purpose and how they enhance type checking and code documentation in 150-200 words."
+      },
+      {
+        "title": "String Joiner",
+        "prompt": "Explain the StringJoiner class in Java SE 8, detailing its role in constructing strings with a specified delimiter and providing examples of its usage in 150-200 words."
+      },
+      {
+        "title": "Recap and Conclusion of Java SE 8 Features",
+        "prompt": "Summarize the key features introduced in Java SE 8, emphasizing their impact on programming practices and code efficiency. Include references to relevant resources such as the official Java documentation for Java SE 8, tutorials on lambda expressions, and articles discussing the Streams API in 150-200 words."
+      }
+    ]
+  },
+  {
+    "Date": "2025-03-03",
+    "Topic": "Java Date & Time",
+    "Prompts": [
+      {
+        "title": "Date Class in Java",
+        "prompt": "Explain the Date class in Java, detailing its purpose, constructors, and methods for handling date and time information in 150-200 words."
+      },
+      {
+        "title": "Methods of the Date Class",
+        "prompt": "Discuss the various methods available in the Date class, explaining their functionality and how they are used in date and time operations in Java in 150-200 words."
+      },
+      {
+        "title": "Java Current Date and Time",
+        "prompt": "Explain how to obtain the current date and time in Java, discussing the classes and methods used to retrieve and format the current date/time information in 150-200 words."
+      },
+      {
+        "title": "Compare Dates in Java",
+        "prompt": "Discuss how to compare dates in Java, outlining the methods and techniques available for comparing Date objects and handling date comparisons effectively in 150-200 words."
+      },
+      {
+        "title": "Recap and Conclusion of Java Date & Time",
+        "prompt": "Summarize the key concepts of handling date and time in Java, emphasizing their importance for application development. Include references to relevant resources such as the official Java documentation on date and time, tutorials on using the Date class, and articles discussing best practices for date/time handling in 150-200 words."
+      }
+    ]
+  },
+  {
+    "Date": "2025-03-04",
+    "Topic": "Java JDBC",
+    "Prompts": [
+      {
+        "title": "Introduction to Java JDBC",
+        "prompt": "Explain the concept of Java JDBC, detailing its role in connecting Java applications to relational databases and the importance of the JDBC API in data handling in 150-200 words."
+      },
+      {
+        "title": "JDBC Driver",
+        "prompt": "Discuss the different types of JDBC drivers available (e.g., Type 1, Type 2, Type 3, and Type 4), explaining their characteristics and use cases in Java applications in 150-200 words."
+      },
+      {
+        "title": "JDBC Connection",
+        "prompt": "Explain how to establish a JDBC connection to a database, detailing the steps involved and the necessary configurations required for successful connectivity in 150-200 words."
+      },
+      {
+        "title": "Types of Statements in JDBC",
+        "prompt": "Discuss the various types of statements in JDBC (Statement, PreparedStatement, CallableStatement), explaining their differences and when to use each type in Java applications in 150-200 words."
+      },
+      {
+        "title": "JDBC Tutorial",
+        "prompt": "Provide a brief tutorial on how to use JDBC in a Java application, covering key steps such as connecting to a database, executing queries, and handling results in 150-200 words."
+      },
+      {
+        "title": "Recap and Conclusion of Java JDBC",
+        "prompt": "Summarize the key concepts of Java JDBC, emphasizing its role in database connectivity and data manipulation in Java applications. Include references to relevant resources such as the official JDBC documentation, online tutorials on JDBC setup, and articles discussing best practices for using JDBC in 150-200 words."
+      }
+    ]
+  },
+  {
+    "Date": "2025-03-05",
+    "Topic": "Java Miscellaneous",
+    "Prompts": [
+      {
+        "title": "Introduction to Reflection API",
+        "prompt": "Explain the Reflection API in Java, detailing its purpose, how it allows inspection of classes, methods, and fields at runtime, and its practical applications in 150-200 words."
+      },
+      {
+        "title": "Java IO Tutorial",
+        "prompt": "Provide an overview of Java IO, discussing the key classes and interfaces for input/output operations, along with practical examples of reading and writing data in 150-200 words."
+      },
+      {
+        "title": "JavaFX Tutorial",
+        "prompt": "Discuss JavaFX, highlighting its features as a framework for building rich user interfaces in Java applications, and provide a simple example of creating a JavaFX application in 150-200 words."
+      },
+      {
+        "title": "Java RMI",
+        "prompt": "Explain Java RMI (Remote Method Invocation), detailing how it enables method calls between Java objects in different JVMs and its significance in distributed computing in 150-200 words."
+      },
+      {
+        "title": "How to Run Java RMI Application?",
+        "prompt": "Provide a step-by-step guide on how to run a Java RMI application, covering the necessary components such as the RMI registry, client-server setup, and executing the application in 150-200 words."
+      },
+      {
+        "title": "Java 17 New Features",
+        "prompt": "Discuss the new features introduced in Java 17, including enhancements to language syntax, libraries, and performance improvements, highlighting their significance for developers in 150-200 words."
+      },
+      {
+        "title": "Recap and Conclusion of Java Miscellaneous",
+        "prompt": "Summarize the key concepts covered in Java Miscellaneous topics, emphasizing their importance for advanced Java programming. Include references to relevant resources such as official Java documentation, tutorials on JavaFX and RMI, and articles discussing the Reflection API in 150-200 words."
+      }
+    ]
+  },
+  {
+    "Date": "2025-03-05",
+    "Topic": "Applications of Java",
+    "Prompts": [
+      {
+        "title": "Mobile Applications",
+        "prompt": "Explain how Java powers mobile application development, particularly focusing on Android. Discuss the role of the Android SDK and highlight popular mobile apps built with Java in 150-200 words."
+      },
+      {
+        "title": "Desktop GUI Applications",
+        "prompt": "Discuss how Java can be used to develop desktop GUI applications. Highlight the differences between JavaFX and Swing, and provide examples of notable Java desktop applications in 150-200 words."
+      },
+      {
+        "title": "Artificial Intelligence",
+        "prompt": "Describe the application of Java in the field of artificial intelligence. Mention relevant libraries and frameworks used for AI development in Java, along with examples of AI applications developed in the language in 150-200 words."
+      },
+      {
+        "title": "Scientific Applications",
+        "prompt": "Explain how Java is utilized in scientific computing and simulations. Provide examples of specific scientific applications built with Java and discuss relevant libraries that enhance its capabilities in this field in 150-200 words."
+      },
+      {
+        "title": "Cloud Applications",
+        "prompt": "Discuss how Java supports the development of cloud-based applications. Highlight notable cloud applications developed in Java and explain the role of frameworks like Spring Cloud in this context in 150-200 words."
+      },
+      {
+        "title": "Embedded Systems",
+        "prompt": "Explain the use of Java in embedded systems. Provide examples of devices or systems running Java applications, and discuss the challenges and advantages of using Java for embedded development in 150-200 words."
+      },
+      {
+        "title": "Gaming Applications",
+        "prompt": "Discuss popular gaming applications developed using Java. Explain how Java facilitates game development and highlight libraries like LWJGL that are used in Java game development in 150-200 words."
+      },
+      {
+        "title": "Recap and Conclusion of Applications of Java",
+        "prompt": "Summarize the key concepts covered in the Applications of Java, emphasizing their relevance in real-world scenarios. Include references to relevant resources such as Java documentation, case studies on mobile and desktop applications, and articles discussing Java's role in AI and cloud computing in 150-200 words."
+      }
+    ]
+  }
+]

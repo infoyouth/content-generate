@@ -1,0 +1,20 @@
+name: 'Course Content Action'
+description: 'Action to print hello message'
+
+inputs:
+  path:
+    description: 'Path to the directory'
+    required: true
+  token:
+    description: 'GitHub token for authentication'
+    required: true
+
+runs:
+  using: 'composite'
+  steps:
+    - name: Print Hello Message
+      shell: bash
+      run: |
+        echo "Hello from private action!"
+        echo "Checked out repo at: ${{ inputs.path }}"
+        ls -la

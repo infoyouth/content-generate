@@ -1,0 +1,846 @@
+[
+  {
+    "Date": "2024-11-07",
+    "Topic": "C Language Basics",
+    "Prompts": [
+      {
+        "title": "Introduction to the C Language",
+        "prompt": "Describe the origins of C, its historical importance, and why it remains relevant in software development. Limit to 150-200 words. Include links to resources about its evolution and significant milestones."
+      },
+      {
+        "title": "Features of the C Programming Language",
+        "prompt": "List the key features of C (like portability, efficiency, and modularity) and explain how each contributes to its flexibility and performance. Limit to 100-150 words. Add links to resources for further info."
+      },
+      {
+        "title": "Understanding the C Language Standards",
+        "prompt": "Explain the evolution of C standards (C89, C99, C11, etc.) and how each version has added new capabilities. Limit to 150-200 words and include links to resources on C language standards."
+      },
+      {
+        "title": "Setting Up a C Development Environment",
+        "prompt": "Provide a guide for setting up a development environment for C across different platforms (Windows, macOS, Linux). Mention common tools, compilers, and IDEs. Limit to 150-200 words and include installation links."
+      },
+      {
+        "title": "Writing and Running a Basic C Program",
+        "prompt": "Guide readers on writing and executing a basic C program. Include steps for code structure, compiling, and running the code on different platforms. Limit to 100-150 words."
+      },
+      {
+        "title": "Understanding C Comments",
+        "prompt": "Explain the purpose of comments in C and demonstrate the correct syntax for single-line and multi-line comments. Limit to 100-150 words and include tips on writing effective comments."
+      },
+      {
+        "title": "Conclusion!",
+        "prompt": "### Conclusion\nWrite an engaging and inviting conclusion statement that encourages readers to leave their comments, feedback, or suggestions in the comments section. Use a friendly tone with emojis. Format the response with the following styled title:<h1><span style='color:#e67e22'>Conclusion</span></h1>Make sure the generated text follows this header and fits well with a blog's ending."
+      }
+    ]
+  },
+  {
+    "Date": "2024-11-14",
+    "Topic": "C Variables and Constants",
+    "Prompts": [
+      {
+        "title": "C Variables",
+        "prompt": "Explain what variables are in C and how they are used in programming. Include examples of different types of variables, such as integers and floating-point numbers, with code snippets."
+      },
+      {
+        "title": "Constants in C",
+        "prompt": "Define constants in C and discuss their importance. Provide examples of constant definitions using `#define` and `const`, with brief explanations of each."
+      },
+      {
+        "title": "Const Qualifier in C",
+        "prompt": "Explain the `const` qualifier in C. Discuss its purpose and how it affects variable usage. Include examples demonstrating the difference between constant and non-constant variables."
+      },
+      {
+        "title": "Different Ways to Declare Variable as Constant in C",
+        "prompt": "Outline various methods to declare a variable as a constant in C. Discuss the use of `#define`, `const`, and enumerations, providing examples for each method."
+      },
+      {
+        "title": "Scope Rules in C",
+        "prompt": "Describe the concept of variable scope in C, including local and global scope. Provide examples illustrating how scope affects variable accessibility in different contexts."
+      },
+      {
+        "title": "Internal Linkage and External Linkage in C",
+        "prompt": "Define internal and external linkage in C. Discuss how they affect variable visibility across different files, with examples demonstrating both types of linkage."
+      },
+      {
+        "title": "Global Variables in C",
+        "prompt": "Explain what global variables are in C and their implications for program design. Include examples showing how to declare and use global variables, along with potential drawbacks."
+      },
+      {
+        "title": "Conclusion!",
+        "prompt": "### Conclusion\nWrite an engaging and inviting conclusion statement that encourages readers to leave their comments, feedback, or suggestions in the comments section. Use a friendly tone with emojis. Format the response with the following styled title:<h1><span style='color:#e67e22'>Conclusion</span></h1>Make sure the generated text follows this header and fits well with a blog's ending."
+      }
+    ]
+  },
+  {
+    "Date": "2024-11-21",
+    "Topic": "C Data Types",
+    "Prompts": [
+      {
+        "title": "Data Types in C",
+        "prompt": "Introduce the different data types available in C, including basic types like int, float, and char. Provide examples to illustrate their use and size in memory."
+      },
+      {
+        "title": "Data Type Modifiers in C",
+        "prompt": "Explain data type modifiers in C, such as `short`, `long`, `signed`, and `unsigned`. Discuss how these modifiers alter the properties of base data types with examples."
+      },
+      {
+        "title": "Literals in C",
+        "prompt": "Define literals in C and categorize them into various types (e.g., integer, floating-point, character). Provide examples of each type of literal and their usage in code."
+      },
+      {
+        "title": "Escape Sequence in C",
+        "prompt": "Explain escape sequences in C, including common sequences like `\n` and `\t`. Provide examples showing how escape sequences are used in strings."
+      },
+      {
+        "title": "bool in C",
+        "prompt": "Discuss the `bool` data type in C and its significance. Explain how to use it with examples and mention any relevant standards (e.g., C99) that introduced it."
+      },
+      {
+        "title": "Integer Promotions in C",
+        "prompt": "Explain integer promotions in C, describing how smaller integer types are promoted to larger types during operations. Provide examples to illustrate this concept."
+      },
+      {
+        "title": "Character Arithmetic in C",
+        "prompt": "Introduce character arithmetic in C, discussing how characters are represented as integer values. Provide examples of arithmetic operations on characters."
+      },
+      {
+        "title": "Type Conversion in C",
+        "prompt": "Define type conversion in C, including implicit and explicit conversions. Discuss when and how type conversion occurs with examples demonstrating both types."
+      },
+      {
+        "title": "Conclusion!",
+        "prompt": "### Conclusion\nWrite an engaging and inviting conclusion statement that encourages readers to leave their comments, feedback, or suggestions in the comments section. Use a friendly tone with emojis. Format the response with the following styled title:<h1><span style='color:#e67e22'>Conclusion</span></h1>Make sure the generated text follows this header and fits well with a blog's ending."
+      }
+    ]
+  },
+  {
+    "Date": "2024-11-28",
+    "Topic": "C Input/Output",
+    "Prompts": [
+      {
+        "title": "Basic Input and Output in C",
+        "prompt": "Introduce the concept of input and output in C programming. Discuss the standard input/output streams and provide simple examples using `printf` and `scanf`."
+      },
+      {
+        "title": "Format Specifiers in C",
+        "prompt": "Explain format specifiers in C, detailing their purpose and usage. Provide examples of common specifiers like `%d`, `%f`, and `%s`, and demonstrate their effects in formatted output."
+      },
+      {
+        "title": "printf in C",
+        "prompt": "Discuss the `printf` function in C, including its syntax and features. Provide examples showcasing various formatting options and how to control output precision."
+      },
+      {
+        "title": "scanf in C",
+        "prompt": "Explain the `scanf` function in C for reading user input. Discuss its syntax, common format specifiers, and provide examples of safe input handling."
+      },
+      {
+        "title": "Scansets in C",
+        "prompt": "Define scansets in C and explain their utility in `scanf`. Provide examples showing how scansets can be used to read specific sets of characters or strings."
+      },
+      {
+        "title": "Formatted and Unformatted Input and Output Functions",
+        "prompt": "Compare formatted and unformatted input/output functions in C. Discuss functions like `fprintf`, `fscanf`, `fgets`, and `fputs`, providing examples for both categories."
+      },
+      {
+        "title": "Conclusion!",
+        "prompt": "### Conclusion\nWrite an engaging and inviting conclusion statement that encourages readers to leave their comments, feedback, or suggestions in the comments section. Use a friendly tone with emojis. Format the response with the following styled title:<h1><span style='color:#e67e22'>Conclusion</span></h1>Make sure the generated text follows this header and fits well with a blog's ending."
+      }
+    ]
+  },
+  {
+    "Date": "2024-12-05",
+    "Topic": "C Operators",
+    "Prompts": [
+      {
+        "title": "Operators in C",
+        "prompt": "Introduce operators in C, explaining their role in performing operations on variables and values. Provide an overview of the different categories of operators."
+      },
+      {
+        "title": "Arithmetic Operators in C",
+        "prompt": "Explain arithmetic operators in C, such as addition, subtraction, multiplication, and division. Provide examples demonstrating their use and behavior with different data types."
+      },
+      {
+        "title": "Unary Operators in C",
+        "prompt": "Define unary operators in C and discuss their functionality, including increment, decrement, and negation. Include examples to illustrate their usage."
+      },
+      {
+        "title": "Relational Operators in C",
+        "prompt": "Discuss relational operators in C, explaining how they compare values. Provide examples for each operator and discuss their return values (true/false)."
+      },
+      {
+        "title": "Bitwise Operators in C",
+        "prompt": "Explain bitwise operators in C, including AND, OR, XOR, NOT, and bit shifts. Provide examples to demonstrate their application in manipulating bits."
+      },
+      {
+        "title": "Logical Operators in C",
+        "prompt": "Introduce logical operators in C, such as AND, OR, and NOT. Discuss how they are used in conditional statements with examples."
+      },
+      {
+        "title": "Assignment Operators in C",
+        "prompt": "Explain assignment operators in C, including simple and compound assignment. Provide examples demonstrating how these operators modify variable values."
+      },
+      {
+        "title": "Increment and Decrement Operators in C",
+        "prompt": "Discuss the increment and decrement operators in C. Explain their functionality and provide examples illustrating their impact on variable values."
+      },
+      {
+        "title": "Conditional or Ternary Operator (?:) in C",
+        "prompt": "Define the conditional (ternary) operator in C and explain its syntax. Provide examples demonstrating its use as a shorthand for if-else statements."
+      },
+      {
+        "title": "size of Operator in C",
+        "prompt": "Introduce the `sizeof` operator in C, explaining its purpose in determining the size of variables and data types. Provide examples to illustrate its use."
+      },
+      {
+        "title": "Operator Precedence and Associativity in C",
+        "prompt": "Explain operator precedence and associativity in C. Discuss how they affect the evaluation of expressions and provide examples to clarify the concepts."
+      },
+      {
+        "title": "Conclusion!",
+        "prompt": "### Conclusion\nWrite an engaging and inviting conclusion statement that encourages readers to leave their comments, feedback, or suggestions in the comments section. Use a friendly tone with emojis. Format the response with the following styled title:<h1><span style='color:#e67e22'>Conclusion</span></h1>Make sure the generated text follows this header and fits well with a blog's ending."
+      }
+    ]
+  },
+  {
+    "Date": "2024-12-12",
+    "Topic": "C Control Statements: Decision-Making",
+    "Prompts": [
+      {
+        "title": "Decision-Making in C",
+        "prompt": "Introduce decision-making in C programming. Explain its importance in controlling the flow of execution based on conditions, with examples."
+      },
+      {
+        "title": "C if Statement",
+        "prompt": "Explain the `if` statement in C. Provide its syntax, usage, and examples demonstrating how to execute code based on a true condition."
+      },
+      {
+        "title": "C if else Statement",
+        "prompt": "Discuss the `if else` statement in C. Explain its syntax and provide examples illustrating how it allows for alternative execution paths."
+      },
+      {
+        "title": "C if-else-if Ladder",
+        "prompt": "Define the `if-else-if` ladder in C. Discuss how it enables multiple conditions to be checked in sequence, with illustrative examples."
+      },
+      {
+        "title": "Switch Statement in C",
+        "prompt": "Introduce the `switch` statement in C. Explain its syntax and usage, and provide examples comparing it with `if else` statements."
+      },
+      {
+        "title": "Using Range in switch case in C",
+        "prompt": "Discuss the limitations of `switch` statements regarding range checks in C. Provide alternatives or workarounds to achieve similar functionality."
+      },
+      {
+        "title": "Loops in C",
+        "prompt": "Introduce loops in C programming, explaining their role in executing a block of code repeatedly. Discuss the various types of loops with examples."
+      },
+      {
+        "title": "C for Loop",
+        "prompt": "Explain the `for` loop in C, including its syntax and use cases. Provide examples demonstrating its functionality for iterating over a range of values."
+      },
+      {
+        "title": "While Looping in C",
+        "prompt": "Discuss the `while` loop in C, explaining its syntax and conditions for execution. Provide examples showcasing its use for indefinite iterations."
+      },
+      {
+        "title": "do while Loop in C",
+        "prompt": "Introduce the `do while` loop in C. Explain its syntax and differences from the `while` loop, with examples demonstrating its functionality."
+      },
+      {
+        "title": "for versus while Loop in C",
+        "prompt": "Compare the `for` loop and `while` loop in C. Discuss their respective use cases and provide examples illustrating when to use each loop."
+      },
+      {
+        "title": "continue Statement in C",
+        "prompt": "Explain the `continue` statement in C, describing its role in skipping the current iteration of a loop. Provide examples to illustrate its usage."
+      },
+      {
+        "title": "break Statement in C",
+        "prompt": "Discuss the `break` statement in C, explaining its purpose in terminating loop execution or exiting switch cases. Provide examples to demonstrate its effect."
+      },
+      {
+        "title": "goto Statement in C",
+        "prompt": "Define the `goto` statement in C. Discuss its syntax, potential uses, and the controversy surrounding its use, with examples demonstrating its effects."
+      },
+      {
+        "title": "Conclusion!",
+        "prompt": "### Conclusion\nWrite an engaging and inviting conclusion statement that encourages readers to leave their comments, feedback, or suggestions in the comments section. Use a friendly tone with emojis. Format the response with the following styled title:<h1><span style='color:#e67e22'>Conclusion</span></h1>Make sure the generated text follows this header and fits well with a blog's ending."
+      }
+    ]
+  },
+  {
+    "Date": "2024-12-19",
+    "Topic": "C Functions",
+    "Prompts": [
+      {
+        "title": "C Functions",
+        "prompt": "Introduce functions in C programming, explaining their role in organizing code and promoting reusability. Discuss different types of functions with examples."
+      },
+      {
+        "title": "User-Defined Function in C",
+        "prompt": "Explain user-defined functions in C, detailing how they are created and utilized. Provide examples demonstrating their syntax and functionality."
+      },
+      {
+        "title": "Parameter Passing Techniques in C",
+        "prompt": "Discuss the various parameter passing techniques in C, including pass by value and pass by reference. Provide examples to illustrate the differences."
+      },
+      {
+        "title": "Importance of Function Prototype in C",
+        "prompt": "Explain the importance of function prototypes in C programming. Discuss how they help with function declaration before usage and provide examples."
+      },
+      {
+        "title": "Return Multiple Values From a C Function",
+        "prompt": "Discuss methods to return multiple values from a function in C, such as using pointers or structures. Provide examples demonstrating these techniques."
+      },
+      {
+        "title": "main Function in C",
+        "prompt": "Introduce the `main` function in C, explaining its significance as the entry point of a program. Discuss its return type and parameters with examples."
+      },
+      {
+        "title": "Implicit Return Type int in C",
+        "prompt": "Explain the implicit return type of `int` in C functions. Discuss scenarios where it may be relevant and provide examples demonstrating its effect."
+      },
+      {
+        "title": "Callbacks in C",
+        "prompt": "Define callbacks in C, explaining their purpose in event-driven programming. Provide examples demonstrating how to implement and use callbacks."
+      },
+      {
+        "title": "Nested Functions in C",
+        "prompt": "Discuss nested functions in C, explaining their syntax and scope. Provide examples illustrating how they can be used within other functions."
+      },
+      {
+        "title": "Variadic Functions in C",
+        "prompt": "Introduce variadic functions in C, discussing their ability to accept a variable number of arguments. Provide examples demonstrating their implementation and use cases."
+      },
+      {
+        "title": "_Noreturn Function Specifier in C",
+        "prompt": "Explain the `_Noreturn` function specifier in C. Discuss its purpose for functions that do not return and provide examples of its usage."
+      },
+      {
+        "title": "Predefined Identifier __func__ in C",
+        "prompt": "Discuss the predefined identifier `__func__` in C, explaining its role in identifying the current function name. Provide examples demonstrating its application."
+      },
+      {
+        "title": "Maths Functions in C",
+        "prompt": "Introduce math functions in C, discussing the standard library's role in providing mathematical operations. Provide examples demonstrating the use of common math functions."
+      },
+      {
+        "title": "Conclusion!",
+        "prompt": "### Conclusion\nWrite an engaging and inviting conclusion statement that encourages readers to leave their comments, feedback, or suggestions in the comments section. Use a friendly tone with emojis. Format the response with the following styled title:<h1><span style='color:#e67e22'>Conclusion</span></h1>Make sure the generated text follows this header and fits well with a blog's ending."
+      }
+    ]
+  },
+  {
+    "Date": "2024-12-26",
+    "Topic": "C Arrays & Strings",
+    "Prompts": [
+      {
+        "title": "C Arrays",
+        "prompt": "Introduce arrays in C programming, explaining their role in storing multiple values of the same type. Discuss syntax and provide examples of array declaration and initialization."
+      },
+      {
+        "title": "Properties of Array in C",
+        "prompt": "Discuss the properties of arrays in C, including fixed size, index-based access, and memory allocation. Provide examples to illustrate these properties."
+      },
+      {
+        "title": "Multidimensional Arrays in C",
+        "prompt": "Explain multidimensional arrays in C, detailing how to create and use them. Provide examples demonstrating their structure and initialization."
+      },
+      {
+        "title": "Initialization of Multidimensional Arrays in C",
+        "prompt": "Discuss methods for initializing multidimensional arrays in C. Provide examples showing different initialization techniques."
+      },
+      {
+        "title": "Pass Array to Functions in C",
+        "prompt": "Explain how to pass arrays to functions in C. Discuss syntax and provide examples demonstrating how to manipulate array data within functions."
+      },
+      {
+        "title": "Pass a 2D Array as a Parameter in C",
+        "prompt": "Discuss how to pass a 2D array as a parameter in C functions. Provide examples illustrating the syntax and usage."
+      },
+      {
+        "title": "Data Types for Which Array is Not Possible",
+        "prompt": "Discuss data types for which arrays cannot be created in C, such as functions or incomplete types. Provide explanations and examples."
+      },
+      {
+        "title": "Pass an Array by Value in C",
+        "prompt": "Explain the concept of passing an array by value in C. Discuss the implications and provide examples illustrating this technique."
+      },
+      {
+        "title": "Strings in C",
+        "prompt": "Introduce strings in C, explaining how they are represented as character arrays. Discuss the null terminator and provide examples."
+      },
+      {
+        "title": "An Array of Strings in C",
+        "prompt": "Explain how to create and use an array of strings in C. Provide examples demonstrating the syntax and common operations."
+      },
+      {
+        "title": "Difference Between Single Quoted and Double Quoted Initialization",
+        "prompt": "Discuss the difference between single and double quotes in C string initialization. Provide examples to illustrate the implications of each."
+      },
+      {
+        "title": "String Functions in C",
+        "prompt": "Introduce common string functions in C, discussing their purpose and usage. Provide examples demonstrating how to manipulate strings using these functions."
+      },
+      {
+        "title": "Conclusion!",
+        "prompt": "### Conclusion\nWrite an engaging and inviting conclusion statement that encourages readers to leave their comments, feedback, or suggestions in the comments section. Use a friendly tone with emojis. Format the response with the following styled title:<h1><span style='color:#e67e22'>Conclusion</span></h1>Make sure the generated text follows this header and fits well with a blog's ending."
+      }
+    ]
+  },
+  {
+    "Date": "2025-01-02",
+    "Topic": "C Pointers",
+    "Prompts": [
+      {
+        "title": "C Pointers",
+        "prompt": "Introduce pointers in C programming, explaining their role in memory management and variable referencing. Discuss syntax and provide examples of pointer declaration and initialization."
+      },
+      {
+        "title": "Pointer Arithmetics in C",
+        "prompt": "Explain pointer arithmetic in C, detailing how pointers can be incremented and decremented. Provide examples demonstrating how pointer arithmetic works with arrays."
+      },
+      {
+        "title": "Pointer to Pointer (Double Pointer) in C",
+        "prompt": "Discuss double pointers in C, explaining their purpose and usage. Provide examples illustrating how to declare and manipulate pointers to pointers."
+      },
+      {
+        "title": "Function Pointer in C",
+        "prompt": "Introduce function pointers in C, explaining their role in callbacks and dynamic function calls. Provide examples demonstrating their declaration and usage."
+      },
+      {
+        "title": "Declare Function Pointer in C",
+        "prompt": "Discuss how to declare function pointers in C, detailing the syntax involved. Provide examples illustrating different types of function pointers."
+      },
+      {
+        "title": "Pointer to an Array in C",
+        "prompt": "Explain how to create a pointer to an array in C. Provide examples demonstrating the syntax and how to access array elements using pointers."
+      },
+      {
+        "title": "Constant Pointer in C",
+        "prompt": "Discuss constant pointers in C, explaining the difference between a pointer to a constant and a constant pointer. Provide examples illustrating both concepts."
+      },
+      {
+        "title": "Pointer vs Array in C",
+        "prompt": "Compare pointers and arrays in C, discussing their similarities and differences. Provide examples to illustrate how they are used in practice."
+      },
+      {
+        "title": "Dangling, Void, Null and Wild Pointers",
+        "prompt": "Introduce the concepts of dangling, void, null, and wild pointers in C. Explain their significance and provide examples of how to avoid these pitfalls."
+      },
+      {
+        "title": "Near, Far and Huge Pointers in C",
+        "prompt": "Discuss near, far, and huge pointers in C, explaining their differences and when each type is used. Provide examples illustrating their applications."
+      },
+      {
+        "title": "restrict Keyword in C",
+        "prompt": "Explain the `restrict` keyword in C, detailing its purpose in optimizing pointer usage. Provide examples demonstrating how it can improve performance."
+      },
+      {
+        "title": "Conclusion!",
+        "prompt": "### Conclusion\nWrite an engaging and inviting conclusion statement that encourages readers to leave their comments, feedback, or suggestions in the comments section. Use a friendly tone with emojis. Format the response with the following styled title:<h1><span style='color:#e67e22'>Conclusion</span></h1>Make sure the generated text follows this header and fits well with a blog's ending."
+      }
+    ]
+  },
+  {
+    "Date": "2025-01-09",
+    "Topic": "C User-Defined Data Types",
+    "Prompts": [
+      {
+        "title": "C Structures",
+        "prompt": "Introduce structures in C programming, explaining their purpose in grouping different data types. Discuss syntax and provide examples of structure declaration and usage."
+      },
+      {
+        "title": "dot (.) Operator in C",
+        "prompt": "Explain the dot (.) operator in C, detailing how it is used to access members of a structure. Provide examples demonstrating its application."
+      },
+      {
+        "title": "C typedef",
+        "prompt": "Discuss the `typedef` keyword in C, explaining its purpose in creating new data type aliases. Provide examples illustrating how to use `typedef` effectively."
+      },
+      {
+        "title": "Structure Member Alignment, Padding and Data Packing",
+        "prompt": "Explain structure member alignment, padding, and data packing in C. Discuss how these concepts affect memory usage and provide examples."
+      },
+      {
+        "title": "Flexible Array Members in a Structure in C",
+        "prompt": "Discuss flexible array members in C structures, explaining their use in dynamic data structures. Provide examples to illustrate how to declare and use them."
+      },
+      {
+        "title": "C Unions",
+        "prompt": "Introduce unions in C, explaining how they allow storing different data types in the same memory location. Provide examples demonstrating union declaration and usage."
+      },
+      {
+        "title": "Bit Fields in C",
+        "prompt": "Explain bit fields in C, detailing how they allow the allocation of specific numbers of bits for structure members. Provide examples illustrating their use."
+      },
+      {
+        "title": "Difference Between Structure and Union in C",
+        "prompt": "Compare structures and unions in C, discussing their differences in memory allocation and usage. Provide examples to clarify these concepts."
+      },
+      {
+        "title": "Anonymous Union and Structure in C",
+        "prompt": "Discuss anonymous unions and structures in C, explaining their purpose and how they simplify code. Provide examples illustrating their usage."
+      },
+      {
+        "title": "Enumeration (or enum) in C",
+        "prompt": "Introduce enumerations (enums) in C, explaining their role in defining named integer constants. Provide examples demonstrating enum declaration and usage."
+      },
+      {
+        "title": "Conclusion!",
+        "prompt": "### Conclusion\nWrite an engaging and inviting conclusion statement that encourages readers to leave their comments, feedback, or suggestions in the comments section. Use a friendly tone with emojis. Format the response with the following styled title:<h1><span style='color:#e67e22'>Conclusion</span></h1>Make sure the generated text follows this header and fits well with a blog's ending."
+      }
+    ]
+  },
+  {
+    "Date": "2025-01-16",
+    "Topic": "C Storage Classes",
+    "Prompts": [
+      {
+        "title": "Storage Classes in C",
+        "prompt": "Introduce storage classes in C, explaining their role in variable lifetime, visibility, and storage duration. Provide examples of each type."
+      },
+      {
+        "title": "extern Keyword in C",
+        "prompt": "Explain the `extern` keyword in C, discussing its purpose for declaring global variables across multiple files. Provide examples to illustrate its usage."
+      },
+      {
+        "title": "Static Variables in C",
+        "prompt": "Discuss static variables in C, explaining their lifetime and scope. Provide examples demonstrating their behavior in functions."
+      },
+      {
+        "title": "Initialization of Static Variables in C",
+        "prompt": "Explain how static variables are initialized in C, discussing default values and explicit initialization. Include examples."
+      },
+      {
+        "title": "Static Functions in C",
+        "prompt": "Introduce static functions in C, detailing how they limit function visibility to the file scope. Provide examples of usage."
+      },
+      {
+        "title": "Understanding \u201cvolatile\u201d Qualifier in C",
+        "prompt": "Discuss the `volatile` qualifier in C, explaining its importance in preventing compiler optimizations on variable access. Provide examples."
+      },
+      {
+        "title": "Understanding the \u201cregister\u201d Keyword in C",
+        "prompt": "Explain the `register` keyword in C, discussing its use for hinting compiler to optimize variable storage. Include examples to illustrate its purpose."
+      },
+      {
+        "title": "Conclusion!",
+        "prompt": "### Conclusion\nWrite an engaging and inviting conclusion statement that encourages readers to leave their comments, feedback, or suggestions in the comments section. Use a friendly tone with emojis. Format the response with the following styled title:<h1><span style='color:#e67e22'>Conclusion</span></h1>Make sure the generated text follows this header and fits well with a blog's ending."
+      }
+    ]
+  },
+  {
+    "Date": "2025-01-23",
+    "Topic": "C Memory Management",
+    "Prompts": [
+      {
+        "title": "Memory Layout of C Programs",
+        "prompt": "Introduce the memory layout of C programs, explaining sections like stack, heap, and data segment. Provide diagrams if possible."
+      },
+      {
+        "title": "Dynamic Memory Allocation in C",
+        "prompt": "Discuss dynamic memory allocation in C, explaining functions like `malloc()`, `calloc()`, and `realloc()`. Provide examples for each."
+      },
+      {
+        "title": "Difference Between malloc() and calloc()",
+        "prompt": "Explain the differences between `malloc()` and `calloc()` in C, highlighting memory allocation and initialization aspects. Include examples."
+      },
+      {
+        "title": "What is a Memory Leak?",
+        "prompt": "Define a memory leak in C, discussing its causes and consequences. Provide examples and tips for avoiding memory leaks."
+      },
+      {
+        "title": "Dynamic Array in C",
+        "prompt": "Illustrate how to create a dynamic array in C using `malloc()` and `realloc()`. Provide examples demonstrating dynamic array usage."
+      },
+      {
+        "title": "Dynamically Allocate a 2D Array in C",
+        "prompt": "Explain how to dynamically allocate a 2D array in C, providing code examples that illustrate the process."
+      },
+      {
+        "title": "Dynamically Growing Array in C",
+        "prompt": "Discuss the concept of a dynamically growing array in C, detailing how to implement one with examples."
+      },
+      {
+        "title": "Conclusion!",
+        "prompt": "### Conclusion\nWrite an engaging and inviting conclusion statement that encourages readers to leave their comments, feedback, or suggestions in the comments section. Use a friendly tone with emojis. Format the response with the following styled title:<h1><span style='color:#e67e22'>Conclusion</span></h1>Make sure the generated text follows this header and fits well with a blog's ending."
+      }
+    ]
+  },
+  {
+    "Date": "2025-01-30",
+    "Topic": "C Preprocessor",
+    "Prompts": [
+      {
+        "title": "C Preprocessors",
+        "prompt": "Introduce the C preprocessor, explaining its role in code transformation before compilation. Discuss its significance in C programming."
+      },
+      {
+        "title": "C Preprocessor Directives",
+        "prompt": "Explain various C preprocessor directives, such as `#define`, `#include`, and `#ifdef`. Provide examples for each directive."
+      },
+      {
+        "title": "How a Preprocessor Works in C?",
+        "prompt": "Discuss the workflow of a C preprocessor, detailing how it processes directives and prepares code for compilation."
+      },
+      {
+        "title": "Header Files in C",
+        "prompt": "Introduce header files in C, explaining their purpose in organizing code and sharing declarations. Provide examples of commonly used header files."
+      },
+      {
+        "title": "Difference Between Header Files \u201cstdio.h\u201d and \u201cstdlib.h\u201d",
+        "prompt": "Compare `stdio.h` and `stdlib.h`, discussing the functions and macros they provide. Include examples of their usage."
+      },
+      {
+        "title": "Write Your Own Header File in C",
+        "prompt": "Guide readers on how to create their own header files in C, including best practices and examples."
+      },
+      {
+        "title": "Macros and their Types in C",
+        "prompt": "Explain macros in C, discussing different types like object-like and function-like macros. Provide examples for each."
+      },
+      {
+        "title": "Interesting Facts About Macros and Preprocessors in C",
+        "prompt": "Share interesting facts and quirks about macros and the preprocessor in C, providing examples and anecdotes."
+      },
+      {
+        "title": "# and ## Operators in C",
+        "prompt": "Introduce the `#` and `##` operators in C macros, explaining their usage for stringizing and token pasting. Include examples."
+      },
+      {
+        "title": "Print a Variable Name in C",
+        "prompt": "Explain how to print a variable name in C using macros, providing examples to illustrate the technique."
+      },
+      {
+        "title": "Multiline Macros in C",
+        "prompt": "Discuss how to create and use multiline macros in C, including syntax and examples."
+      },
+      {
+        "title": "Variable Length Arguments for Macros",
+        "prompt": "Explain how to define macros with variable length arguments in C, providing examples to illustrate their use."
+      },
+      {
+        "title": "Branch Prediction Macros in GCC",
+        "prompt": "Discuss branch prediction macros in GCC, explaining their purpose and providing examples of how to use them."
+      },
+      {
+        "title": "typedef versus #define in C",
+        "prompt": "Compare `typedef` and `#define` in C, discussing their differences and use cases with examples."
+      },
+      {
+        "title": "Difference Between #define and const in C",
+        "prompt": "Explain the differences between `#define` and `const` in C, including examples to clarify their usage."
+      },
+      {
+        "title": "Conclusion!",
+        "prompt": "### Conclusion\nWrite an engaging and inviting conclusion statement that encourages readers to leave their comments, feedback, or suggestions in the comments section. Use a friendly tone with emojis. Format the response with the following styled title:<h1><span style='color:#e67e22'>Conclusion</span></h1>Make sure the generated text follows this header and fits well with a blog's ending."
+      }
+    ]
+  },
+  {
+    "Date": "2025-02-06",
+    "Topic": "C File Handling",
+    "Prompts": [
+      {
+        "title": "Basics of File Handling in C",
+        "prompt": "Introduce the basics of file handling in C, explaining the significance of reading and writing files. Provide an overview of file operations."
+      },
+      {
+        "title": "C fopen() Function",
+        "prompt": "Explain the `fopen()` function in C, detailing its parameters and return values. Provide examples of how to use it for opening files."
+      },
+      {
+        "title": "EOF, getc() and feof() in C",
+        "prompt": "Discuss the concepts of EOF, `getc()`, and `feof()` in C, explaining how they are used for reading files. Provide examples."
+      },
+      {
+        "title": "fgets() and gets() in C",
+        "prompt": "Compare `fgets()` and `gets()` in C, discussing their usage, advantages, and disadvantages. Include examples of both functions."
+      },
+      {
+        "title": "fseek() vs rewind() in C",
+        "prompt": "Explain the differences between `fseek()` and `rewind()` in C, detailing their roles in file positioning. Provide examples."
+      },
+      {
+        "title": "Return Type of getchar(), fgetc() and getc()",
+        "prompt": "Discuss the return types of `getchar()`, `fgetc()`, and `getc()` in C, explaining how they handle input and provide examples."
+      },
+      {
+        "title": "Read/Write Structure From/to a File in C",
+        "prompt": "Illustrate how to read from and write structures to files in C, providing examples to demonstrate the process."
+      },
+      {
+        "title": "C Program to Print Contents of File",
+        "prompt": "Provide a simple C program that reads a file and prints its contents to the console. Explain the code step by step."
+      },
+      {
+        "title": "C Program to Delete a File",
+        "prompt": "Write a C program that demonstrates how to delete a file using the `remove()` function, explaining its parameters."
+      },
+      {
+        "title": "C Program to Merge Contents of Two Files into a Third File",
+        "prompt": "Illustrate how to merge the contents of two files into a third file in C, providing code examples and explaining the logic."
+      },
+      {
+        "title": "Difference Between printf, sprintf and fprintf",
+        "prompt": "Compare `printf()`, `sprintf()`, and `fprintf()` in C, discussing their uses and differences with examples."
+      },
+      {
+        "title": "Difference Between getc(), getchar(), getch() and getche()",
+        "prompt": "Explain the differences between `getc()`, `getchar()`, `getch()`, and `getche()` in C, discussing their functionalities and use cases."
+      },
+      {
+        "title": "Conclusion!",
+        "prompt": "### Conclusion\nWrite an engaging and inviting conclusion statement that encourages readers to leave their comments, feedback, or suggestions in the comments section. Use a friendly tone with emojis. Format the response with the following styled title:<h1><span style='color:#e67e22'>Conclusion</span></h1>Make sure the generated text follows this header and fits well with a blog's ending."
+      }
+    ]
+  },
+  {
+    "Date": "2025-02-13",
+    "Topic": "C Error Handling",
+    "Prompts": [
+      {
+        "title": "Error Handling in C",
+        "prompt": "Introduce error handling in C, explaining its importance in robust programming. Discuss various methods for handling errors."
+      },
+      {
+        "title": "Using goto for Exception Handling in C",
+        "prompt": "Discuss the use of `goto` for exception handling in C, explaining its pros and cons with examples."
+      },
+      {
+        "title": "Error Handling During File Operations in C",
+        "prompt": "Explain how to handle errors during file operations in C, providing strategies and examples for effective error management."
+      },
+      {
+        "title": "C Program to Handle Divide By Zero and Multiple Exceptions",
+        "prompt": "Provide a C program that demonstrates handling divide-by-zero and multiple exceptions, explaining the logic behind the error handling mechanisms."
+      },
+      {
+        "title": "Conclusion!",
+        "prompt": "### Conclusion\nWrite an engaging and inviting conclusion statement that encourages readers to leave their comments, feedback, or suggestions in the comments section. Use a friendly tone with emojis. Format the response with the following styled title:<h1><span style='color:#e67e22'>Conclusion</span></h1>Make sure the generated text follows this header and fits well with a blog's ending."
+      }
+    ]
+  },
+  {
+    "Date": "2025-02-20",
+    "Topic": "C Programs",
+    "Prompts": [
+      {
+        "title": "Basic C Programs",
+        "prompt": "Create multiple basic C programs demonstrating fundamental concepts like input/output and data types. Include code examples, expected outputs, and detailed explanations for each program."
+      },
+      {
+        "title": "Control Flow Programs",
+        "prompt": "Provide several examples of control flow programs in C, showcasing the use of `if`, `switch`, and loop statements. Include the code, expected outputs, and thorough explanations."
+      },
+      {
+        "title": "Pattern Printing Programs",
+        "prompt": "Demonstrate pattern printing programs in C with various designs. Provide multiple code examples for each pattern, along with outputs and explanations of the logic behind the code."
+      },
+      {
+        "title": "Functions Programs",
+        "prompt": "Introduce programs that focus on functions in C. Provide multiple code examples, demonstrating how to define, call, and utilize functions, along with their outputs and detailed explanations."
+      },
+      {
+        "title": "Arrays Programs",
+        "prompt": "Discuss programs that utilize arrays in C. Provide multiple examples showing different array manipulations, expected outputs, and detailed explanations of the code."
+      },
+      {
+        "title": "Strings Programs",
+        "prompt": "Explain string manipulation programs in C, providing multiple code examples that demonstrate common string functions and operations, along with outputs and explanations."
+      },
+      {
+        "title": "Conversions Programs",
+        "prompt": "Provide several conversion programs in C, such as converting between different number bases or units. Include code examples, expected outputs, and explanations of the conversion logic."
+      },
+      {
+        "title": "Pointers Programs",
+        "prompt": "Introduce programs that use pointers in C. Provide multiple examples illustrating pointer arithmetic and pointer-based data structures, along with outputs and explanations."
+      },
+      {
+        "title": "Structures and Unions Programs",
+        "prompt": "Discuss programs that implement structures and unions in C. Provide examples that demonstrate their use, expected outputs, and detailed explanations of the differences."
+      },
+      {
+        "title": "File I/O Programs",
+        "prompt": "Explain file I/O programs in C, providing multiple examples that read from and write to files. Include code, expected outputs, and explanations of how file operations are performed."
+      },
+      {
+        "title": "Date and Time Programs",
+        "prompt": "Provide examples of date and time programs in C, demonstrating how to work with date and time functions. Include code examples, outputs, and thorough explanations."
+      },
+      {
+        "title": "More C Programs",
+        "prompt": "Introduce additional C programs covering various topics and concepts. Provide multiple code examples, outputs, and explanations to encourage exploration of advanced features."
+      },
+      {
+        "title": "Conclusion!",
+        "prompt": "### Conclusion\nWrite an engaging and inviting conclusion statement that encourages readers to leave their comments, feedback, or suggestions in the comments section. Use a friendly tone with emojis. Format the response with the following styled title:<h1><span style='color:#e67e22'>Conclusion</span></h1>Make sure the generated text follows this header and fits well with a blog's ending."
+      }
+    ]
+  },
+  {
+    "Date": "2025-02-27",
+    "Topic": "Miscellaneous",
+    "Prompts": [
+      {
+        "title": "Date and Time in C",
+        "prompt": "Provide multiple examples of how to work with date and time in C. Include code snippets that demonstrate using functions from the `time.h` library, expected outputs, and detailed explanations."
+      },
+      {
+        "title": "Input-Output System Calls in C",
+        "prompt": "Explain input-output system calls in C with multiple code examples. Demonstrate how to use system calls like `read()`, `write()`, and others, including outputs and explanations of how these calls operate."
+      },
+      {
+        "title": "Signals in C",
+        "prompt": "Introduce signals in C with multiple examples demonstrating how to handle different signals using `signal()` and `sigaction()`. Include code, expected outputs, and explanations of signal handling mechanisms."
+      },
+      {
+        "title": "Program Error Signals in C",
+        "prompt": "Discuss program error signals in C, providing examples of common error signals and how to handle them. Include code snippets, outputs, and detailed explanations of the error handling process."
+      },
+      {
+        "title": "Socket Programming in C",
+        "prompt": "Provide multiple examples of socket programming in C, showcasing both client and server implementations. Include code, expected outputs, and explanations of socket operations and protocols."
+      },
+      {
+        "title": "_Generics Keyword in C",
+        "prompt": "Explain the use of the `_Generics` keyword in C with multiple examples illustrating how to create generic functions. Include code examples, expected outputs, and explanations of type safety."
+      },
+      {
+        "title": "Multithreading in C",
+        "prompt": "Introduce multithreading in C with multiple examples using the pthread library. Provide code snippets demonstrating thread creation, synchronization, and communication, along with expected outputs and explanations."
+      },
+      {
+        "title": "Conclusion!",
+        "prompt": "### Conclusion\nWrite an engaging and inviting conclusion statement that encourages readers to leave their comments, feedback, or suggestions in the comments section. Use a friendly tone with emojis. Format the response with the following styled title:<h1><span style='color:#e67e22'>Conclusion</span></h1>Make sure the generated text follows this header and fits well with a blog's ending."
+      }
+    ]
+  },
+  {
+    "Date": "2025-03-06",
+    "Topic": "Interview",
+    "Prompts": [
+      {
+        "title": "Top 50 C Programming Interview Questions and Answers",
+        "prompt": "Provide an overview of the top 50 C programming interview questions and answers, highlighting the significance of each question and how they relate to core C programming concepts."
+      },
+      {
+        "title": "Commonly Asked C Programming Interview Questions | Set 1",
+        "prompt": "Compile a list of 10 commonly asked C programming interview questions along with their answers. Provide code examples where applicable, expected outputs, and explanations for each question."
+      },
+      {
+        "title": "Commonly Asked C Programming Interview Questions | Set 2",
+        "prompt": "Provide another set of 10 commonly asked C programming interview questions and their answers. Include relevant code examples, outputs, and detailed explanations to enhance understanding."
+      },
+      {
+        "title": "Commonly Asked C Programming Interview Questions | Set 3",
+        "prompt": "Curate a third set of 10 commonly asked C programming interview questions, including answers. Ensure each question has a code example, expected output, and comprehensive explanations for clarity."
+      },
+      {
+        "title": "Conclusion!",
+        "prompt": "### Conclusion\nWrite an engaging and inviting conclusion statement that encourages readers to leave their comments, feedback, or suggestions in the comments section. Use a friendly tone with emojis. Format the response with the following styled title:<h1><span style='color:#e67e22'>Conclusion</span></h1>Make sure the generated text follows this header and fits well with a blog's ending."
+      }
+    ]
+  }
+]
