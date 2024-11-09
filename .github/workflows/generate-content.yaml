@@ -11,6 +11,7 @@ on:
 
 permissions:
   contents: write  # Changed to write since we'll be generating content
+  pull-requests: write
 
 jobs:
   generate-content:
