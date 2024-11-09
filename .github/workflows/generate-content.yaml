@@ -84,8 +84,8 @@ jobs:
           git add .
           git commit -m "✨ Tutorials generated and file created: ${{ env.MARKDOWN_FILENAME }} on ${{ env.CURRENT_DATETIME }} 📝"
           git push origin ${{ env.BRANCH_NAME }}
-
-      # Step 6: Create Pull Request using GitHub API
-      - name: Create Pull Request
-        run: |
-          curl -X POST -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" -H "Accept: application/vnd.github.v3+json" -d '{"title": "Notes generated for ${{ env.MARKDOWN_FILENAME }} on ${{ env.CURRENT_DATETIME }}", "head": "${{ env.BRANCH_NAME }}", "base": "main", "body": "This PR contains generated notes for the topic."}' https://api.github.com/repos/${{ github.repository }}/pulls
+          curl -X POST \
+            -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+            -H "Accept: application/vnd.github.v3+json" \
+            -d '{"title": "Notes generated for '${{ env.MARKDOWN_FILENAME }}' on '${{ env.CURRENT_DATETIME }}'", "head": "'${{ env.BRANCH_NAME }}'", "base": "main", "body": "This PR contains generated notes for the topic."}' \
+            https://api.github.com/repos/${{ github.repository }}/pulls
