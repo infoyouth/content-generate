@@ -43,11 +43,14 @@ jobs:
         working-directory: ./temp
         run: |
           set -x
+          pwd
           mkdir -p $GITHUB_WORKSPACE/_posts
           echo "🎯 Starting content generation process..."
           chmod a+x *.py
           python3 todays_course_finder.py || echo "Failed to run the Python script"
-          cp *.md $GITHUB_WORKSPACE/_posts && cd 
+          ls -lrth
+          pwd
+          cp *.md $GITHUB_WORKSPACE/_posts && cd ..
           rm -rf ./temp
           pwd
           ls -lrth
