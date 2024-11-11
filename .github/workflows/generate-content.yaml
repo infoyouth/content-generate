@@ -86,23 +86,22 @@ jobs:
             exit 1
           fi
       
-      - name: Set up branch and datetime
+      - name: Create Pull Request
+        if: ${{ env.CONTENT_GENERATED == 'true' }}
         run: |
           CURRENT_DATETIME=$(date '+%Y-%m-%d')
           BRANCH_NAME="${{ env.TOPIC }}-${CURRENT_DATETIME}"
-          echo "CURRENT_DATETIME=${CURRENT_DATETIME}" >> $GITHUB_ENV
           echo "BRANCH_NAME=${BRANCH_NAME}" >> $GITHUB_ENV
       
-      - name: Create Pull Request
-        if: ${{ env.CONTENT_GENERATED == 'true' }} && (github.event_name == 'workflow_dispatch' || github.event_name == 'schedule')
-        uses: peter-evans/create-pull-request@v7.0.5
-        with:
-          title: "Notes generated for ${{ env.TOPIC }} on ${{ env.CURRENT_DATETIME }}"
-          body: "This PR contains generated notes on ${{ env.CURRENT_DATETIME }}."
-          committer: "Youth Innovations <info.youthinno@gmail.com>"
-          author: "Youth Innovations <info.youthinno@gmail.com>"
-          assignees: "project-owner"
-          base: main
-          branch: ${{ env.BRANCH_NAME }}
-          commit-message: "New blog post generated for ${{ env.TOPIC }} on ${{ env.CURRENT_DATETIME }}"
-          token: ${{ secrets.GITHUB_TOKEN }}
+          # Create the PR using the 'create-pull-request' action
+          uses: peter-evans/create-pull-request@v7.0.5
+          with:
+            title: "Notes generated for ${{ env.TOPIC }} on ${{ env.CURRENT_DATETIME }}"
+            body: "This PR contains generated notes on ${{ env.CURRENT_DATETIME }}."
+            committer: "Youth Innovations <info.youthinno@gmail.com>"
+            author: "Youth Innovations <info.youthinno@gmail.com>"
+            assignees: "project-owner"
+            base: main
+            branch: ${{ env.BRANCH_NAME }}
+            commit-message: "New blog post generated for ${{ env.TOPIC }} on ${{ env.CURRENT_DATETIME }}"
+            token: ${{ secrets.GITHUB_TOKEN }}
