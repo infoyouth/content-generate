@@ -6,15 +6,17 @@ on:
         description: 'Reason for manual trigger'
         required: false
         default: 'Manual content generation'
+      TOPIC:
+        description: 'Topic of the course'
+        required: true  # This ensures the topic is provided during manual trigger
   schedule:
-    - cron: '0 3 * * *'
+    - cron: '0 3 * * *'  # Runs daily at midnight UTC
 
 permissions:
   contents: write
   pull-requests: write
 
 env:
-  TOPIC: ${{ env.TOPIC }}
   GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
   GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
 
@@ -55,6 +57,8 @@ jobs:
           mkdir -p $GITHUB_WORKSPACE/_posts
           echo "🎯 Starting content generation process..."
           chmod a+x *.py
+          # Set the TOPIC environment variable for the Python script
+          export TOPIC="${{ github.event.inputs.TOPIC }}"
           python3 todays_course_finder.py || { echo "Failed to generate content, exiting with error code"; exit 1; }
           cp *.md $GITHUB_WORKSPACE/_posts && cd ..
           rm -rf ./temp
@@ -72,19 +76,19 @@ jobs:
       - name: Set up branch and datetime
         run: |
           CURRENT_DATETIME=$(date '+%Y-%m-%d')
-          BRANCH_NAME="${TOPIC}-${CURRENT_DATETIME}"
+          BRANCH_NAME="${{ github.event.inputs.TOPIC }}-${CURRENT_DATETIME}"
           echo "CURRENT_DATETIME=${CURRENT_DATETIME}" >> $GITHUB_ENV
           echo "BRANCH_NAME=${BRANCH_NAME}" >> $GITHUB_ENV
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v7.0.5
         with:
-          title: "Notes generated for ${{ env.TOPIC }} on ${{ env.CURRENT_DATETIME }}"
+          title: "Notes generated for ${{ github.event.inputs.TOPIC }} on ${{ env.CURRENT_DATETIME }}"
           body: "This PR contains generated notes on ${{ env.CURRENT_DATETIME }}."
           committer: "Youth Innovations <info.youthinno@gmail.com>"
           author: "Youth Innovations <info.youthinno@gmail.com>"
           assignees: "project-owner"
           base: main
           branch: ${{ env.BRANCH_NAME }}
-          commit-message: "New blog post generated for ${{ env.TOPIC }} on ${{ env.CURRENT_DATETIME }}"
+          commit-message: "New blog post generated for ${{ github.event.inputs.TOPIC }} on ${{ env.CURRENT_DATETIME }}"
           token: ${{ secrets.GITHUB_TOKEN }}
