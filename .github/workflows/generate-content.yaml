@@ -75,7 +75,13 @@ jobs:
           # Clean up
           cd ..
           rm -rf ./temp
-      
+
+      - name: Debug Environment Variables
+        run: |
+          echo "TOPIC=${TOPIC}"
+          echo "CONTENT_GENERATED=${CONTENT_GENERATED}"
+          echo "CURRENT_DATETIME=${CURRENT_DATETIME}"
+
       - name: 📋 Process Status
         if: always()
         run: |
@@ -107,4 +113,3 @@ jobs:
           branch: ${{ env.BRANCH_NAME }}
           commit-message: "New blog post generated for ${{ env.TOPIC }} on ${{ env.CURRENT_DATETIME }}"
           token: ${{ secrets.GITHUB_TOKEN }}
-
