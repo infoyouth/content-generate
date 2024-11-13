@@ -18,13 +18,16 @@ env:
   GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
 
 jobs:
-  generate-content:
-    name: 📚 Generate Course Content
+  setup:
+    name: Setup Environment and Install Dependencies
     runs-on: ubuntu-latest
     steps:
       - name: 🔍 Checkout Main Repository
         uses: actions/checkout@v3
-
+        
+      - name: Create temp directory
+        run: mkdir -p ./temp
+        
       - name: 🔐 Checkout Private Content Repo
         uses: actions/checkout@v3
         with:
@@ -46,6 +49,14 @@ jobs:
           python -m pip install --upgrade pip
           pip install transformers markdownify torch requests aiohttp python-dotenv tenacity colorlog
 
+  generate-content:
+    name: 📚 Generate Course Content
+    runs-on: ubuntu-latest
+    needs: setup
+    strategy:
+      matrix:
+        run: [1, 2, 3]  # Repeat 3 times to create 3 different PRs
+    steps:
       - name: 🚀 Generate Course Content
         working-directory: ./temp
         run: |
@@ -65,16 +76,13 @@ jobs:
             echo "📄 Found generated markdown files, copying them..."
             cp *.md $GITHUB_WORKSPACE/_posts
             CONTENT_GENERATED=true
+            rm -rf ./temp/*
           else
             echo "🚫 No content generated for today. Skipping file copy."
           fi
       
           # Export the CONTENT_GENERATED flag so it can be used in later steps
           echo "CONTENT_GENERATED=${CONTENT_GENERATED}" >> $GITHUB_ENV
-      
-          # Clean up
-          cd ..
-          rm -rf ./temp
 
       - name: Debug Environment Variables
         run: |
@@ -91,25 +99,25 @@ jobs:
             echo "❌ Content generation encountered issues"
             exit 1
           fi
-      
+
       - name: Create Branch Name and Set Date
         if: ${{ env.CONTENT_GENERATED == 'true' }}
         run: |
           CURRENT_DATETIME=$(date '+%Y-%m-%d')
           echo "CURRENT_DATETIME=${CURRENT_DATETIME}" >> $GITHUB_ENV
-          BRANCH_NAME="${{ env.TOPIC }}-${CURRENT_DATETIME}"
+          BRANCH_NAME="${{ env.TOPIC }}-${CURRENT_DATETIME}-${{ matrix.run }}"
           echo "BRANCH_NAME=${BRANCH_NAME}" >> $GITHUB_ENV
-      
+
       - name: Create Pull Request using action
         if: ${{ env.CONTENT_GENERATED == 'true' }}
         uses: peter-evans/create-pull-request@v7.0.5
         with:
-          title: "Notes generated for ${{ env.TOPIC }} on ${{ env.CURRENT_DATETIME }}"
-          body: "This PR contains generated notes on ${{ env.CURRENT_DATETIME }}."
+          title: "Notes generated for ${{ env.TOPIC }} on ${{ env.CURRENT_DATETIME }} (Run ${{ matrix.run }})"
+          body: "This PR contains generated notes on ${{ env.CURRENT_DATETIME }} (Run ${{ matrix.run }})."
           committer: "Youth Innovations <info.youthinno@gmail.com>"
           author: "Youth Innovations <info.youthinno@gmail.com>"
           assignees: "project-owner"
           base: main
           branch: ${{ env.BRANCH_NAME }}
-          commit-message: "New blog post generated for ${{ env.TOPIC }} on ${{ env.CURRENT_DATETIME }}"
+          commit-message: "New blog post generated for ${{ env.TOPIC }} on ${{ env.CURRENT_DATETIME }} (Run ${{ matrix.run }})"
           token: ${{ secrets.GITHUB_TOKEN }}
