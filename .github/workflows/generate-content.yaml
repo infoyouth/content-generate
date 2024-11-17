@@ -127,19 +127,27 @@ jobs:
         uses: cabrera-evil/discord-notify-action@1.0.1
         with:
           webhook_url: ${{ secrets.DISCORD_WEBHOOK_URL }}
-          title: '📢 **Todays COurse Created**'
+          title: '📢 **Today’s Course Created!**'
           description: |
-            🎉 **Pull Request Details** 🎉
+          
+            🎉 **Exciting News!** 🎉
       
-            🔖 **Branch Name:** `${{ steps.create_pull_request.outputs.pull-request-branch }}`
-            🔄 **Operation:** `${{ steps.create_pull_request.outputs.pull-request-operation }}`
-            🧬 **Head SHA:** `${{ steps.create_pull_request.outputs.pull-request-head-sha }}`
-            🔢 **PR Number:** `${{ steps.create_pull_request.outputs.pull-request-number }}`
-            🔗 **PR Link:** [View Pull Request](${{ steps.create_pull_request.outputs.pull-request-url }})
+            🚀 A new Pull Request has been created for today’s course notes!  
+            Dive in, explore the content, and help shape the future of open-source learning! 🌟  
       
-            📝 **Notes Generated for Topic:** **${{ env.TOPIC }}**
-            📅 **Date and Time:** **${{ env.CURRENT_DATETIME }}**
+            🔖 **Branch Name:** `${{ steps.create_pull_request.outputs.pull-request-branch }`  
+            🔢 **PR Number:** `${{ steps.create_pull_request.outputs.pull-request-number }`  
+            🔗 **PR Link:** [View and Review the Pull Request](${{ steps.create_pull_request.outputs.pull-request-url }})  
       
+            📝 **Topic:** **${{ env.TOPIC }}**  
+            📅 **Date:** **${{ env.CURRENT_DATETIME }}**
+      
+            💡 **Get Involved:**  
+            - Review the changes 📋  
+            - Share feedback 💬  
+            - Join the open-source community 🌐  
+      
+            Your contributions make a difference—let’s grow together! 💖  
           include_image: 'true'
           username: 'Youth Innovations'
           title_url: ${{ steps.create_pull_request.outputs.pull-request-url }}
