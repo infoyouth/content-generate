@@ -116,15 +116,14 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
       
       - name: 🚨 Notify Discord
-        if: env.CONTENT_GENERATED == 'true' && steps.create_pull_request.outputs.pull_number != ''
+        if: env.CONTENT_GENERATED == 'true' && steps.create_pull_request.outputs.pull_request_number != ''
         uses: cabrera-evil/discord-notify-action@1.0.1
         with:
           webhook_url: ${{ secrets.DISCORD_WEBHOOK_URL }}
           title: '📢 New Pull Request Created'
           description: |
             A new PR has been generated successfully for **${{ env.TOPIC }}** on **${{ env.CURRENT_DATETIME }}**.
-            Click [here](https://github.com/${{ github.repository }}/pull/${{ steps.create_pull_request.outputs.pull_number }}) to view it.
+            Click [here](${{ steps.create_pull_request.outputs.pull_request_url }}) to view it.
           include_image: 'true'
           username: 'Youth Innovations'
-          title_url: 'https://github.com/${{ github.repository }}/pull/${{ steps.create_pull_request.outputs.pull_number }}'
-      
+          title_url: ${{ steps.create_pull_request.outputs.pull_request_url }}
