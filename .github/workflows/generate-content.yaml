@@ -100,16 +100,30 @@ jobs:
           BRANCH_NAME="${{ env.TOPIC }}-${CURRENT_DATETIME}"
           echo "BRANCH_NAME=${BRANCH_NAME}" >> $GITHUB_ENV
       
-      - name: Create Pull Request using action
-        if: ${{ env.CONTENT_GENERATED == 'true' }}
+      - name: 🚀 Open Pull Request
+        if: env.CONTENT_GENERATED == 'true'
         uses: peter-evans/create-pull-request@v7.0.5
         with:
-          title: "Notes generated for ${{ env.TOPIC }} on ${{ env.CURRENT_DATETIME }}"
-          body: "This PR contains generated notes on ${{ env.CURRENT_DATETIME }}."
+          title: "📝 New Course Notes for ${{ env.TOPIC }} on ${{ env.CURRENT_DATETIME }}"
+          body: "This PR includes generated notes created on ${{ env.CURRENT_DATETIME }}."
           committer: "Youth Innovations <info.youthinno@gmail.com>"
           author: "Youth Innovations <info.youthinno@gmail.com>"
           assignees: "project-owner"
           base: main
           branch: ${{ env.BRANCH_NAME }}
-          commit-message: "New blog post generated for ${{ env.TOPIC }} on ${{ env.CURRENT_DATETIME }}"
+          commit-message: "📝 Course content generated for ${{ env.TOPIC }} on ${{ env.CURRENT_DATETIME }}"
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: 🚨 Notify Discord
+        if: success()  # Run this step only if the PR creation succeeds
+        uses: cabrera-evil/discord-notify-action@1.0.1
+        with:
+          webhook_url: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          title: '📢 New Pull Request Created for todays topic'
+          description: |
+            A new PR has been generated successfully for **${{ env.TOPIC }}** on **${{ env.CURRENT_DATETIME }}**.
+            Click [here](https://github.com/${{ github.repository }}/pull/${{ steps.create_pull_request.outputs.pull_number }}) to view it.
+          include_image: 'true'
+          username: 'Youth Innovations'
+          title_url: 'https://github.com/${{ github.repository }}/pull/${{ steps.create_pull_request.outputs.pull_number }}'
           token: ${{ secrets.GITHUB_TOKEN }}
