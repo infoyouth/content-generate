@@ -128,8 +128,7 @@ jobs:
         with:
           webhook_url: ${{ secrets.DISCORD_WEBHOOK_URL }}
           title: '📢 **Today’s Course Created!**'
-          description: |
-          
+          description: |          
             🎉 **Exciting News!** 🎉
       
             🚀 A new Pull Request has been created for today’s course notes!  
