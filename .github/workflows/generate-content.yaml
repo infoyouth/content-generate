@@ -127,11 +127,11 @@ jobs:
         uses: cabrera-evil/discord-notify-action@1.0.1
         with:
           webhook_url: ${{ secrets.DISCORD_WEBHOOK_URL }}
-          title: '📢 **Today’s Course Notes Created!**'
+          title: '📢 ** ${{ env.TOPIC }} **'
           description: |
             🎉 **Exciting News!** 🎉
       
-            🚀 A new Pull Request has been created for today’s course notes!  
+            🚀 A new Pull Request has been created for today’s course!  
             Dive in, explore the content, and help shape the future of open-source learning! 🌟  
       
             🔖 **Branch Name:** **${{ steps.create_pull_request.outputs.pull-request-branch }}**  
