@@ -102,7 +102,7 @@ jobs:
       
       - name: 🚀 Open Pull Request
         if: env.CONTENT_GENERATED == 'true'
-        id: create_pull_request  # Adding an id to refer to this step's outputs
+        id: create_pull_request
         uses: peter-evans/create-pull-request@v7.0.5
         with:
           title: "📝 New Course Notes for ${{ env.TOPIC }} on ${{ env.CURRENT_DATETIME }}"
@@ -114,9 +114,9 @@ jobs:
           branch: ${{ env.BRANCH_NAME }}
           commit-message: "📝 Course content generated for ${{ env.TOPIC }} on ${{ env.CURRENT_DATETIME }}"
           token: ${{ secrets.GITHUB_TOKEN }}
-
+      
       - name: 🚨 Notify Discord
-        if: steps.create_pull_request.outputs.pull_number  # Only run if PR was created
+        if: env.CONTENT_GENERATED == 'true' && steps.create_pull_request.outputs.pull_number != ''
         uses: cabrera-evil/discord-notify-action@1.0.1
         with:
           webhook_url: ${{ secrets.DISCORD_WEBHOOK_URL }}
@@ -127,3 +127,4 @@ jobs:
           include_image: 'true'
           username: 'Youth Innovations'
           title_url: 'https://github.com/${{ github.repository }}/pull/${{ steps.create_pull_request.outputs.pull_number }}'
+      
