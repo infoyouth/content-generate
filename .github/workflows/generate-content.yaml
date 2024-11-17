@@ -127,10 +127,19 @@ jobs:
         uses: cabrera-evil/discord-notify-action@1.0.1
         with:
           webhook_url: ${{ secrets.DISCORD_WEBHOOK_URL }}
-          title: '📢 New Pull Request Created'
+          title: '📢 **Todays COurse Created**'
           description: |
-            A new PR has been generated successfully for **${{ env.TOPIC }}** on **${{ env.CURRENT_DATETIME }}**.
-            Click [here](${{ steps.create_pull_request.outputs.pull_request_url }}) to view it.
+            🎉 **Pull Request Details** 🎉
+      
+            🔖 **Branch Name:** `${{ steps.create_pull_request.outputs.pull-request-branch }}`
+            🔄 **Operation:** `${{ steps.create_pull_request.outputs.pull-request-operation }}`
+            🧬 **Head SHA:** `${{ steps.create_pull_request.outputs.pull-request-head-sha }}`
+            🔢 **PR Number:** `${{ steps.create_pull_request.outputs.pull-request-number }}`
+            🔗 **PR Link:** [View Pull Request](${{ steps.create_pull_request.outputs.pull-request-url }})
+      
+            📝 **Notes Generated for Topic:** **${{ env.TOPIC }}**
+            📅 **Date and Time:** **${{ env.CURRENT_DATETIME }}**
+      
           include_image: 'true'
           username: 'Youth Innovations'
-          title_url: ${{ steps.create_pull_request.outputs.pull_request_url }}
+          title_url: ${{ steps.create_pull_request.outputs.pull-request-url }}
