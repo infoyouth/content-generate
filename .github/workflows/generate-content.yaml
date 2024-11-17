@@ -114,9 +114,16 @@ jobs:
           branch: ${{ env.BRANCH_NAME }}
           commit-message: "📝 Course content generated for ${{ env.TOPIC }} on ${{ env.CURRENT_DATETIME }}"
           token: ${{ secrets.GITHUB_TOKEN }}
-      
+      - name: Debug Outputs
+        run: |
+          echo "Pull Request Branch: ${{ steps.create_pull_request.outputs.pull-request-branch }}"
+          echo "Pull Request Operation: ${{ steps.create_pull_request.outputs.pull-request-operation }}"
+          echo "Pull Request Head SHA: ${{ steps.create_pull_request.outputs.pull-request-head-sha }}"
+          echo "Pull Request Number: ${{ steps.create_pull_request.outputs.pull-request-number }}"
+          echo "Pull Request URL: ${{ steps.create_pull_request.outputs.pull-request-url }}"
+
       - name: 🚨 Notify Discord
-        if: env.CONTENT_GENERATED == 'true' && steps.create_pull_request.outputs.pull_request_number != ''
+        if: steps.create_pull_request.outputs.pull-request-operation == 'created'
         uses: cabrera-evil/discord-notify-action@1.0.1
         with:
           webhook_url: ${{ secrets.DISCORD_WEBHOOK_URL }}
