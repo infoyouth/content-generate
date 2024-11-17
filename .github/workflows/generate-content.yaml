@@ -127,15 +127,15 @@ jobs:
         uses: cabrera-evil/discord-notify-action@1.0.1
         with:
           webhook_url: ${{ secrets.DISCORD_WEBHOOK_URL }}
-          title: '📢 **Today’s Course Created!**'
-          description: |          
+          title: '📢 **Today’s Course Notes Created!**'
+          description: |
             🎉 **Exciting News!** 🎉
       
             🚀 A new Pull Request has been created for today’s course notes!  
             Dive in, explore the content, and help shape the future of open-source learning! 🌟  
       
-            🔖 **Branch Name:** `${{ steps.create_pull_request.outputs.pull-request-branch }`  
-            🔢 **PR Number:** `${{ steps.create_pull_request.outputs.pull-request-number }`  
+            🔖 **Branch Name:** **${{ steps.create_pull_request.outputs.pull-request-branch }}**  
+            🔢 **PR Number:** **${{ steps.create_pull_request.outputs.pull-request-number }}**  
             🔗 **PR Link:** [View and Review the Pull Request](${{ steps.create_pull_request.outputs.pull-request-url }})  
       
             📝 **Topic:** **${{ env.TOPIC }}**  
@@ -150,3 +150,4 @@ jobs:
           include_image: 'true'
           username: 'Youth Innovations'
           title_url: ${{ steps.create_pull_request.outputs.pull-request-url }}
+
