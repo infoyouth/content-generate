@@ -6,8 +6,6 @@ on:
         description: 'Reason for manual trigger'
         required: false
         default: 'Manual content generation'
-  schedule:
-    - cron: '0 3 * * *'
 
 permissions:
   contents: write
