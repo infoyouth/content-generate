@@ -90,7 +90,8 @@ jobs:
           echo "CURRENT_DATETIME=${CURRENT_DATETIME}" >> $GITHUB_ENV
           BRANCH_NAME="${{ env.TOPIC }}-${CURRENT_DATETIME}"
           echo "BRANCH_NAME=${BRANCH_NAME}" >> $GITHUB_ENV
-          echo "TOPIC_WITH_SPACE=${{ env.TOPIC | replace('_', ' ') }}" >> $GITHUB_ENV
+          TOPIC_WITH_SPACE=$(echo "${{ env.TOPIC }}" | sed 's/_/ /g')
+          echo "TOPIC_WITH_SPACE=${TOPIC_WITH_SPACE}" >> $GITHUB_ENV
       
       - name: 🚀 Open Pull Request
         if: env.CONTENT_GENERATED == 'true'
