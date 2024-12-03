@@ -44,11 +44,9 @@ jobs:
           pip install aiofiles==24.1.0 colorlog==6.9.0
       - name: 🚀 Generate Course Content
         working-directory: ./temp
-        env:
-          PYTHONPATH: $(pwd)  # Set the PYTHONPATH environment variable
         run: |
+          export PYTHONPATH=$(pwd)
           echo $PYTHONPATH
-          set -x
           mkdir -p $GITHUB_WORKSPACE/_posts
           echo "🎯 Starting content generation process..."
           # Run the Python script to generate content and set the TOPIC value in the script
