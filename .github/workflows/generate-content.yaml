@@ -44,6 +44,8 @@ jobs:
           pip install aiofiles==24.1.0 colorlog==6.9.0
       - name: 🚀 Generate Course Content
         working-directory: ./temp
+        env:
+          PYTHONPATH: $(pwd)  # Set the PYTHONPATH environment variable
         run: |
           set -x
           mkdir -p $GITHUB_WORKSPACE/_posts
