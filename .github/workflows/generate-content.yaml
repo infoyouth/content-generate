@@ -47,10 +47,10 @@ jobs:
         env:
           PYTHONPATH: $(pwd)  # Set the PYTHONPATH environment variable
         run: |
+          echo $PYTHONPATH
           set -x
           mkdir -p $GITHUB_WORKSPACE/_posts
           echo "🎯 Starting content generation process..."
-          chmod a+x *.py
           # Run the Python script to generate content and set the TOPIC value in the script
           python3 todays_course_finder.py || { echo "Failed to generate content, exiting with error code"; exit 1; }
       
