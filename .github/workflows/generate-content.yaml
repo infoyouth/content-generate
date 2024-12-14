@@ -5,7 +5,9 @@ on:
       reason:
         description: 'Reason for manual trigger'
         required: false
-        default: 'Manual content generation'    
+        default: 'Manual content generation'
+  schedule:
+    - cron: '0 1 * * *'
 
 permissions:
   contents: write
@@ -46,7 +48,6 @@ jobs:
         working-directory: ./temp
         run: |
           export PYTHONPATH=$(pwd)
-          echo $PYTHONPATH
           mkdir -p $GITHUB_WORKSPACE/_posts
           echo "🎯 Starting content generation process..."
           # Run the Python script to generate content and set the TOPIC value in the script
@@ -101,8 +102,10 @@ jobs:
           committer: "Youth Innovations <info.youthinno@gmail.com>"
           author: "Youth Innovations <info.youthinno@gmail.com>"
           assignees: "project-owner"
+          reviewers: DarshanBoraganve,Sanmatiboragave,shweta-borganve
           base: main
           branch: ${{ env.BRANCH_NAME }}
+          labels: blog-post
           commit-message: "📝 Freshly Generated Course Content for '${{ env.TOPIC_WITH_SPACE }}' on ${{ env.CURRENT_DATETIME }} 📚✨ | Ready to Dive In!"
 
           token: ${{ secrets.GITHUB_TOKEN }}
