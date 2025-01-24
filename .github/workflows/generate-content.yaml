@@ -6,6 +6,8 @@ on:
         description: 'Reason for manual trigger'
         required: false
         default: 'Manual content generation'
+  schedule:
+    - cron: '0 1 * * *'
 
 permissions:
   contents: write
@@ -18,7 +20,7 @@ env:
 jobs:
   generate-content:
     name: 📚 Generate Course Content
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - name: 🔍 Checkout Main Repository
         uses: actions/checkout@v4
@@ -54,10 +56,10 @@ jobs:
           # Initialize a flag for content generation
           CONTENT_GENERATED=false
       
-          # Check if any .md files were generated
-          if ls *.md 1> /dev/null 2>&1; then
-            echo "📄 Found generated markdown files, copying them..."
-            cp *.md $GITHUB_WORKSPACE/_posts
+          # Check if any .md files were generated, excluding README.md
+          if ls *.md 2>/dev/null | grep -v '^README.md$' > /dev/null; then
+            echo "📄 Found generated markdown files (excluding README.md), copying them..."
+            ls *.md | grep -v '^README.md$' | xargs -I {} cp {} $GITHUB_WORKSPACE/_posts
             CONTENT_GENERATED=true
           else
             echo "🚫 No content generated for today. Skipping file copy."
@@ -93,7 +95,7 @@ jobs:
       - name: 🚀 Open Pull Request
         if: env.CONTENT_GENERATED == 'true'
         id: create_pull_request
-        uses: peter-evans/create-pull-request@v7.0.5
+        uses: peter-evans/create-pull-request@v7.0.6
         with:
           title: "📝 ${{ env.TOPIC_WITH_SPACE }} - Comprehensive Notes with New Insights (${{ env.CURRENT_DATETIME }}) 📥"
           body: "This PR includes generated notes created on ${{ env.CURRENT_DATETIME }}."
@@ -115,7 +117,7 @@ jobs:
           echo "Pull Request URL: ${{ steps.create_pull_request.outputs.pull-request-url }}"
       - name: 🚨 Notify Discord
         if: steps.create_pull_request.outputs.pull-request-operation == 'created'
-        uses: cabrera-evil/discord-notify-action@1.0.2
+        uses: cabrera-evil/discord-notify-action@1.1.8
         with:
           webhook_url: ${{ secrets.DISCORD_WEBHOOK_URL }}
           title: '📢 ** ${{ env.TOPIC }} **'
@@ -128,11 +130,13 @@ jobs:
             
             🔖 **Branch:** ${{ steps.create_pull_request.outputs.pull-request-branch }}
             
-            🔢 **PR:** ${{ steps.create_pull_request.outputs.pull-request-number }}
+            🔢 **PR Number:** ${{ steps.create_pull_request.outputs.pull-request-number }}
             
-            🔗 [View PR](${{ steps.create_pull_request.outputs.pull-request-url }})
+            🔗 **View PR:** [Click here](${{ steps.create_pull_request.outputs.pull-request-url }})
             
             💬 Review, share feedback, and help improve open-source! 🌐 
           include_image: 'true'
           username: 'Youth Innovations'
-          title_url: ${{ steps.create_pull_request.outputs.pull-request-url }}
+          custom_image_url: 'https://raw.githubusercontent.com/infoyouth/infoyouth.github.io/main/assets/img/favicons/favicon-48x48.png'
+          repo_name: ${{ github.repository }}
+          repo_url: ${{ github.server_url }}/${{ github.repository }}
